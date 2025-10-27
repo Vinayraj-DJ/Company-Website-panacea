@@ -1,0 +1,503 @@
+/* Section */
+.section {
+    
+    border-radius: 24px;
+    padding: clamp(20px, 4vw, 44px);
+    margin: 0px 0px 50px;
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.64);
+    color: #2b2b2b;
+    position: relative;
+    font-family: "Roboto Serif", serif;
+}
+
+/* Add a soft overlay */
+.section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    background: radial-gradient(120% 120% at 20% 10%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+}
+
+/* Inner wrapper */
+.inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Roboto Serif", serif;
+}
+
+/* Header row */
+.topBar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "kicker cta" "title cta";
+    align-items: center;
+    gap: 10px 10px;
+}
+
+/* Kicker */
+.kicker {
+    grid-area: kicker;
+    font-family: "Roboto Serif", serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    opacity: 0.9;
+    font-size: clamp(16px, 2.2vw, 24px);
+}
+
+/* Title */
+.title {
+    grid-area: title;
+    margin: 0;
+    font-family: "Roboto Serif", serif;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: clamp(28px, 4.6vw, 42px);
+    color: #2b2b2b;
+}
+
+.title span {
+    color: #2d6ab1;
+    font-weight: 700;
+    font-family: "Roboto Serif", serif;
+}
+
+/* Call-to-action button */
+.cta {
+    grid-area: cta;
+    border: 0;
+    background: #3b68b2;
+    color: #fff;
+    border-radius: 999px;
+    padding: 14px 26px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: "Roboto Serif", serif;
+}
+
+/* Cards grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: clamp(24px, 4vw, 48px) 38px;
+    font-family: "Roboto Serif", serif;
+}
+
+/* Cards */
+.card {
+    text-align: center;
+    font-family: "Roboto Serif", serif;
+}
+
+.avatarWrap {
+    position: relative;
+    width: 175px;
+    height: 175px;
+    max-width: 56vw;
+    margin: 0 auto 3px;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Decorative dots */
+.dot {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+
+.dotDark {
+    right: -16px;
+    top: 8px;
+    background: rgba(21, 34, 49, 0.85);
+}
+
+.dotAccent {
+    right: -10px;
+    bottom: 10px;
+    background: #d27b1e;
+}
+
+/* Name and Role */
+.name {
+    font-family: "Roboto Serif", serif;
+    font-weight: 700;
+    color: #2d6ab1;
+    font-size: clamp(16px, 2.2vw, 20px);
+    margin-bottom: 6px;
+}
+
+.role {
+    font-family: "Roboto Serif", serif;
+    font-size: clamp(14px, 1.8vw, 16px);
+    color: rgba(0, 0, 0, 0.65);
+}
+/* --- Responsive --- */
+@media (max-width: 1100px) {
+    .cta {
+            display: flex;
+            grid-area: cta;
+            border: 0;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            background: #3b68b2;
+            color: #fff;
+            border-radius: 999px;
+            padding: 14px 26px;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
+            cursor: pointer;
+            white-space: nowrap;
+            font-family: "Roboto Serif", serif;
+        }
+    .grid {
+        grid-template-columns: repeat(3, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 820px) {
+    .cta {
+            display: flex;
+            grid-area: cta;
+            border: 0;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            background: #3b68b2;
+            color: #fff;
+            border-radius: 999px;
+            padding: 14px 26px;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
+            cursor: pointer;
+            white-space: nowrap;
+            font-family: "Roboto Serif", serif;
+        }
+    .topBar {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "kicker"
+            "title"
+            "cta";
+        justify-items: start;
+    }
+
+    /* MOBILE: make 2 columns in a row */
+    .grid {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+        gap: clamp(16px, 3vw, 32px) 16px;
+        /* optional: adjust spacing */
+    }
+
+    .avatarWrap {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Place the button below the grid on mobile, center-aligned */
+    .ctaButtonContainer {
+        grid-column: 1 / -1;
+        /* Span the entire grid */
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        /* Space between grid and button */
+    }
+
+    .ctaButton {
+        display: flex;
+        width: auto;
+        justify-content: flex-end;
+        background-color: var(--primary);
+        color: white;
+        padding: 14px 24px;
+        font-weight: 600;
+        font-size: 16px;
+        box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
+        cursor: pointer;
+        white-space: nowrap;
+        border-radius: 999px;
+    }
+}
+
+@media (max-width: 520px) {
+    
+    .grid {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: clamp(12px, 2.5vw, 24px) 12px;
+    }
+
+    .avatarWrap {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Ensures the button stays centered on the smallest mobile screen */
+    .ctaButtonContainer {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+        .cta {
+            display: flex;
+            grid-area: cta;
+            border: 0;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            background: #3b68b2;
+            color: #fff;
+            border-radius: 999px;
+            padding: 14px 26px;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
+            cursor: pointer;
+            white-space: nowrap;
+            font-family: "Roboto Serif", serif;
+        }
+
+         .ctaButton {
+             display: flex;
+             width: auto;
+             justify-content: flex-end;
+             background-color: var(--primary);
+             color: white;
+             padding: 14px 24px;
+             font-weight: 600;
+             font-size: 16px;
+             box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
+             cursor: pointer;
+             white-space: nowrap;
+             border-radius: 999px;
+         }
+}
+/* --- Responsive --- */
+@media (max-width: 1100px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 820px) {
+    .topBar {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "kicker"
+            "title"
+            "cta";
+        justify-items: start;
+    }
+
+    /* MOBILE: make 2 columns in a row */
+    .grid {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+        gap: clamp(16px, 3vw, 32px) 16px;
+        /* optional: adjust spacing */
+    }
+
+    .avatarWrap {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Move the existing Schedule A Call button below the grid and center it */
+    .ctaButtonContainer {
+        grid-column: 1 / -1;
+        /* Span the entire grid */
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        /* Space between grid and button */
+    }
+}
+
+@media (max-width: 520px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: clamp(12px, 2.5vw, 24px) 12px;
+    }
+    
+
+    .avatarWrap {
+        width: 120px;
+        height: 120px;
+    }
+         .ctaButton {
+             display: flex;
+             width: auto;
+             justify-content: flex-end;
+             background-color: var(--primary);
+             color: white;
+             padding: 14px 24px;
+             font-weight: 600;
+             font-size: 16px;
+             box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
+             cursor: pointer;
+             white-space: nowrap;
+             border-radius: 999px;
+         }
+
+    /* Ensure the button is still centered below the grid */
+    .ctaButtonContainer {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}/* Toast Wrapper */
+.toastWrapper {
+    position: fixed;
+    top: 20px;
+    /* Distance from top of screen */
+    right: 20px;
+    /* Distance from right of screen */
+    z-index: 9999;
+    /* Ensure it appears on top of other content */
+    pointer-events: none;
+    /* Allow clicks to pass through */
+    display: flex;
+    justify-content: flex-end;
+    /* Align to the right */
+}
+
+/* Toast Box */
+.topToast {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #69b7d6 0%, #59c2b2 65%);
+    /* Toast color gradient */
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 300px;
+    /* Width of toast box */
+    box-shadow: 0 14px 30px rgba(33, 33, 33, 0.12);
+    animation: toastEnter 260ms ease-out;
+    /* Animation for toast appearance */
+}
+
+/* Toast Content */
+.topToastInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.toastIcon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+}
+
+.toastText {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.toastClose {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 18px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.toastClose:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* Progress Bar */
+.toastProgress {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, #4ec17b 0%, #f5b64f 55%, #e35a5a 100%);
+    transform-origin: left center;
+    animation: progressShrink linear forwards;
+}
+
+/* Toast Entry Animation */
+@keyframes toastEnter {
+    from {
+        opacity: 0;
+        transform: translateY(-8px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Progress bar animation */
+@keyframes progressShrink {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+/* Responsive Mobile View - Center the toast */
+@media (max-width: 768px) {
+    .toastWrapper {
+        left: 16px;
+        right: 16px;
+        top: 50px;
+        /* Adjust the top position on mobile */
+        justify-content: center;
+        /* Center the toast horizontally */
+    }
+ .ctaButton {
+     display: flex;
+     width: auto;
+     justify-content: flex-end;
+     background-color: var(--primary);
+     color: white;
+     padding: 14px 24px;
+     font-weight: 600;
+     font-size: 16px;
+     box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
+     cursor: pointer;
+     white-space: nowrap;
+     border-radius: 999px;
+ }
+    .topToast {
+        width: 100%;
+        /* Allow the toast to take full width */
+        max-width: 400px;
+        /* Optional, set a max width */
+        border-radius: 10px;
+        /* Adjust the border radius on mobile */
+    }
+}
