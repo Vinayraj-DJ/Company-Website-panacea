@@ -204,8 +204,9 @@
         color: #2D6AB1;
     }
 
+    /* CHANGED: allow clicks inside the panel content */
     .hoverPanel .megaInner {
-        pointer-events: none;
+        pointer-events: auto;
     }
 
     .hoverPanel .viewAllRow,
@@ -528,25 +529,13 @@
 }
 
 @keyframes toastTimerAnim {
-    from {
-        width: 100%;
-    }
-
-    to {
-        width: 0%;
-    }
+    from { width: 100%; }
+    to   { width: 0%; }
 }
 
 @keyframes toastIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-8px) scale(0.98);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
+    0% { opacity: 0; transform: translateY(-8px) scale(0.98); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 /* Mobile toast tweak (narrow centered) */
@@ -571,7 +560,9 @@
 /* small helpers */
 .menuItem.active +.arrowIcon {
     color: #2D6AB1;
-}/* ===================== MOBILE (<=768) ===================== */
+}
+
+/* ===================== MOBILE (<=768) ===================== */
 @media (max-width: 768px) {
     .logo {
         height: 40px !important;
@@ -750,6 +741,7 @@
         justify-content: center;
     }
 }
+
 /* Desktop: pin the "View all" button centered and overlapping the bottom of the products hover panel */
 @media (hover: hover) and (min-width: 769px) {
 
