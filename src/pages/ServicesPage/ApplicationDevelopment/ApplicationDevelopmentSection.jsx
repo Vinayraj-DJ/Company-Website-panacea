@@ -891,6 +891,7 @@ import JoinOurServiceSection from "../../../sections/Services/JoinOurServiceSect
 import KnowEverythingSection from "../../../sections/Services/KnowEverythingSection";
 import FooterSection from "../../../sections/HomePageSection/FooterSection/FooterSection";
 import HeroTitleChip from "../../../components/common/HeroTitleChip";
+import HoverRevealCard from "../../../components/HoverRevealCard/HoverRevealCard";
 /** Same overlay chips as your Services page */
 const SOCIALS = {
   linkedin: "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
@@ -985,6 +986,8 @@ export default function ApplicationDevelopmentSection({
       </div>
 
       {/* Reuse other sections */}
+     
+
       <JoinOurServiceSection />
       <KnowEverythingSection />
       <FooterSection />
