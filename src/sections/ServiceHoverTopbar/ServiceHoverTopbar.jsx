@@ -205,9 +205,9 @@ const ServiceHoverTopbar = () => {
         </div>
 
         <div className={styles.viewAllRowDesktop}>
-          <button className={styles.viewAllBtnDesktop} onClick={() => navigate("/services")}>
+          {/* <button className={styles.viewAllBtnDesktop} onClick={() => navigate("/services")}>
             View all services →
-          </button>
+          </button> */}
         </div>
       </div>
     );
