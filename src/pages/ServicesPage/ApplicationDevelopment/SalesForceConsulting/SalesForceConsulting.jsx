@@ -23,7 +23,7 @@ const SalesForceConsulting = () => {
       {/* Hero (structure unchanged; just the title/copy) */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc=""
+          imageSrc="/images/services/sfc.png"
           alt="Sales Force Consulting"
           title={"Sales Force\nConsulting"}
         />
@@ -61,7 +61,7 @@ const SalesForceConsulting = () => {
 
       {/* SplitFeature #1 (content updated only) */}
       <SplitFeature
-        image="/images/services/image 38.png"            // keep your image path
+        image="/images/services/image 46.png"            // keep your image path
         title="Why Choose Sales Force Consulting Services And How PanaceaIT Can Help"
         body={`In today’s competitive business environment, managing customer relationships efficiently is key to success. Salesforce Consulting Services empower organizations to streamline sales, marketing, and service processes through powerful automation and data-driven insights. By leveraging the full potential of Salesforce, businesses can enhance customer engagement, improve team collaboration, and drive measurable growth.`}
         body2={`At PanaceaIT Services, we specialize in delivering end-to-end Salesforce consulting solutions tailored to your business goals. Our certified experts assist with CRM setup, customization, integration, and automation to ensure a seamless experience. Whether you’re optimizing an existing Salesforce platform or implementing a new solution, we help you unlock its full potential with strategic guidance and technical excellence.`}
@@ -70,7 +70,7 @@ const SalesForceConsulting = () => {
 
       {/* SplitFeature #2 (content updated only) */}
       <SplitFeature
-        image="/images/services/image 37.png"            // keep your image path
+        image="/images/services/image 47.png"            // keep your image path
         title="About Sales Force Consulting Services"
         body={`Salesforce Consulting Services help businesses harness the full potential of Salesforce — the world’s leading Customer Relationship Management (CRM) platform. These services focus on understanding your processes and tailoring Salesforce solutions to improve efficiency, automate workflows, and strengthen customer engagement.`}
         body2={`With expert consulting, companies can streamline sales, marketing, and service operations, gain actionable insights through data analytics, and enhance overall business performance. Consultants guide organizations from planning and implementation to customization and ongoing support, ensuring a smooth digital transformation and measurable growth.`}
@@ -102,7 +102,7 @@ const SalesForceConsulting = () => {
               "Consultants ensure smooth integration of Salesforce with your existing systems, creating a unified and efficient business ecosystem.",
           },
         ]}
-        illustrationSrc="/images/services/image 39.png"  // keep your image path
+        illustrationSrc="/images/services/image 48.png"  // keep your image path
         illustrationAlt="Salesforce consulting illustration"
         imageLeft={true}
       />

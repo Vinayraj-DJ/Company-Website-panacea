@@ -17,7 +17,7 @@ const BIDataAnalytics = () => {
     <section className={styles.page}>
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/Rectangle%2053.png"
+          imageSrc="/images/services/BDA.png"
           alt="BI & Data Analytics"
           title={"BI & Data\nAnalytics"}
         />
@@ -51,7 +51,7 @@ const BIDataAnalytics = () => {
       />
 
       <SplitFeature
-        image="/images/services/image 41.png"
+        image="/images/services/image 52.png"
         title="Why BI & Data Analytics Matter And How PanaceaIT Can Help"
         body={`In today’s data-driven world, businesses generate massive amounts of information every day — but only those who harness it effectively can gain a competitive advantage. Business Intelligence (BI) and Data Analytics empower organizations to turn raw data into actionable insights, helping leaders make smarter, faster, and more strategic decisions.`}
         body2={`At PanaceaIT Services, we specialize in delivering end-to-end BI and Data Analytics solutions tailored to your business goals. Our experts design and implement powerful dashboards, reports, and data models that simplify complex information into clear, visual insights.`}
@@ -59,7 +59,7 @@ const BIDataAnalytics = () => {
       />
 
       <SplitFeature
-        image="/images/services/image 40.png"
+        image="/images/services/image 53.png"
         title="About BI & Data Analytics"
         body={`Business Intelligence (BI) and Data Analytics empower organizations to transform raw data into meaningful insights that drive smarter decision-making. These services help businesses collect, process, and analyze data from various sources to uncover trends, measure performance, and identify growth opportunities.`}
         body2={`By turning data into actionable intelligence, companies can gain a competitive edge and confidently navigate today’s dynamic business environment.`}
@@ -90,7 +90,7 @@ const BIDataAnalytics = () => {
               "Understand customer preferences and buying patterns to improve engagement, satisfaction, and loyalty.",
           },
         ]}
-        illustrationSrc="/images/services/image 42.png"
+        illustrationSrc="/images/services/image 54.png"
         illustrationAlt="BI & Data Analytics illustration"
         imageLeft={true}
       />

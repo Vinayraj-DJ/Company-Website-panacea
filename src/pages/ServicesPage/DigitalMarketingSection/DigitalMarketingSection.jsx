@@ -124,12 +124,12 @@ const SOCIALS = {
 };
 
 const ITEMS = [
-  { title: "Search Engine Optimization", image: "/images/dm/seo.jpg" },
-  { title: "Social Media Marketing",     image: "/images/dm/social-media.jpg" },
-  { title: "Content Marketing",          image: "/images/dm/content.jpg" },
-  { title: "Email Marketing",            image: "/images/dm/email.jpg" },
-  { title: "Inbound Marketing",          image: "/images/dm/inbound.jpg" },
-  { title: "Pay Per Click (PPC)",        image: "/images/dm/ppc.jpg" },
+  { title: "Search Engine Optimization", image: "/images/services/seo.png" },
+  { title: "Social Media Marketing",     image: "/images/services/social-media.png" },
+  { title: "Content Marketing",          image: "/images/services/content.png" },
+  { title: "Email Marketing",            image: "/images/services/email.png" },
+  { title: "Inbound Marketing",          image: "/images/services/inbound.png" },
+  { title: "Pay Per Click (PPC)",        image: "/images/services/ppc.png" },
 ];
 
 export default function DigitalMarketingSection({
@@ -174,7 +174,7 @@ export default function DigitalMarketingSection({
       {/* Hero with overlay socials (same as Services page) */}
       <div className={styles.hero}>
          <HeroTitleChip
-  imageSrc=""
+  imageSrc="/images/services/digital-marketing.png"
   alt="image not found"
   title={"Digital Marketing\nServices"}
 />

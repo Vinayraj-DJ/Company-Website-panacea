@@ -40,6 +40,7 @@ import ReactDevelopment from "../pages/ServicesPage/WebDevelopmentSection/ReactD
 import LaravelDevelopment from "../pages/ServicesPage/WebDevelopmentSection/LaravelDevelopment/LaravelDevelopment";
 import CodeIgniterDevelopment from "../pages/ServicesPage/WebDevelopmentSection/CodeIgniterDevelopment/CodeIgniterDevelopment";
 import CakePhpDevelopment from "../pages/ServicesPage/WebDevelopmentSection/CakePhpDevelopment/CakePhpDevelopment";
+import QualityEngineering from "../pages/TestimonialsPage/QualityEngineering/QualityEngineering";
 function AppRoutes() {
   return (
     <Routes>
@@ -182,6 +183,11 @@ function AppRoutes() {
         <Route
           path="/services/web-development/cakephp-development"
           element={<CakePhpDevelopment />}
+        />
+
+        <Route
+          path="/services/testing-automation/quality-engineering"
+          element={<QualityEngineering />}
         />
       
 

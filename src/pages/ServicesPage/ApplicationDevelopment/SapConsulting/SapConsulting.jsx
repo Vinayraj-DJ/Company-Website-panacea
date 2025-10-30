@@ -19,7 +19,7 @@ export default function SapConsulting() {
       {/* Hero */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/Rectangle%2053.png"
+          imageSrc="/images/services/sap.png"
           alt="SAP Consulting Services"
           title={"SAP Consulting\nServices"}
         />

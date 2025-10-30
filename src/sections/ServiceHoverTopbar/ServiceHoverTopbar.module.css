@@ -7,7 +7,7 @@
   background: transparent;
 }
 
-/* heading */
+
 .heading {
   font-size: 22px;
   font-weight: 700;
@@ -16,14 +16,14 @@
   font-family: var(--Font_Family, "Poppins", sans-serif);
 }
 
-/* Desktop layout inside the hover panel */
+
 .content {
   display: flex;
   gap: 40px;
   align-items: flex-start;
 }
 
-/* image left (desktop). Hidden on mobile below */
+
 .imageWrapper {
   flex: 0 0 260px;
   border-radius: 12px;
@@ -40,7 +40,7 @@
   display: block;
 }
 
-/* small version for mobile stack (if you want the image shown above accordion) */
+
 .imageWrapperMobile {
   display: none;
   border-radius: 10px;
@@ -56,7 +56,7 @@
   border-radius: 10px;
 }
 
-/* Desktop "View all services" */
+
 .viewAllRowDesktop {
   margin-top: 20px;
   display: flex;
@@ -82,7 +82,6 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-/* grid for service items */
 .serviceGrid {
   display: grid;
   grid-template-columns: repeat(4, minmax(220px, 1fr));
@@ -90,7 +89,7 @@
   flex: 1;
 }
 
-/* service card */
+
 .serviceItem {
   min-width: 200px;
   padding: 14px 12px;
@@ -124,13 +123,13 @@
   margin: 0;
 }
 
-/* arrow on desktop cards */
+
 .serviceArrow {
   color: #7a8696;
   font-weight: 600;
 }
 
-/* make the entire card a link without default underlines */
+
 .serviceLink {
   display: block;
   text-decoration: none;
@@ -149,14 +148,13 @@
   border-radius: 10px;
 }
 
-/* ================= MOBILE ================= */
 @media (max-width: 768px) {
   .container { padding: 12px; }
 
-  /* hide desktop content area */
+  
   .content { display: none; }
 
-  /* keep hidden per your "don't show image" requirement */
+ 
   .imageWrapperMobile { display: none; }
 
   .mobileWrap { display: block; }
@@ -212,7 +210,6 @@
 
   .chevOpen { transform: rotate(180deg); color: #2d6ab1; }
 
-  /* smoother accordion with measured height */
   .accPanel {
     max-height: 0;
     overflow: hidden;
@@ -222,7 +219,7 @@
     will-change: max-height, opacity;
   }
 
-  /* open state controlled by li.accItemOpen */
+ 
   .accItemOpen .accPanel {
     opacity: 1;
     padding-bottom: 12px;
@@ -259,7 +256,7 @@
   }
 }
 
-/* Responsive grid tweaks */
+
 @media (min-width: 1100px) {
   .serviceGrid { grid-template-columns: repeat(4, 1fr); gap: 32px 40px; }
 }
@@ -272,7 +269,7 @@
   .serviceGrid { grid-template-columns: 1fr; }
 }
 
-/* CTA inside mobile accordion */
+
 .accCta {
   display: inline-block;
   margin: 0 0 14px;

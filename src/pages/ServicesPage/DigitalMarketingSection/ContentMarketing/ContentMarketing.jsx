@@ -17,7 +17,7 @@ export default function ContentMarketing() {
     <section className={styles.page}>
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/content-marketing-hero.png"
+          imageSrc="/images/services/CM.png"
           alt="Content Marketing"
           title={"Content\nMarketing"}
         />
@@ -36,7 +36,7 @@ export default function ContentMarketing() {
       />
 
       <SplitFeature
-        image="/images/services/content-why.png"
+        image="/images/services/image 733.png"
         title="Why Choose Content Marketing — And How PanaceaIT Helps"
         body={`High-quality, relevant content builds trust, educates your audience, and positions your brand as an industry leader across the buying journey.`}
         body2={`We combine storytelling, SEO optimization, and data-driven insights to deliver the right message to the right audience at the right time — with measurable impact.`}
@@ -44,7 +44,7 @@ export default function ContentMarketing() {
       />
 
       <SplitFeature
-        image="/images/services/content-about.png"
+        image="/images/services/image 74.png"
         title="About Content Marketing"
         body={`A strategic approach to creating and sharing consistent, valuable information that attracts a clearly defined audience and drives profitable customer action.`}
         imageLeft={false}
@@ -58,7 +58,7 @@ export default function ContentMarketing() {
           { title: "Drives Engagement", desc: "Blogs, videos, and social posts nurture interest and relationships." },
           { title: "Generates Quality Leads", desc: "Valuable information attracts prospects genuinely interested in your solutions." },
         ]}
-        illustrationSrc="/images/services/content-benefits.png"
+        illustrationSrc="/images/services/image 75.png"
         illustrationAlt="Content benefits illustration"
         imageLeft={true}
       />

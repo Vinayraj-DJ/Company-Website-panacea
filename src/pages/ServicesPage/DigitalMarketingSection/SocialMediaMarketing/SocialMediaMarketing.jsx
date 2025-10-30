@@ -20,7 +20,7 @@ export default function SocialMediaMarketing() {
       {/* Hero */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/social-media-hero.png"
+          imageSrc="/images/services/SMM.png"
           alt="Social Media Marketing"
           title={"Social Media\nMarketing"}
         />
@@ -55,7 +55,7 @@ export default function SocialMediaMarketing() {
 
       {/* Why choose + how Panacea helps */}
       <SplitFeature
-        image="/images/services/smm-why.png"
+        image="/images/services/image 64.png"
         title="Why you should Choose Social Media Marketing And how Panacea can help you"
         body={`In today’s digital age, social media has become one of the most effective tools for connecting with customers and building brand identity. SMM allows businesses to engage with their audience directly, increase brand awareness, and promote products or services in a creative and interactive way.`}
         body2={`With billions of active users across Facebook, Instagram, LinkedIn, and X, social media provides an unmatched opportunity to grow online presence and reach potential customers globally. At PanaceaIT Services, we craft customized strategies tailored to your brand’s voice, industry, and target market.`}
@@ -64,7 +64,7 @@ export default function SocialMediaMarketing() {
 
       {/* About SMM */}
       <SplitFeature
-        image="/images/services/smm-about.png"
+        image="/images/services/image 65.png"
         title="About Social Media Marketing"
         body={`Social Media Marketing (SMM) is the process of promoting your brand, products, or services through popular social platforms. It centers on creating engaging content, building strong community relationships, and driving meaningful interactions.`}
         body2={`By leveraging data-driven strategies and creative storytelling, SMM helps businesses boost brand awareness, generate leads, and improve customer loyalty. Our team develops tailored social media plans that enhance visibility, increase engagement, and deliver measurable marketing success.`}
@@ -96,7 +96,7 @@ export default function SocialMediaMarketing() {
               "Convert social engagement into real business growth with strategies that drive inquiries and purchases.",
           },
         ]}
-        illustrationSrc="/images/services/smm-benefits.png"
+        illustrationSrc="/images/services/image 66.png"
         illustrationAlt="SMM benefits illustration"
         imageLeft={true}
       />

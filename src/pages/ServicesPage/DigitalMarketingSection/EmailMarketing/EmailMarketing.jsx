@@ -18,7 +18,7 @@ export default function EmailMarketing() {
       {/* Hero */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/email-marketing-hero.png"
+          imageSrc="/images/services/EM.png"
           alt="Email Marketing"
           title={"Email\nMarketing"}
         />
@@ -38,7 +38,7 @@ export default function EmailMarketing() {
 
       {/* Why + How */}
       <SplitFeature
-        image="/images/services/email-why.png"
+        image="/images/services/image 67.png"
         title="Why You Should Choose Email Marketing — And How PanaceaIT Can Help"
         body={`In the digital era, Email Marketing remains one of the most powerful and cost-effective ways to connect with your audience. It allows businesses to communicate directly with potential and existing customers through personalized and targeted messages.                  `}
         body2={`At PanaceaIT Services, we understand that successful email marketing is more than just sending messages — it’s about creating meaningful connections. Our team specializes in crafting tailored email campaigns that reflect your brand’s tone and goals. We focus on audience segmentation, creative design, persuasive content, and automation to ensure maximum open rates, click-throughs, and ROI.`}
@@ -47,7 +47,7 @@ export default function EmailMarketing() {
 
       {/* About */}
       <SplitFeature
-        image="/images/services/email-about.png"
+        image="/images/services/image 68.png"
         title="About Email Marketing"
         body={`Email Marketing is a powerful digital strategy that enables businesses to communicate directly with their audience through personalized and targeted email campaigns. It helps promote products, share updates, nurture leads, and build lasting customer relationships. By delivering the right message to the right people at the right time, email marketing enhances engagement, increases conversions, and drives brand loyalty. At PanaceaIT Services, we create strategic, visually appealing, and data-driven email campaigns designed to boost customer retention, maximize ROI, and strengthen your brand’s digital presence.`}
         imageLeft={false}
@@ -62,7 +62,7 @@ export default function EmailMarketing() {
           { title: "Improved Customer Engagement", desc: "Useful, timely content keeps audiences informed, engaged, and connected to your brand." },
           { title: "Automation & Efficiency", desc: "Workflows save time while ensuring consistent onboarding, follow-ups, and lifecycle emails." },
         ]}
-        illustrationSrc="/images/services/email-benefits.png"
+        illustrationSrc="/images/services/image 69.png"
         illustrationAlt="Email benefits illustration"
         imageLeft={true}
       />

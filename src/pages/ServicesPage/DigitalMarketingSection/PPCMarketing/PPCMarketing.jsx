@@ -17,7 +17,7 @@ export default function PPCMarketing() {
     <section className={styles.page}>
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/ppc-hero.png"
+          imageSrc="/images/services/PPCM.png"
           alt="Pay Per Click Marketing"
           title={"Pay Per Click\nMarketing"}
         />
@@ -36,7 +36,7 @@ export default function PPCMarketing() {
       />
 
       <SplitFeature
-        image="/images/services/ppc-why.png"
+        image="/images/services/image 70.png"
         title="Why Choose PPC — And How PanaceaIT Helps"
         body={`PPC provides immediate results with precise audience targeting. Place your brand at the top of search results and reach intent-driven prospects across social platforms.`}
         body2={`Our certified team handles keyword research, ad creation, bidding, and performance optimization to convert clicks into customers efficiently.`}
@@ -44,7 +44,7 @@ export default function PPCMarketing() {
       />
 
       <SplitFeature
-        image="/images/services/ppc-about.png"
+        image="/images/services/image 71.png"
         title="About Pay Per Click Marketing"
         body={`With PPC, you pay only when someone clicks your ad. Campaigns are tuned for qualified traffic, brand visibility, and measurable growth using data-driven placements.`}
         imageLeft={false}
@@ -58,7 +58,7 @@ export default function PPCMarketing() {
           { title: "Cost-Effective Control", desc: "Pay only for clicks; allocate budget to best-performing segments." },
           { title: "Measurable Performance", desc: "Track every impression, click, and conversion for crystal-clear ROI." },
         ]}
-        illustrationSrc="/images/services/ppc-benefits.png"
+        illustrationSrc="/images/services/image 72.png"
         illustrationAlt="PPC benefits illustration"
         imageLeft={true}
       />

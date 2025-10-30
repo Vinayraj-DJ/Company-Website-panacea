@@ -120,13 +120,13 @@ const SOCIALS = {
 };
 
 const ITEMS = [
-  { title: "Php Development",           image: "/images/web-dev/php.jpg" },
-  { title: "Node.js Development",       image: "/images/web-dev/nodejs.jpg" },
-  { title: "Angular js Development",    image: "/images/web-dev/angular.jpg" },
-  { title: "React js Development",      image: "/images/web-dev/react.jpg" },
-  { title: "Laravel Development",       image: "/images/web-dev/laravel.jpg" },
-  { title: "Codeigniter Development",   image: "/images/web-dev/codeigniter.jpg" },
-  { title: "Cakephp Development",       image: "/images/web-dev/cakephp.jpg" },
+  { title: "Php Development",           image: "/images/services/web-dev/php.png" },
+  { title: "Node.js Development",       image: "/images/services/web-dev/nodejs.png" },
+  { title: "Angular js Development",    image: "/images/services/web-dev/angular.png" },
+  { title: "React js Development",      image: "/images/services/web-dev/react.png" },
+  { title: "Laravel Development",       image: "/images/services/web-dev/laravel.png" },
+  { title: "Codeigniter Development",   image: "/images/services/web-dev/codeigniter.png" },
+  { title: "Cakephp Development",       image: "/images/services/web-dev/cakephp.png" },
 ];
 
 export default function WebDevelopmentSection({
@@ -168,7 +168,7 @@ export default function WebDevelopmentSection({
       {/* Hero with overlay socials (same as Services page) */}
       <div className={styles.hero}>
          <HeroTitleChip
-          imageSrc=""
+          imageSrc="/images/services/web-development.png"
           alt="Web Development Services"
           title={"Web Development\nServices"}
         />

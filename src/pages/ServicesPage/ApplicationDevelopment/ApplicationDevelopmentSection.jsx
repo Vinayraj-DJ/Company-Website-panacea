@@ -907,7 +907,7 @@ const ITEMS = [
   { title: "Custom Application", image: "/images/services/custom-application.png" },
   { title: "BI & Data Analysis", image: "/images/services/bi-data-analysis.png" },
   { title: "Big Data Services", image: "/images/services/big-data.png" },
-  { title: "Sap Consulting Services", image: "/images/services/sap.png" },
+  { title: "Sap Consulting Services", image: "/images/services/Rectangle 34624653 (1).png" },
 ];
 
 export default function ApplicationDevelopmentSection({
@@ -987,7 +987,7 @@ export default function ApplicationDevelopmentSection({
 
       {/* Reuse other sections */}
      
-
+ 
       <JoinOurServiceSection />
       <KnowEverythingSection />
       <FooterSection />

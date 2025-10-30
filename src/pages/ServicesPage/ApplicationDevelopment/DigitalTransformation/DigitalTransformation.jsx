@@ -58,7 +58,7 @@ const FullstackDevelopment = () => {
 />
 
 <SplitFeature
-  image="/images/services/image 38.png"
+  image="/images/services/image 43.png"
   title="Why You Should Embrace Digital Transformation And How PanaceaIT Can Help"
   body={`In today’s fast-paced digital era, embracing digital transformation is essential for staying competitive and relevant. It allows businesses to streamline operations, enhance customer engagement, and make data-driven decisions that boost efficiency and profitability. Companies that adapt to digital change not only improve internal processes but also deliver smarter and more personalized experiences to their clients.`}
   body2={`At PanaceaIT Services, we empower businesses to transform digitally through innovative technologies and strategic implementation. Our expertise spans across cloud solutions, automation, AI integration, and data analytics — helping organizations modernize systems and optimize performance.`}
@@ -66,7 +66,7 @@ const FullstackDevelopment = () => {
 />
 
 <SplitFeature
-  image="/images/services/image 37.png"
+  image="/images/services/image 44.png"
   title="About Digital Transformation"
   body={`Digital transformation is the strategic adoption of digital technologies to reshape business processes, culture, and customer experiences. It enables organizations to operate more efficiently, make data-driven decisions, and respond quickly to market changes.`}
   body2={`By leveraging tools such as cloud computing, automation, artificial intelligence, and analytics, businesses can enhance productivity, improve collaboration, and deliver greater value to their customers.`}
@@ -97,7 +97,7 @@ const FullstackDevelopment = () => {
         "Digital transformation empowers companies to adapt quickly to market changes, explore new opportunities, and drive innovation across departments.",
     },
   ]}
-  illustrationSrc="/images/services/image 39.png"
+  illustrationSrc="/images/services/image 45.png"
   illustrationAlt="Digital transformation illustration"
   imageLeft={true}
 />

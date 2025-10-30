@@ -119,10 +119,10 @@ const SOCIALS = {
 };
 
 const ITEMS = [
-  { title: "IOS App Development",     image: "/images/mobile/ios.jpg" },
-  { title: "Android App Development", image: "/images/mobile/android.jpg" },
-  { title: "Ipad Development",        image: "/images/mobile/ipad.jpg" },
-  { title: "Game Development",        image: "/images/mobile/game.jpg" },
+  { title: "IOS App Development",     image: "/images/services/mobile/ios.png" },
+  { title: "Android App Development", image: "/images/services/mobile/android.png" },
+  { title: "Ipad Development",        image: "/images/services/mobile/ipad.png" },
+  { title: "Game Development",        image: "/images/services/mobile/game.png" },
 ];
 
 export default function MobileAppSection({
@@ -167,7 +167,7 @@ export default function MobileAppSection({
       {/* Hero with overlay socials (same treatment as Services page) */}
       <div className={styles.hero}>
         <HeroTitleChip
-  imageSrc=""
+  imageSrc="/images/services/mobile-application.png"
   alt="Cloud & DevOps"
   title={"Mobile Appication\nServices"}
 />

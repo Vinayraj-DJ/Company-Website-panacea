@@ -17,7 +17,7 @@ const ServicesPage = () => {
       {/* Hero with overlay icons */}
       <div className={styles.hero}>
         <HeroTitleChip
-  imageSrc=""
+  imageSrc="/images/services/applicationDevelopment.png"
   alt="image not found"
   title={"Services"}
 />

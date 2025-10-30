@@ -20,7 +20,7 @@ export default function SearchEngineOptimization() {
       {/* Hero */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/seo-hero.png"
+          imageSrc="/images/services/SOE.png"
           alt="Search Engine Optimization"
           title={"Search Engine\nOptimization"}
         />
@@ -55,7 +55,7 @@ export default function SearchEngineOptimization() {
 
       {/* Why choose SEO + how Panacea helps */}
       <SplitFeature
-        image="/images/services/seo-why.png"
+        image="/images/services/image 61.png"
         title="Why you should Choose SEO Services and how Panacea can help you"
         body={`In today’s digital world, having a great website isn’t enough — it must be visible to your target audience. SEO is essential for improving your website’s ranking on search engines like Google, helping potential customers find your business easily. By optimizing content, keywords, and technical performance, SEO drives organic traffic, builds brand credibility, and increases your chances of converting visitors into loyal customers.`}
         body2={`At PanaceaIT Services, we offer comprehensive SEO solutions tailored to your business goals. Our team focuses on on-page and off-page optimization, keyword research, content strategy, and technical SEO to ensure your website meets the latest search-engine standards. We use proven strategies and analytics-driven insights to improve visibility, boost performance, and generate measurable results.`}
@@ -64,7 +64,7 @@ export default function SearchEngineOptimization() {
 
       {/* About SEO */}
       <SplitFeature
-        image="/images/services/seo-about.png"
+        image="/images/services/image 62.png"
         title="About SEO"
         body={`Search Engine Optimization (SEO) is the practice of improving a website’s visibility and ranking on search engines to attract more organic traffic. It involves optimizing website content, structure, and technical elements to ensure search engines understand and prioritize your site.`}
         imageLeft={false}
@@ -95,7 +95,7 @@ export default function SearchEngineOptimization() {
               "Compared to paid ads, SEO provides long-term visibility and consistent traffic at a lower overall cost.",
           },
         ]}
-        illustrationSrc="/images/services/seo-benefits.png"
+        illustrationSrc="/images/services/image 63.png"
         illustrationAlt="SEO benefits illustration"
         imageLeft={true}
       />

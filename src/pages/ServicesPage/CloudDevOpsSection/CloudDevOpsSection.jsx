@@ -118,10 +118,10 @@ const SOCIALS = {
 };
 
 const ITEMS = [
-  { title: "DevOps",                    image: "/images/cloud-devops/devops.jpg" },
-  { title: "AWS",                       image: "/images/cloud-devops/aws.jpg" },
-  { title: "Windows Azure",             image: "/images/cloud-devops/azure.jpg" },
-  { title: "Cloud Consulting Services", image: "/images/cloud-devops/consulting.jpg" },
+  { title: "DevOps",                    image: "/images/services/devops.png" },
+  { title: "AWS",                       image: "/images/services/aws.png" },
+  { title: "Windows Azure",             image: "/images/services/azure.png" },
+  { title: "Cloud Consulting Services", image: "/images/services/consulting.png" },
 ];
 
 export default function CloudDevOpsSection({
@@ -165,7 +165,7 @@ export default function CloudDevOpsSection({
       {/* Hero (same structure as Application page) */}
       <div className={styles.hero}>
          <HeroTitleChip
-  imageSrc=""
+  imageSrc="/images/services/clouds-and-devops.png"
   alt="Cloud & DevOps"
   title={"Cloud & DevOps"}
 />

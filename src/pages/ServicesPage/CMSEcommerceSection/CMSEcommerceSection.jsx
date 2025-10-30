@@ -123,10 +123,10 @@ const SOCIALS = {
 };
 
 const ITEMS = [
-  { title: "WordPress Development",   image: "/images/cms/wordpress.jpg" },
-  { title: "BigCommerce Development", image: "/images/cms/bigcommerce.jpg" },
-  { title: "Shopify Development",     image: "/images/cms/shopify.jpg" },
-  { title: "WooCommerce Development", image: "/images/cms/woocommerce.jpg" },
+  { title: "WordPress Development",   image: "/images/services/cms/wordpress.png" },
+  { title: "BigCommerce Development", image: "/images/services/cms/bigcommerce.png" },
+  { title: "Shopify Development",     image: "/images/services/cms/shopify.png" },
+  { title: "WooCommerce Development", image: "/images/services/cms/woocommerce.png" },
 ];
 
 export default function CMSEcommerceSection({
@@ -172,7 +172,7 @@ export default function CMSEcommerceSection({
       {/* Hero (same pattern as Application page) */}
       <div className={styles.hero}>
       <HeroTitleChip
-  imageSrc=""
+  imageSrc="/images/services/cms-ecommerce.png"
   alt="image not found"
   title={"CMS & E-Commerce\nDevelopment Service"}
 />

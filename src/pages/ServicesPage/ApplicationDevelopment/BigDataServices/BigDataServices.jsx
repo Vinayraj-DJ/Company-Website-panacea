@@ -19,7 +19,7 @@ export default function BigDataServices() {
       {/* Hero */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/Rectangle%2053.png"
+          imageSrc="/images/services/BD.png"
           alt="Big Data Services"
           title={"Big Data\nServices"}
         />
@@ -54,7 +54,7 @@ export default function BigDataServices() {
 
       {/* Why + How */}
       <SplitFeature
-        image="/images/services/image 49.png"
+        image="/images/services/image 58.png"
         title="Why Big Data Services is essential And How PanaceaIT services Help You"
         body={`In today’s digital-first economy, businesses generate massive amounts of data from multiple sources — customers, operations, devices, and more. Managing and making sense of this information is critical to staying competitive. Big Data Services enable organizations to process, analyze, and leverage this data to uncover hidden patterns, predict trends, and make smarter, faster decisions.`}
         body2={`With the right Big Data strategy, businesses can improve efficiency, enhance customer experiences, and identify new growth opportunities. At PanaceaIT Services, we help organizations unlock the true value of their data through customized Big Data solutions.`}
@@ -63,7 +63,7 @@ export default function BigDataServices() {
 
       {/* About */}
       <SplitFeature
-        image="/images/services/image 50.png"
+        image="/images/services/image 59.png"
         title="About Big Data Services"
         body={`Big Data Services empower businesses to manage, analyze, and extract value from massive volumes of structured and unstructured data. These services help organizations uncover insights that drive better decisions, enhance customer experiences, and improve operational efficiency.`}
         body2={`At PanaceaIT Services, we offer end-to-end Big Data solutions — from strategy and architecture design to implementation, integration, and visualization — enabling companies to turn data into actionable intelligence and achieve sustainable business growth.`}
@@ -95,7 +95,7 @@ export default function BigDataServices() {
               "Leverage advanced algorithms to anticipate market trends, customer needs, and potential risks before they occur.",
           },
         ]}
-        illustrationSrc="/images/services/image 51.png"
+        illustrationSrc="/images/services/image 60.png"
         illustrationAlt="Big Data benefits illustration"
         imageLeft={true}
       />

@@ -120,10 +120,10 @@ const SOCIALS = {
 };
 
 const ITEMS = [
-  { title: "Flexible Images",         image: "/images/website-designing/flexible-images.jpg" },
-  { title: "Media Queries",           image: "/images/website-designing/media-queries.jpg" },
-  { title: "Improve User Experience", image: "/images/website-designing/user-experience.jpg" },
-  { title: "Impact On SEO Ranking",   image: "/images/website-designing/seo-impact.jpg" },
+  { title: "Flexible Images",         image: "/images/services/website-designing/flexible-images.png" },
+  { title: "Media Queries",           image: "/images/services/website-designing/media-queries.png" },
+  { title: "Improve User Experience", image: "/images/services/website-designing/user-experience.png" },
+  { title: "Impact On SEO Ranking",   image: "/images/services/website-designing/seo-impact.png" },
 ];
 
 export default function WebsiteDesigningSection({
@@ -165,7 +165,7 @@ export default function WebsiteDesigningSection({
       {/* Hero with overlay socials */}
       <div className={styles.hero}>
          <HeroTitleChip
-  imageSrc=""
+  imageSrc="/images/services/website-designing.png"
   alt="image not found"
   title={"Website Designing\nServices"}
 />

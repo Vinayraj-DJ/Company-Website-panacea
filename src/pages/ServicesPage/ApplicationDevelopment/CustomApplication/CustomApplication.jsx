@@ -19,7 +19,7 @@ export default function CustomApplication() {
       {/* Hero */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/Rectangle%2053.png"
+          imageSrc="/images/services/SAD.png"
           alt="Custom Application Development"
           title={"Custom\nApplication Development"}
         />
@@ -54,7 +54,7 @@ export default function CustomApplication() {
 
       {/* Why + How */}
       <SplitFeature
-        image="/images/services/image 46.png"
+        image="/images/services/image 55.png"
         title="Why Custom Application And How PanaceaIT Services Help You"
         body={`In today’s dynamic digital landscape, every business has unique needs that generic software often can’t meet. Custom Application Development empowers organizations to build tailored solutions that perfectly fit their workflows, objectives, and customer demands.`}
         body2={`At PanaceaIT Services, we specialize in developing scalable, secure, and innovative custom applications that align with your business vision. Our team works closely with you from ideation to deployment to deliver exceptional functionality and user experience.`}
@@ -63,7 +63,7 @@ export default function CustomApplication() {
 
       {/* About */}
       <SplitFeature
-        image="/images/services/image 47.png"
+        image="/images/services/image 57.png"
         title="About Custom Application Services"
         body={`Custom Application Development Services focus on creating software solutions designed specifically to meet the unique requirements of a business. Unlike generic, off-the-shelf software, custom applications are built to align perfectly with an organization’s processes, goals, and customer needs.`}
         body2={`These solutions enhance productivity, improve workflow efficiency, and provide greater flexibility as businesses grow. Our expert developers design, develop, and deploy tailor-made applications that are secure, scalable, and performance-driven.`}
@@ -90,7 +90,7 @@ export default function CustomApplication() {
               "Custom-built solutions can easily evolve with your business, adapting to new features, users, or market needs without disruption.",
           },
         ]}
-        illustrationSrc="/images/services/image 48.png"
+        illustrationSrc="/images/services/image 56.png"
         illustrationAlt="Custom application benefits illustration"
         imageLeft={true}
       />

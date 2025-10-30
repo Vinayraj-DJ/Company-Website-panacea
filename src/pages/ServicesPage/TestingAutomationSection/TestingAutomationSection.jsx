@@ -116,9 +116,9 @@ const SOCIALS = {
 };
 
 const ITEMS = [
-  { title: "Quality Engineering", image: "/images/testing-automation/quality-engineering.jpg" },
-  { title: "Quality Consulting",  image: "/images/testing-automation/quality-consulting.jpg" },
-  { title: "Quality Assurance",   image: "/images/testing-automation/quality-assurance.jpg" },
+  { title: "Quality Engineering", image: "/images/services/testing-automation/quality-engineering.png" },
+  { title: "Quality Consulting",  image: "/images/services/testing-automation/quality-consulting.png" },
+  { title: "Quality Assurance",   image: "/images/services/testing-automation/quality-assurance.png" },
 ];
 
 export default function TestingAutomationSection({
@@ -162,7 +162,7 @@ export default function TestingAutomationSection({
       {/* Hero with overlay socials (same pattern as Services page) */}
       <div className={styles.hero}>
         <HeroTitleChip
-  imageSrc=""
+  imageSrc="/images//services/testing-automation.png"
   alt="Testing Automation"
   title={"Testing Automation"}
 />

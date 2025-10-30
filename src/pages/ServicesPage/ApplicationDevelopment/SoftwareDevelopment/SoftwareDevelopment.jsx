@@ -18,7 +18,7 @@ export default function SoftwareDevelopment() {
       {/* Hero (only text changed) */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/fullstackdevelopment-hero.png"  // keep same pattern you’re using
+          imageSrc="/images/services/sd.png"  // keep same pattern you’re using
           alt="Software Development"
           title={"Software\nDevelopment"}
         />
@@ -55,7 +55,7 @@ export default function SoftwareDevelopment() {
 
       {/* Understanding needs */}
       <SplitFeature
-        image="/images/services/image 43.png"
+        image="/images/services/image 40.png"
         title="Understanding The Needs & Defining The Problem"
         body={`The process of software development begins with understanding a problem or a need. Developers work closely with stakeholders to identify the requirements and define the scope of the software. This initial phase is crucial as it lays the foundation for the entire development process.`}
         body2={`Clear communication and a comprehensive understanding of the problem domain are essential to ensure that the final software solution meets the expectations and needs of its users.`}
@@ -64,7 +64,7 @@ export default function SoftwareDevelopment() {
 
       {/* Blueprint & roadmap */}
       <SplitFeature
-        image="/images/services/image 44.png"
+        image="/images/services/image 41.png"
         title="Designing The Blueprint & Creating The Software Roadmap"
         body={`Once the requirements are established, developers move to the design phase. This involves creating a blueprint or roadmap for the software, outlining its architecture and structure.`}
         body2={`Design decisions take into account factors such as user experience, scalability, and maintainability. This phase is crucial for setting the direction of the project and ensuring the development team has a clear vision of the final product.`}
@@ -73,7 +73,7 @@ export default function SoftwareDevelopment() {
 
       {/* Testing & QA */}
       <SplitFeature
-        image="/images/services/image 45.png"
+        image="/images/services/image 42.png"
         title="Testing For Quality & Identifying And Fixing Bugs"
         body={`Testing and Quality Assurance (QA) is the process of evaluating software to ensure it meets the required standards of performance, functionality, and security. It involves systematically identifying, reporting, and fixing bugs or errors to improve the product’s reliability and user experience.`}
         body2={`Through continuous testing and quality checks, businesses can deliver software that is stable, efficient, and ready for real-world use.`}
