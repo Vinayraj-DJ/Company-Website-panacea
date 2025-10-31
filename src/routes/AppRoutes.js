@@ -41,6 +41,20 @@ import LaravelDevelopment from "../pages/ServicesPage/WebDevelopmentSection/Lara
 import CodeIgniterDevelopment from "../pages/ServicesPage/WebDevelopmentSection/CodeIgniterDevelopment/CodeIgniterDevelopment";
 import CakePhpDevelopment from "../pages/ServicesPage/WebDevelopmentSection/CakePhpDevelopment/CakePhpDevelopment";
 import QualityEngineering from "../pages/TestimonialsPage/QualityEngineering/QualityEngineering";
+import DevOps from "../pages/ServicesPage/CloudDevOpsSection/DevOps/DevOps";
+import AWS from "../pages/ServicesPage/CloudDevOpsSection/AWS/AWS";
+import WindowsAzure from "../pages/ServicesPage/CloudDevOpsSection/WindowsAzure/WindowsAzure";
+import CloudConsulting from "../pages/ServicesPage/CloudDevOpsSection/CloudConsultingServices/CloudConsultingServices";
+import Qualityassurance from "../pages/ServicesPage/TestingAutomationSection/Qualityassurance/Qualityassurance";
+import Qualityconsulting from "../pages/ServicesPage/TestingAutomationSection/Qualityconsulting/Qualityconsulting";
+import Wordpress from "../pages/ServicesPage/CMSEcommerceSection/Wordpress/Wordpress";
+import ECommerce from "../pages/ServicesPage/CMSEcommerceSection/ECommerce/ECommerce";
+import WooCommerce from "../pages/ServicesPage/CMSEcommerceSection/WooCommerce/WooCommerce";
+import Shopify from "../pages/ServicesPage/CMSEcommerceSection/Shopify/Shopify";
+import IosMobileApplication from "../pages/ServicesPage/MobileAppSection/IosMobileApplication/IosMobileApplication";
+import AndroidApp from "../pages/ServicesPage/MobileAppSection/AndroidApp/AndroidApp";
+import Ipad from "../pages/ServicesPage/MobileAppSection/Ipad/Ipad";
+import GameDevelopment from "../pages/ServicesPage/MobileAppSection/GameDevelopment/GameDevelopment";
 function AppRoutes() {
   return (
     <Routes>
@@ -189,7 +203,87 @@ function AppRoutes() {
           path="/services/testing-automation/quality-engineering"
           element={<QualityEngineering />}
         />
+
+        <Route
+          path="/services/clouds-and-devops/devops"
+          element={<DevOps />}
+        />
       
+          <Route
+          path="/services/clouds-and-devops/aws"
+          element={< AWS/>}
+        />
+
+        <Route
+          path="/services/clouds-and-devops/windows-azure"
+          element={<WindowsAzure />}
+        />
+
+        <Route
+          path="/services/clouds-and-devops/cloud-consulting-services"
+          element={<CloudConsulting />}
+        />
+
+        <Route
+          path="/services/testing-automation/quality-engineering"
+          element={<QualityEngineering />}
+        />
+
+        <Route
+          path="/services/testing-automation/quality-consulting"
+          element={<Qualityconsulting />}
+        />
+
+        <Route
+          path="/services/testing-automation/quality-assurance"
+          element={<Qualityassurance />}
+        />
+
+        <Route
+          path="/services/cms-ecommerce/wordpress-development"
+          element={<Wordpress />}
+        />
+
+        <Route
+          path="/services/cms-ecommerce/bigcommerce-development"
+          element={<ECommerce />}
+        />
+
+        <Route
+          path="/services/cms-ecommerce/shopify-development"
+          element={<Shopify />}
+        />
+
+        <Route
+          path="/services/cms-ecommerce/woocommerce-development"
+          element={<WooCommerce />}
+        />
+
+        
+        <Route
+          path="/services/mobile-application/ios-app-development"
+          element={<IosMobileApplication />}
+        />
+
+        <Route
+          path="/services/mobile-application/android-app-development"
+          element={<AndroidApp />}
+        />
+
+         
+        <Route
+          path="/services/mobile-application/ipad-development"
+          element={<Ipad />}
+        />
+
+        <Route
+          path="/services/mobile-application/game-development"
+          element={< GameDevelopment/>}
+        />
+
+
+
+
 
 
 
