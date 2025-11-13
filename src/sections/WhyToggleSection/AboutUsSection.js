@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../components/Button/Button"; // Importing the Button component
+// import Button from "../../components/Button/Button"; 
 import styles from "./AboutUsSection.module.css"; // Importing the CSS module
 
 export function AboutUsSection() {

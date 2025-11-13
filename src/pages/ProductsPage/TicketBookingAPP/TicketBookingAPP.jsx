@@ -65,7 +65,7 @@ const TicketBookingApp = () => {
         heroSrc="/images/hero-ticket.jpg"
         titleLeft="Book. Click. Go."
         titleHighlight="ticket"
-        titleRight="to anywhere!"
+        titleRight="to anywhere! "
         // items={people}
       />
 

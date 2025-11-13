@@ -6,7 +6,7 @@ import AboutUsPage from "../pages/AboutUsPage/AboutUsPage";
 import ServicesPage from "../pages/ServicesPage/ServicesPage";
 import ProjectsPage from "../pages/ProjectsPage/ProjectsPage";
 import TesimonialsPage from "../pages/TestimonialsPage/TestimonialsPage";
-import { SlOptions } from "react-icons/sl";
+// import { SlOptions } from "react-icons/sl";
 import SpotlightPage from "../pages/SpotlightPage/SpotlightPage";
 import ApplicationDevelopmentSection from "../pages/ServicesPage/ApplicationDevelopment/ApplicationDevelopmentSection";
 import DigitalMarketingSection from "../pages/ServicesPage/DigitalMarketingSection/DigitalMarketingSection";
