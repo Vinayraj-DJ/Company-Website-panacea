@@ -1,7 +1,0 @@
-{
-  "rules": {
-    "jsx-a11y/anchor-is-valid": "warn",
-    "jsx-a11y/no-redundant-roles": "warn",
-    "no-unused-vars": ["warn", { "vars": "all", "args": "none", "ignoreRestSiblings": true }]
-  }
-}
