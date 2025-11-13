@@ -22,7 +22,7 @@ const Qualityconsulting = () => {
       {/* HERO */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/qualityconsulting-hero.png"
+          imageSrc="/images/services/qc.png"
           alt="Quality Consulting"
           title={"Quality\nConsulting"}
         />
@@ -60,7 +60,7 @@ const Qualityconsulting = () => {
 
       {/* WHY QC IS IMPORTANT */}
       <SplitFeature
-        image="/images/services/qc-why.png"
+        image="/images/services/quality1.png"
         title="Why Quality Consulting is Important ?"
         body={'Quality Consulting is essential for organizations that strive to deliver reliable, efficient, and high-performing software solutions. It ensures that every stage of the development lifecycle — from planning to deployment — adheres to the highest quality standards.'}
         body2={'By identifying process gaps, reducing risks, and enhancing product performance, quality consulting helps businesses maintain a strong reputation and customer trust. In today’s market, quality is not optional — it’s a differentiator. With the right consulting approach, businesses can minimize defects, improve time-to-market, and optimize resources, leading to sustainable growth and long-term success.'}
@@ -69,7 +69,7 @@ const Qualityconsulting = () => {
 
       {/* HOW PANACEA HELPS */}
       <SplitFeature
-        image="/images/services/qc-how.png"
+        image="/images/services/quality2.png"
         title="How Panacea Can Help You with Quality Consulting ?"
         body={'At PanaceaIT Services, we bring deep expertise and proven methodologies to elevate your software quality standards. Our team of skilled quality consultants works closely with your organization to assess existing processes, identify inefficiencies, and implement tailored quality frameworks that drive excellence.'}
         body2={'We leverage advanced testing tools, automation strategy, and continuous integration practices to ensure faster, more reliable software delivery. From QA strategy development to performance optimization, PanaceaIT helps you build a culture of quality that reduces costs, enhances user satisfaction, and ensures long-term business success.'}
@@ -101,7 +101,7 @@ const Qualityconsulting = () => {
               "Deliver consistent, error-free products that build trust and improve user experience.",
           },
         ]}
-        illustrationSrc="/images/services/qc-benefits.png"
+        illustrationSrc="/images/services/quality3.png"
         illustrationAlt="Quality consulting benefits illustration"
         imageLeft={true}
       />

@@ -21,7 +21,7 @@ const QualityEngineering = () => {
       {/* ✅ HERO (same component, new art/text) */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/quality-engineering-hero.png"
+          imageSrc="/images/services/qe.png"
           alt="Quality Engineering"
           title={"Quality\nEngineering"}
         />
@@ -58,7 +58,7 @@ const QualityEngineering = () => {
       />
 
       <SplitFeature
-        image="/images/services/qe-why.png"
+        image="/images/services/quality1.png"
         title="Why Quality Engineering is Important ?"
         body={'In today’s fast-paced digital environment, customers expect flawless and reliable software experiences. Quality Engineering plays a pivotal role in achieving this by preventing defects early, improving product performance, and reducing time to release. It brings together advanced testing methodologies, real-time insights, and efficient workflows to ensure software is scalable, secure, and robust.'}
         body2={'Moreover, QE supports continuous integration and continuous delivery (CI/CD) pipelines—allowing development teams to iterate rapidly without compromising quality. This leads to faster, more reliable releases and a better user experience across every touchpoint.'}
@@ -66,7 +66,7 @@ const QualityEngineering = () => {
       />
 
       <SplitFeature
-        image="/images/services/qe-how-panacea-helps.png"
+        image="/images/services/quality2.png"
         title="How Panacea Can Help You with Quality Engineering ?"
         body={'At Panacea IT Services, we deliver end-to-end Quality Engineering solutions that combine automation, innovation, and domain expertise. Our QA engineers and test architects collaborate with your teams to make quality an integral part of your development lifecycle.'}
         body2={'We specialize in test automation, performance testing, API testing, security testing, and continuous testing across agile and DevOps environments—helping you ship faster with confidence.'}
@@ -97,7 +97,7 @@ const QualityEngineering = () => {
               "Automation reduces manual effort, eliminates repetitive tasks, improves accuracy, and speeds up delivery."
           }
         ]}
-        illustrationSrc="/images/services/qe-benefits.png"
+        illustrationSrc="/images/services/quality3.png"
         illustrationAlt="Quality engineering team illustration"
         imageLeft={true}
       />

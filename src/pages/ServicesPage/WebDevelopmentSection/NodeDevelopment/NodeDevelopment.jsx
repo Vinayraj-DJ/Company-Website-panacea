@@ -16,7 +16,7 @@ export default function NodeDevelopment() {
   return (
     <section className={styles.page}>
       <div className={styles.hero}>
-        <HeroTitleChip imageSrc="/images/services/nodejs-dev-hero.png" alt="Node.js Development" title={"Node.js\nDevelopment"} />
+        <HeroTitleChip imageSrc="/images/services/node1.png" alt="Node.js Development" title={"Node.js\nDevelopment"} />
         <div className={styles.heroSocialIcons}>
           <a href={SOCIALS.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={`${styles.social} ${styles.linkedin}`}><span className={styles.text}>in</span></a>
           <a href={SOCIALS.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className={`${styles.social} ${styles.facebook}`}><span className={styles.text}>F</span></a>
@@ -32,7 +32,7 @@ export default function NodeDevelopment() {
       />
 
       <SplitFeature
-        image="/images/services/node-art-1.png"
+        image="/images/services/node2.png"
         title="Why Embrace Node.js & How We Help"
         body={`Event-driven I/O and non-blocking runtime make Node.js ideal for real-time systems and high concurrency.`}
         body2={`We architect cloud-ready Node services, microservices, and APIs with robust CI/CD, logging, and monitoring.`}
@@ -40,7 +40,7 @@ export default function NodeDevelopment() {
       />
 
       <SplitFeature
-        image="/images/services/node-art-2.png"
+        image="/images/services/node3.png"
         title="About Node.js Development"
         body={`Use one language across front-end and back-end, accelerate delivery, and reduce context switching for teams.`}
         imageLeft={false}
@@ -54,7 +54,7 @@ export default function NodeDevelopment() {
           { title: "Scalable Architecture", desc: "Microservices & queues for horizontal growth." },
           { title: "Full-Stack JS", desc: "Shared language reduces hand-offs & accelerates dev." },
         ]}
-        illustrationSrc="/images/services/node-art-3.png"
+        illustrationSrc="/images/services/node4.png"
         illustrationAlt="Node.js illustration"
         imageLeft={true}
       />

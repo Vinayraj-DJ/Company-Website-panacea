@@ -20,7 +20,7 @@ const Ipad = () => {
       {/* HERO */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/ipad-hero.png"
+          imageSrc="/images/services/ipad1.png"
           alt="iPad App Development"
           title={"iPad App\nDevelopment"}
         />
@@ -57,7 +57,7 @@ const Ipad = () => {
 
       {/* WHY + IMAGE */}
       <SplitFeature
-        image="/images/services/ipad-why.png"
+        image="/images/services/ipad2.png"
         title="Why iPad App Development Matters & How Panacea Can Help"
         body={'iPad applications provide a richer canvas for immersive UI, multi-pane layouts, and advanced interactions. A dedicated iPad app elevates user engagement and productivity by using platform-specific capabilities — split view, drag & drop, Pencil support, and high-resolution assets.'}
         body2={'Panacea IT Services crafts iPad apps with clean architecture, adaptive layouts, and optimized performance. We follow Apple’s Human Interface Guidelines, implement secure data handling, and support device-specific features to deliver elegant, reliable apps that delight users.'}
@@ -66,7 +66,7 @@ const Ipad = () => {
 
       {/* ABOUT TECHNOLOGIES */}
       <SplitFeature
-        image="/images/services/ipad-about.png"
+        image="/images/services/ipad3.png"
         title="About iPad App Development Technologies"
         body={'Native iPad apps are commonly built with Swift and SwiftUI or UIKit, using Xcode as the development environment. Apple frameworks like ARKit, CoreML, Metal, and PencilKit enable advanced graphics, machine learning, and stylus interactions. We also use testing frameworks and CI pipelines to ensure quality across iPad models and iOS versions.'}
         body2={'Our development process includes prototyping, performance tuning, accessibility checks, and App Store readiness so your application delivers a polished, consistent experience on all supported iPad devices.'}
@@ -98,14 +98,14 @@ const Ipad = () => {
               "iPad apps are ideal for enterprise dashboards, creative tools, learning apps, and interactive kiosks with specialized input support.",
           },
         ]}
-        illustrationSrc="/images/services/ipad-benefits.png"
+        illustrationSrc="/images/services/ipad4.png"
         illustrationAlt="iPad app illustration"
         imageLeft={true}
       />
 
       <CtaPanel
         title="KNOW MORE PROJECTS"
-        description="To know more projects and technologies we used to make them successful in a short span, please contact us."
+        description="To know more projects and about all the details of the projects , the Technolgies that we used to make the project successful in very short span of time please do contact us"
         buttonLabel="Call us"
         href="/contact"
         align="center"

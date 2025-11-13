@@ -52,8 +52,7 @@ const FullstackDevelopment = () => {
       <SectionIntro
   title="Digital Transformation"
   paragraphs={[
-    "Digital transformation is the process of integrating digital technologies into all areas of a business, fundamentally changing how it operates and delivers value to customers. It empowers organizations to enhance efficiency, improve customer experiences, and stay competitive in the evolving digital landscape.",
-    "By leveraging technologies like cloud computing, automation, data analytics, and AI, businesses can drive innovation and achieve sustainable growth."
+    "Digital transformation is the process of integrating digital technologies into all areas of a business, fundamentally changing how it operates and delivers value to customers. It empowers organizations to enhance efficiency, improve customer experiences, and stay competitive in the evolving digital landscape. By leveraging technologies like cloud computing, automation, data analytics, and AI, businesses can drive innovation and achieve sustainable growth."
   ]}
 />
 
@@ -68,8 +67,8 @@ const FullstackDevelopment = () => {
 <SplitFeature
   image="/images/services/image 44.png"
   title="About Digital Transformation"
-  body={`Digital transformation is the strategic adoption of digital technologies to reshape business processes, culture, and customer experiences. It enables organizations to operate more efficiently, make data-driven decisions, and respond quickly to market changes.`}
-  body2={`By leveraging tools such as cloud computing, automation, artificial intelligence, and analytics, businesses can enhance productivity, improve collaboration, and deliver greater value to their customers.`}
+  body={`Digital transformation is the strategic adoption of digital technologies to reshape business processes, culture, and customer experiences. It enables organizations to operate more efficiently, make data-driven decisions, and respond quickly to market changes. By leveraging tools such as cloud computing, automation, artificial intelligence, and analytics, businesses can enhance productivity, improve collaboration, and deliver greater value to their customers.`}
+  body2={`Digital transformation is the strategic adoption of digital technologies to reshape business processes, culture, and customer experiences. It enables organizations to operate more efficiently, make data-driven decisions, and respond quickly to market changes. By leveraging tools such as cloud computing, automation, artificial intelligence, and analytics, businesses can enhance productivity, improve collaboration, and deliver greater value to their customers.`}
   imageLeft={false}
 />
 

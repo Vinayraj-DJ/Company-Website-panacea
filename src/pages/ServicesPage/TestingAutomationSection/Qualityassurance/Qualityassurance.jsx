@@ -22,7 +22,7 @@ const Qualityassurance = () => {
       {/* HERO */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/qualityassurance-hero.png"
+          imageSrc="/images/services/qa.png"
           alt="Quality Assurance"
           title={"Quality\nAssurance"}
         />
@@ -60,7 +60,7 @@ const Qualityassurance = () => {
 
       {/* WHY QA IS IMPORTANT */}
       <SplitFeature
-        image="/images/services/qa-why.png"
+        image="/images/services/quality1.png"
         title="Why Quality Assurance is Important ?"
         body={`Quality Assurance (QA) is vital for ensuring that software products perform flawlessly, meet user expectations, and align with business goals. It helps detect and prevent issues early in the development cycle, saving time, reducing costs, and ensuring reliable performance in the final product.`}
         body2={`In today’s competitive digital world, customers demand seamless experiences. QA not only ensures bug-free applications but also enhances security, usability, and scalability. By maintaining high-quality standards, businesses can strengthen their brand reputation, boost customer satisfaction, and achieve sustainable growth.`}
@@ -69,7 +69,7 @@ const Qualityassurance = () => {
 
       {/* HOW PANACEA HELPS */}
       <SplitFeature
-        image="/images/services/qa-how.png"
+        image="/images/services/quality2.png"
         title="How Panacea Can Help You with Quality Assurance ?"
         body={`At PanaceaIT Services, we deliver end-to-end Quality Assurance solutions that ensure your software meets the highest performance and reliability standards. Our QA experts use a mix of manual, automated, and performance testing to identify defects early, improve functionality, and ensure a seamless user experience across all platforms.`}
         body2={`We tailor our QA strategies to your business goals — from defining test plans and frameworks to executing regression, security, and usability testing. Using modern tools and agile methodologies, Panacea helps you achieve faster releases, lower maintenance costs, and consistently deliver error-free products that earn customer trust and drive business success.`}
@@ -101,7 +101,7 @@ const Qualityassurance = () => {
               "Deliver smooth, error-free applications that enhance customer satisfaction and retention.",
           },
         ]}
-        illustrationSrc="/images/services/qa-benefits.png"
+        illustrationSrc="/images/services/quality3.png"
         illustrationAlt="Quality assurance benefits illustration"
         imageLeft={true}
       />

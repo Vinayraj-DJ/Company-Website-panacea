@@ -102,7 +102,7 @@ body {
     text-decoration: underline;
 }
 
-/* Mobile ≤ 768px: stack */
+/* ---------------- Mobile ≤ 768px ONLY (horizontal scroller: 2 full cards + half of next) ---------------- */
 @media (max-width: 768px) {
     .bgWrapper {
         height: 360px;
@@ -135,37 +135,52 @@ body {
         width: 100%;
         padding: 0 16px;
         margin-top: -76px;
+        box-sizing: border-box;
         z-index: 3;
     }
 
+    /* Horizontal scroller */
     .cards {
-        grid-template-columns: repeat(3, 1fr);
-        /* Two items per row */
+        display: flex;
+        flex-direction: row;
         gap: 12px;
-        max-width: 720px;
+        align-items: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 12px;
         margin: 0 auto;
+        justify-content: flex-start;
+        /* hide scrollbar visuals but preserve scroll functionality */
+        -ms-overflow-style: none;  /* IE/Edge */
+        scrollbar-width: none;     /* Firefox */
     }
 
-    /* Adjust image size to look proportional */
+    .cards::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+    .cards:focus { outline: none; }
+
+    /* Two cards visible (~45% each) so the next card peeks (~half) */
     .cardImg {
-        width: 100%;
-        max-width: 320px;
-        /* Limit max width */
+        flex: 0 0 45%;
+        max-width: 45%;
         height: auto;
-        margin: 0 auto;
         display: block;
         border-radius: 24px;
+        scroll-snap-align: start;
+        margin: 0;
     }
 
-    /* Center the last card if the number of cards is odd */
+    /* Center the last card visually if odd count (keeps behavior similar to grid) */
     .cards img:last-child {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .link {
         justify-content: flex-end;
-        /* Align to the right */
         margin-top: 16px;
     }
 
@@ -174,7 +189,7 @@ body {
     }
 }
 
-/* XS ≤ 360px */
+/* ---------------- Extra small phones ≤ 360px (tuned, hide scrollbar visuals) ---------------- */
 @media (max-width: 360px) {
     .bgWrapper {
         height: 320px;
@@ -197,24 +212,42 @@ body {
     .cardWrapper {
         padding: 0 12px;
         margin-top: -28px;
+        box-sizing: border-box;
     }
 
     .cards {
+        display: flex;
+        flex-direction: row;
         gap: 10px;
+        align-items: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        justify-content: flex-start;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
+    .cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cards:focus { outline: none; }
+
     .cardImg {
-        width: 100%;
-        max-width: 280px;
-        /* Further limit max width */
+        flex: 0 0 48%;
+        max-width: 48%;
         height: auto;
         display: block;
         border-radius: 24px;
+        scroll-snap-align: start;
+        margin: 0;
     }
 
-    /* Center the last card if the number of cards is odd on small devices */
     .cards img:last-child {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 }

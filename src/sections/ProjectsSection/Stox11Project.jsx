@@ -10,6 +10,21 @@ import BrainBuzz from "./BrainBuzz/BrainBuzz";
 import HyderabadPartyRentals from "./HyderabadPartyRentals/HyderabadPartyRentals";
 import Stox11 from "./Stox11/Stox11";
 
+// console.log('Check imports →', {
+//   Stox11,
+//   ChildCareManagement,
+//   OmrSheetDesign,
+//   InfluencerApp,
+//   ChattingApp,
+//   MutualFunds,
+//   BrainBuzz,
+//   HyderabadPartyRentals,
+//   Button,
+// });
+
+
+
+
 const SOCIALS = {
   linkedin:
     "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
@@ -96,7 +111,7 @@ const Stox11Project = () => {
       >
         <div className={styles.projectsGrid}>
           <div className={styles.childcare}>
-            <Stox11 />
+            <Stox11/>
           </div>
           <div className={styles.childcare}>
             <ChildCareManagement />
@@ -117,7 +132,7 @@ const Stox11Project = () => {
             <BrainBuzz />
           </div>
           <div className={styles.chattingapp}>
-            <HyderabadPartyRentals />
+            <HyderabadPartyRentals/>
           </div>
         </div>
 

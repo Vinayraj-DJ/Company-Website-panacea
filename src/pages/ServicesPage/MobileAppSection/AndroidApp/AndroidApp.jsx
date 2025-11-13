@@ -19,7 +19,7 @@ const AndroidApp = () => {
       {/* Hero (only visual difference) */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/android-hero.png" // replace with your hero image path
+          imageSrc="/images/services/android1.png" // replace with your hero image path
           alt="Android App Development"
           title={"Android App\nDevelopment"}
         />
@@ -50,56 +50,57 @@ const AndroidApp = () => {
       <SectionIntro
         title="Android App Development Services"
         paragraphs={[
-          "Android App Development Services empower businesses to reach a vast audience by creating innovative, scalable, and user-friendly mobile applications for Android devices. With millions of users worldwide, Android offers unmatched market reach and flexibility for businesses of all sizes.",
-          "From concept to deployment, Android app development uses powerful tools and technologies such as Kotlin, Java, Android Studio, Firebase, and Jetpack libraries to ensure smooth UX, performance, and reliability across many device types and screen sizes.",
+          "Android App Development Services empower businesses to reach a vast audience by creating innovative, scalable, and user-friendly mobile applications for Android devices. With millions of users worldwide, Android offers unmatched market reach and flexibility for businesses of all sizes. From concept to deployment, Android app development involves the use of powerful tools and technologies such as Java, Kotlin, Android Studio, and Firebase, ensuring seamless functionality, appealing designs, and high performance.",
         ]}
       />
 
       {/* Split feature blocks (content changed, layout same) */}
       <SplitFeature
-        image="/images/services/android-feature-1.png"
-        title="Why Android App Development is Important and How Panacea Can Help You"
-        body={`In today’s mobile-driven world, Android app development is essential for businesses aiming to expand their digital presence and connect with a global audience. A well-designed Android app enhances customer engagement, boosts brand loyalty, and provides seamless access to products and services anytime, anywhere.`}
-        body2={`At Panacea IT Services, we combine design thinking with deep technical expertise to deliver powerful, secure Android applications. Our team leverages Kotlin/Java, Android Studio, and modern tooling to build apps that scale and perform.`}
+        image="/images/services/android2.png"
+        title="Why Android App Development is Important And how panacea can help you"
+        body={`In today’s mobile-driven world, Android App Development is essential for businesses aiming to expand their digital presence and connect with a global audience. With Android powering over 70% of the world’s smartphones, developing an Android app offers unparalleled reach, flexibility, and affordability. A well-designed Android app enhances customer engagement, boosts brand loyalty, and provides seamless access to products and services anytime, anywhere.`}
+        body2={`At PanaceaIT Services, we combine innovation with technical expertise to deliver powerful and scalable Android applications. Our skilled developers leverage the latest technologies like Kotlin, Java, and Android Studio to craft secure, high-performing apps tailored to your business goals.`}
         imageLeft={true}
       />
 
       <SplitFeature
-        image="/images/services/android-feature-2.png"
+        image="/images/services/android3.png"
         title="About Android App Development Technologies"
-        body={`Android technologies form the backbone of high-performing mobile apps. Core languages like Kotlin and Java, plus frameworks and tools such as Android Jetpack, Firebase, and Material Design enable rich UI, robust backend integration, and excellent device compatibility.`}
+        body={`Android App Development Technologies form the backbone of building dynamic, secure, and high-performing mobile applications for the Android ecosystem. Developers primarily use Java and Kotlin as core programming languages, supported by the robust Android Studio IDE for coding, debugging, and testing. The Android framework offers flexible APIs for UI/UX design, cloud integration, and device compatibility, ensuring smooth performance across smartphones, tablets, and wearables.`}
+        body2={`Modern tools like Firebase, Jetpack Compose, and Material Design further enhance app functionality, scalability, and user experience. At PanaceaIT Services, we utilize these advanced technologies to develop customized Android apps that meet business objectives while maintaining speed, security, and innovation. Our approach ensures each app is optimized for performance, user engagement, and long-term growth.`}
         imageLeft={false}
       />
 
       {/* Feature list (customized for android) */}
-      <FeatureList
-        title="Key Benefits Of Android App Development"
+            <FeatureList
+        title="Key Benefits Of Android App Development Technologies"
         items={[
           {
             title: "Wider Market Reach",
             desc:
-              "Android powers the majority of smartphones worldwide, allowing businesses to connect with a massive and diverse audience.",
+              "Android powers the majority of smartphones worldwide, allowing businesses to connect with a massive and diverse global audience.",
           },
           {
             title: "Open-Source Flexibility",
             desc:
-              "Android’s open ecosystem gives developers freedom to customize apps, integrate unique features, and optimize costs.",
+              "The open-source nature of Android provides developers with the freedom to customize applications, integrate unique features, and reduce development costs.",
           },
           {
-            title: "Seamless Integration & Compatibility",
+            title: "Seamless Integration and Compatibility",
             desc:
-              "Android technologies ensure smooth integration across platforms, tools and device sizes for consistent performance.",
+              "Android technologies ensure smooth integration with various platforms, tools, and devices, offering consistent performance across different screen sizes and hardware.",
           },
           {
-            title: "High Scalability & Performance",
+            title: "High Scalability and Performance",
             desc:
-              "Frameworks such as Android Jetpack and Firebase let apps scale easily while maintaining speed and reliability.",
+              "With frameworks like Android Jetpack and tools such as Kotlin and Firebase, apps can be easily scaled and optimized for superior speed and reliability.",
           },
         ]}
-        illustrationSrc="/images/services/android-illustration.png"
-        illustrationAlt="Android development illustration"
+        illustrationSrc="/images/services/android4.png"
+        illustrationAlt="Android development benefits"
         imageLeft={true}
       />
+
 
       {/* CTA + footer kept same */}
       <CtaPanel

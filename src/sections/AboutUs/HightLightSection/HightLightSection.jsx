@@ -1,52 +1,113 @@
-// src/sections/HightLightSection/HightLightSection.jsx
-import React from "react";
+// // src/sections/HightLightSection/HightLightSection.jsx
+// import React from "react";
+// import styles from "./HightLightSection.module.css";
+
+// const CARDS = [
+//   { value: "100 +", text: "Users that are using our services" },
+//   { value: "50 +", text: "Employee that are well experienced" },
+//   { value: "10 +", text: "Reputed Companies using our products" },
+//   { value: "10 +", text: "Professionals in Global Network" },
+// ];
+
+// const HightLightSection = () => {
+//   return (
+//     <section
+//       className={styles.section}
+     
+//     >
+//       <div className={styles.header}>
+//         <h2 className={styles.title}>
+//           Redefining solutions with purpose and passion.
+//         </h2>
+
+//         <div className={styles.leadWrap}>
+//           <p className={styles.lead}>
+//             Use our products that are&nbsp; well made
+//             <br />
+//             and built
+//           </p>
+//         </div>
+//       </div>
+
+//       {/* Top two images (keeps your existing layout) */}
+//       <div className={styles.imagesRow}>
+//         <img
+//           src="/images/hightlight1.png"
+//           alt="Team working"
+//           className={styles.image}
+//         />
+//         <img
+//           src="/images/hightlight2.png"
+//           alt="Collaboration"
+//           className={styles.image}
+//         />
+//       </div>
+
+//       {/* Cards */}
+//       <div className={styles.cards}>
+//         {CARDS.map((c) => (
+//           <div key={c.text} className={styles.card}>
+//             <div className={styles.value}>{c.value}</div>
+//             <p className={styles.caption}>{c.text}</p>
+//           </div>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default HightLightSection;
+
+
+
+
+import React, { useMemo } from "react";
+import PropTypes from "prop-types";
 import styles from "./HightLightSection.module.css";
 
-const CARDS = [
+const defaultCards = [
   { value: "100 +", text: "Users that are using our services" },
-  { value: "50 +", text: "Employee that are well experienced" },
+  { value: "50 +", text: "Employees that are well experienced" },
   { value: "10 +", text: "Reputed Companies using our products" },
   { value: "10 +", text: "Professionals in Global Network" },
 ];
 
-const HightLightSection = () => {
+export default function HightLightSection({
+  title = "Redefining solutions with purpose and passion.",
+  lead = "Use our products that are well made<br/>and built",
+  cards = defaultCards,
+  columns = 4,
+  background = "linear-gradient(180deg, #f3f2f5ff 0%, #e9e2eeff 100%)",
+  compact = false,
+  className = "",
+}) {
+  const CARD_LIST = useMemo(() => cards, [cards]);
+
   return (
     <section
-      className={styles.section}
-     
+      className={`${styles.section} ${compact ? styles.compact : ""} ${className}`}
+      style={{ background }}
+      data-columns={columns}
     >
       <div className={styles.header}>
-        <h2 className={styles.title}>
-          Redefining solutions with purpose and passion.
-        </h2>
+        <h2 className={styles.title}>{title}</h2>
 
         <div className={styles.leadWrap}>
-          <p className={styles.lead}>
-            Use our products that are&nbsp; well made
-            <br />
-            and built
-          </p>
+          <p
+            className={styles.lead}
+            dangerouslySetInnerHTML={{ __html: lead }}
+          />
         </div>
       </div>
 
-      {/* Top two images (keeps your existing layout) */}
-      <div className={styles.imagesRow}>
-        <img
-          src="/images/hightlight1.png"
-          alt="Team working"
-          className={styles.image}
-        />
-        <img
-          src="/images/hightlight2.png"
-          alt="Collaboration"
-          className={styles.image}
-        />
-      </div>
-
-      {/* Cards */}
-      <div className={styles.cards}>
-        {CARDS.map((c) => (
-          <div key={c.text} className={styles.card}>
+      {/* Cards grid */}
+      <div
+        className={styles.cards}
+        style={{ "--cards-cols": Number(columns) || 4 }}
+        role="list"
+      >
+        {CARD_LIST.map((c, i) => (
+          <div key={`${c.text}-${i}`} className={styles.card} role="listitem">
             <div className={styles.value}>{c.value}</div>
             <p className={styles.caption}>{c.text}</p>
           </div>
@@ -54,6 +115,16 @@ const HightLightSection = () => {
       </div>
     </section>
   );
-};
+}
 
-export default HightLightSection;
+HightLightSection.propTypes = {
+  title: PropTypes.string,
+  lead: PropTypes.string,
+  cards: PropTypes.arrayOf(
+    PropTypes.shape({ value: PropTypes.string, text: PropTypes.string })
+  ),
+  columns: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  background: PropTypes.string,
+  compact: PropTypes.bool,
+  className: PropTypes.string,
+};

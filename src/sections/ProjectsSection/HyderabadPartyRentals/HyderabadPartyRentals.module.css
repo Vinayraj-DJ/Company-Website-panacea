@@ -18,7 +18,7 @@
     color: #333;
 }
 
-/* subtle left gradient to match other pages */
+
 .projectBackground {
     width: 100%;
     background: linear-gradient(90deg, rgba(233, 214, 244, 0.07) 0%, rgba(255, 255, 255, 0) 40%);
@@ -41,7 +41,7 @@
     display: inline-block;
 }
 
-/* small blue rule to the right of title (OMR style) */
+
 .projectTitle::after {
     content: "";
     position: absolute;
@@ -63,7 +63,7 @@
     max-width: 900px;
 }
 
-/* main block */
+
 .projectBlock {
     display: flex;
     flex-wrap: nowrap;
@@ -75,7 +75,7 @@
     margin: 0 auto;
 }
 
-/* image on left */
+
 .projectImage {
     flex: 0 0 40%;
     max-width: 40%;
@@ -88,14 +88,14 @@
     .projectBlock {
         padding-left: 0;
         padding-right: 3rem;
-        /* a bit smaller right padding */
+      
         max-width: none;
         margin-left: 0;
     }
 
     .projectImage {
         flex: 0 0 55%;
-        /* increase image width from 40–45% → 55% */
+     
         max-width: 55%;
         margin-left: 0;
     }
@@ -103,16 +103,16 @@
     .projectImage img {
         width: 100%;
         max-width: none;
-        /* allow full stretch inside its container */
+     
         height: 100%;
         object-fit: cover;
-        /* fill the space nicely */
+       
         border-radius: 0;
     }
 
     .projectDetails {
         flex: 0 0 45%;
-        /* shrink details column */
+       
         max-width: 45%;
     }
 }
@@ -123,13 +123,13 @@
     max-width: 425px;
     height: auto;
     border-radius: 0;
-    /* ✅ no curves */
+ 
     object-fit: cover;
     box-shadow: none;
-    /* cleaner look */
+  
 }
 
-/* details card on right */
+
 .projectDetails {
     flex: 0 0 55%;
     max-width: 55%;
@@ -177,13 +177,13 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
-/* fixed-width label column for tidy alignment */
+
 .techList li span.label {
     display: inline-block;
     width: 150px;
 }
 
-/* responsive */
+
 @media (max-width: 1024px) {
     .projectBlock {
         padding: 0 3rem 40px;
@@ -247,20 +247,20 @@
     }
 }
 
-/* ---------------------- DESKTOP-ONLY: flush image left ---------------------- */
+
 @media (min-width: 1024px) {
     .projectBlock {
         padding-left: 0;
-        /* remove left padding */
+       
         padding-right: 5rem;
-        /* keep right spacing */
+  
         max-width: none;
         margin-left: 0;
     }
 
     .projectImage {
         margin-left: 0;
-        /* stick to viewport left */
+     
         flex: 0 0 45%;
         max-width: 45%;
         justify-content: flex-start;
@@ -270,6 +270,6 @@
         max-width: 520px;
         width: auto;
         border-radius: 0;
-        /* ✅ ensure still no curves on desktop */
+
     }
 }

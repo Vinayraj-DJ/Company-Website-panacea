@@ -18,7 +18,7 @@ export default function PhpDevelopment() {
     <section className={styles.page}>
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/php-dev-hero.png"
+          imageSrc="/images/services/php1.png"
           alt="PHP Development"
           title={"PHP\nDevelopment"}
         />
@@ -37,7 +37,7 @@ export default function PhpDevelopment() {
       />
 
       <SplitFeature
-        image="/images/services/php-art-1.png"
+        image="/images/services/php2.png"
         title="Why You Should Embrace PHP And How PanaceaIT Helps"
         body={`PHP remains a reliable, versatile choice for building modern web solutions. Its open-source ecosystem, mature community, and vast library support enable high performance and rapid delivery.`}
         body2={`Our team leverages modern PHP frameworks, best practices, and clean architecture to craft secure, fast, and maintainable applications aligned with your business goals.`}
@@ -45,7 +45,7 @@ export default function PhpDevelopment() {
       />
 
       <SplitFeature
-        image="/images/services/php-art-2.png"
+        image="/images/services/php3.png"
         title="About PHP Development"
         body={`From startups to enterprises, PHP powers content-rich sites, portals, and platforms. Its compatibility with databases and cloud services makes it ideal for long-term growth.`}
         imageLeft={false}
@@ -59,7 +59,7 @@ export default function PhpDevelopment() {
           { title: "Great Integration", desc: "Works seamlessly with popular DBs, caches, and services." },
           { title: "Scalable & Flexible", desc: "Easily evolve features and scale users without rework." },
         ]}
-        illustrationSrc="/images/services/php-art-3.png"
+        illustrationSrc="/images/services/php4.png"
         illustrationAlt="PHP benefits"
         imageLeft={true}
       />

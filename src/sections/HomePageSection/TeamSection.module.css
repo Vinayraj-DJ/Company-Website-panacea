@@ -170,334 +170,107 @@
     }
 }
 
+/* ------------------ MOBILE / TABLET (keep only mobile view rules) ------------------ */
+
+/* Tablet / Phone landscape and smaller (stack header, 2-column grid) */
 @media (max-width: 820px) {
-    .cta {
-            display: flex;
-            grid-area: cta;
-            border: 0;
-            justify-content: center;
-            align-items: center;
-            align-self: center;
-            background: #3b68b2;
-            color: #fff;
-            border-radius: 999px;
-            padding: 14px 26px;
-            font-weight: 600;
-            font-size: 16px;
-            box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
-            cursor: pointer;
-            white-space: nowrap;
-            font-family: "Roboto Serif", serif;
-        }
-    .topBar {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "kicker"
-            "title"
-            "cta";
-        justify-items: start;
-    }
-
-    /* MOBILE: make 2 columns in a row */
-    .grid {
-        grid-template-columns: repeat(2, minmax(180px, 1fr));
-        gap: clamp(16px, 3vw, 32px) 16px;
-        /* optional: adjust spacing */
-    }
-
-    .avatarWrap {
-        width: 150px;
-        height: 150px;
-    }
-
-    /* Place the button below the grid on mobile, center-aligned */
-    .ctaButtonContainer {
-        grid-column: 1 / -1;
-        /* Span the entire grid */
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-        /* Space between grid and button */
-    }
-
-    .ctaButton {
-        display: flex;
-        width: auto;
-        justify-content: flex-end;
-        background-color: var(--primary);
-        color: white;
-        padding: 14px 24px;
-        font-weight: 600;
-        font-size: 16px;
-        box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
-        cursor: pointer;
-        white-space: nowrap;
-        border-radius: 999px;
-    }
-}
-
-@media (max-width: 520px) {
-    
-    .grid {
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
-        gap: clamp(12px, 2.5vw, 24px) 12px;
-    }
-
-    .avatarWrap {
-        width: 120px;
-        height: 120px;
-    }
-
-    /* Ensures the button stays centered on the smallest mobile screen */
-    .ctaButtonContainer {
-        grid-column: 1 / -1;
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-    }
-        .cta {
-            display: flex;
-            grid-area: cta;
-            border: 0;
-            justify-content: center;
-            align-items: center;
-            align-self: center;
-            background: #3b68b2;
-            color: #fff;
-            border-radius: 999px;
-            padding: 14px 26px;
-            font-weight: 600;
-            font-size: 16px;
-            box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
-            cursor: pointer;
-            white-space: nowrap;
-            font-family: "Roboto Serif", serif;
-        }
-
-         .ctaButton {
-             display: flex;
-             width: auto;
-             justify-content: flex-end;
-             background-color: var(--primary);
-             color: white;
-             padding: 14px 24px;
-             font-weight: 600;
-             font-size: 16px;
-             box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
-             cursor: pointer;
-             white-space: nowrap;
-             border-radius: 999px;
-         }
-}
-/* --- Responsive --- */
-@media (max-width: 1100px) {
-    .grid {
-        grid-template-columns: repeat(3, minmax(180px, 1fr));
-    }
-}
-
-@media (max-width: 820px) {
-    .topBar {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "kicker"
-            "title"
-            "cta";
-        justify-items: start;
-    }
-
-    /* MOBILE: make 2 columns in a row */
-    .grid {
-        grid-template-columns: repeat(2, minmax(180px, 1fr));
-        gap: clamp(16px, 3vw, 32px) 16px;
-        /* optional: adjust spacing */
-    }
-
-    .avatarWrap {
-        width: 150px;
-        height: 150px;
-    }
-
-    /* Move the existing Schedule A Call button below the grid and center it */
-    .ctaButtonContainer {
-        grid-column: 1 / -1;
-        /* Span the entire grid */
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-        /* Space between grid and button */
-    }
-}
-
-@media (max-width: 520px) {
-    .grid {
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
-        gap: clamp(12px, 2.5vw, 24px) 12px;
-    }
-    
-
-    .avatarWrap {
-        width: 120px;
-        height: 120px;
-    }
-         .ctaButton {
-             display: flex;
-             width: auto;
-             justify-content: flex-end;
-             background-color: var(--primary);
-             color: white;
-             padding: 14px 24px;
-             font-weight: 600;
-             font-size: 16px;
-             box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
-             cursor: pointer;
-             white-space: nowrap;
-             border-radius: 999px;
-         }
-
-    /* Ensure the button is still centered below the grid */
-    .ctaButtonContainer {
-        grid-column: 1 / -1;
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-    }
-}/* Toast Wrapper */
-.toastWrapper {
-    position: fixed;
-    top: 20px;
-    /* Distance from top of screen */
-    right: 20px;
-    /* Distance from right of screen */
-    z-index: 9999;
-    /* Ensure it appears on top of other content */
-    pointer-events: none;
-    /* Allow clicks to pass through */
-    display: flex;
-    justify-content: flex-end;
-    /* Align to the right */
-}
-
-/* Toast Box */
-.topToast {
-    display: flex;
+  /* Stack top bar vertically and left-align */
+  .topBar {
     flex-direction: column;
-    background: linear-gradient(90deg, #69b7d6 0%, #59c2b2 65%);
-    /* Toast color gradient */
-    color: #fff;
-    border-radius: 8px;
-    padding: 12px 16px;
-    width: 300px;
-    /* Width of toast box */
-    box-shadow: 0 14px 30px rgba(33, 33, 33, 0.12);
-    animation: toastEnter 260ms ease-out;
-    /* Animation for toast appearance */
-}
+    align-items: flex-start;
+    gap: 12px;
+  }
 
-/* Toast Content */
-.topToastInner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.toastIcon {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.18);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    color: #fff;
-    font-size: 14px;
-}
-
-.toastText {
-    flex: 1;
-    font-size: 15px;
-    line-height: 1.3;
-}
-
-.toastClose {
-    background: transparent;
-    border: none;
-    color: rgba(255, 255, 255, 0.95);
-    font-size: 18px;
-    cursor: pointer;
-    padding: 6px;
-    border-radius: 6px;
-}
-
-.toastClose:hover {
-    background: rgba(255, 255, 255, 0.06);
-}
-
-/* Progress Bar */
-.toastProgress {
-    height: 4px;
+  /* Ensure CTA sits below title and left-aligned */
+  .ctaContainer {
     width: 100%;
-    background: linear-gradient(90deg, #4ec17b 0%, #f5b64f 55%, #e35a5a 100%);
-    transform-origin: left center;
-    animation: progressShrink linear forwards;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /* Grid -> 2 columns for phones/tablet landscape */
+  .grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    gap: clamp(16px, 3vw, 32px) 16px;
+    margin-top: 20px;
+  }
+
+  .avatarWrap {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cta {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  /* Toast: centered and full-width inside safe margins */
+  .toastWrapper {
+    top: 22px;
+    left: 16px;
+    right: 16px;
+    justify-content: center;
+  }
+  .topToast {
+    width: 100%;
+    max-width: 640px;
+  }
 }
 
-/* Toast Entry Animation */
-@keyframes toastEnter {
-    from {
-        opacity: 0;
-        transform: translateY(-8px) scale(0.98);
-    }
+/* Small phones */
+@media (max-width: 520px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: clamp(12px, 2.5vw, 24px) 12px;
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
+  .avatarWrap {
+    width: 120px;
+    height: 120px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .role {
+    font-size: 13px;
+  }
+
+  .cta {
+    padding: 11px 18px;
+    font-size: 14px;
+  }
+
+  .topToast {
+    max-width: 420px;
+  }
 }
 
-/* Progress bar animation */
-@keyframes progressShrink {
-    from {
-        width: 100%;
-    }
+/* Very small / narrow screens */
+@media (max-width: 380px) {
+  /* collapse grid to single column for very narrow devices */
+  .grid {
+    grid-template-columns: 1fr;
+  }
 
-    to {
-        width: 0%;
-    }
-}
+  .avatarWrap {
+    width: 140px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-/* Responsive Mobile View - Center the toast */
-@media (max-width: 768px) {
-    .toastWrapper {
-        left: 16px;
-        right: 16px;
-        top: 50px;
-        /* Adjust the top position on mobile */
-        justify-content: center;
-        /* Center the toast horizontally */
-    }
- .ctaButton {
-     display: flex;
-     width: auto;
-     justify-content: flex-end;
-     background-color: var(--primary);
-     color: white;
-     padding: 14px 24px;
-     font-weight: 600;
-     font-size: 16px;
-     box-shadow: 0 8px 18px rgba(59, 104, 178, 0.25);
-     cursor: pointer;
-     white-space: nowrap;
-     border-radius: 999px;
- }
-    .topToast {
-        width: 100%;
-        /* Allow the toast to take full width */
-        max-width: 400px;
-        /* Optional, set a max width */
-        border-radius: 10px;
-        /* Adjust the border radius on mobile */
-    }
+  /* center CTA on very small screens */
+  .ctaContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
 }

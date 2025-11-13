@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;500;600&display=swap');
+
+:root {
+  --serif: 'Roboto Serif', serif;
+}
+
+/* Whole section wrapper */
+.section {
+  width: 100%;
+  padding: 60px 0;
+  font-family: var(--serif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+/* Background image container */
+.bgContainer {
+  width: 100%;
+  max-width: 1440px;
+  height: 710px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Container that holds phones */
+.phonesContainer {
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+}
+
+/* Each phone wrapper */
+.phoneWrapper {
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Phone images */
+.phoneImage {
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.08),
+    0 30px 60px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.phoneImage:hover {
+  transform: translateY(-6px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .bgContainer {
+    height: 540px;
+  }
+
+  .phonesContainer {
+    gap: 24px;
+  }
+
+  .phoneWrapper {
+    width: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bgContainer {
+    height: 420px;
+  }
+
+  .phonesContainer {
+    gap: 16px;
+  }
+
+  .phoneWrapper {
+    width: 130px;
+  }
+
+  .phoneImage {
+    border-radius: 20px;
+  }
+}

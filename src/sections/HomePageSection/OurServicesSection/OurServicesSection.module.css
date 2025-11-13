@@ -97,7 +97,7 @@ body {
     }
 }
 
-/* ---------------- Mobile ≤ 768px ONLY ---------------- */
+/* ---------------- Mobile ≤ 768px ONLY (hide scrollbar visually but keep scrolling) ---------------- */
 @media (max-width: 768px) {
     .bgWrapper {
         height: 360px;
@@ -134,24 +134,38 @@ body {
         z-index: 3;
     }
 
+    /* Horizontal scroller (keeps scrolling) */
     .cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        /* two items per row */
+        display: flex;
+        flex-direction: row;
         gap: 12px;
-        /* spacing between cards */
-        justify-items: center;
-        margin: 0 auto;
+        align-items: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 12px;
+        margin: 0;
+        /* hide scrollbar visuals but preserve scroll functionality */
+        -ms-overflow-style: none;  /* IE/Edge */
+        scrollbar-width: none;     /* Firefox */
+    }
+
+    .cards::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+    /* remove focus outline on the scroller itself (targeted, not global) */
+    .cards:focus {
+        outline: none;
     }
 
     .cards img {
-        width: 100%;
-        /* Ensure images take up full width of their container */
-        max-width: 160px;
-        /* Limit the maximum width of the images */
+        flex: 0 0 45%;
+        max-width: 45%;
         height: auto;
         display: block;
         border-radius: 24px;
+        scroll-snap-align: start;
     }
 
     .link {
@@ -164,7 +178,7 @@ body {
     }
 }
 
-/* ---------------- Extra small phones ≤ 360px ---------------- */
+/* ---------------- Extra small phones ≤ 360px (hide scrollbar visuals, keep scroll) ---------------- */
 @media (max-width: 360px) {
     .bgWrapper {
         height: 320px;
@@ -190,17 +204,33 @@ body {
     }
 
     .cards {
+        display: flex;
+        flex-direction: row;
         gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        /* two items per row */
+        align-items: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+        margin: 0;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cards:focus {
+        outline: none;
     }
 
     .cards img {
-        width: 100%;
-        max-width: 130px;
-        /* Further limit the image width for smaller devices */
+        flex: 0 0 48%;
+        max-width: 48%;
         height: auto;
         display: block;
         border-radius: 24px;
+        scroll-snap-align: start;
     }
 }

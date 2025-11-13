@@ -1,138 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Section */
 .section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-   
-    /* compact vertical padding */
-   
-    background: url("../../assets/images/OurProcessbg.png") center/cover no-repeat;
-}
-.section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
     background: url("../../assets/images/OurProcessbg.png") center/cover no-repeat;
 }
 
-
-
-/* Image for larger screens */
+/* Image styling */
 .processImage {
     width: 100%;
     height: auto;
     display: block;
-
     border-radius: 16px;
     object-fit: contain;
+    margin: 35px 0 100px;
 }
 
-/* Optional: tighter spacing for mobile screens */
-@media (max-width: 768px) {
-    .processImage {
-        margin-top: 16px;
-        width: 100%;
-    }
-
-    /* Left side container for mobile */
-    .leftSide {
-        flex: 1;
-        padding: 40px 20px;
-        /* Adjusted padding for mobile */
-        width: 100%;
-    }
-
-    /* Section padding and background for mobile */
-    .section {
-        padding: 32px 16px 16px;
-        background-position: center top;
-        row-gap: 16px;
-    }
-
-    /* Subtitle and title adjustments for smaller screens */
-    .sectionSubtitle {
-        font-size: 18px;
-        gap: 10px;
-        margin-bottom: 6px;
-    }
-
-    .sectionSubtitle::after {
-        max-width: 64px;
-    }
-
-    .sectionTitle {
-        font-size: 28px;
-        line-height: 1.25;
-        margin-bottom: 8px;
-    }
-
-    /* Steps row adjustments */
-    .stepsRow {
-        --gap: clamp(10px, 2vw, 18px);
-    }
-
-    .stepsRow>* {
-        --size: calc((100% - (var(--gap) * 3)) / 4);
-    }
-}
-
-@media (max-width: 360px) {
-    .section {
-        padding: 28px 12px 12px;
-    }
-
-    .sectionSubtitle {
-        font-size: 16px;
-    }
-
-    .sectionSubtitle::after {
-        max-width: 48px;
-    }
-
-    .sectionTitle {
-        font-size: 24px;
-    }
-}
-.leftSide{
-    padding: 150px 100px 40px;
-}
-/* Make the process image start at the left and span the row */
-.processImage {
-    width: 100%;
-    /* fill the row within .leftSide (respecting section padding) */
- 
-    height: auto;
-    display: block;
-    margin: 35px  0px 100px;
-    /* space below the heading; no side auto-centering */
-    border-radius: 16px;
-    /* set to 0 if you want square corners */
-    object-fit: contain;
-    /* no cropping */
-}
-
-/* Optional: slightly tighter spacing on small screens */
-@media (max-width: 768px) {
-    .processImage {
-        margin-top: 16px;
-    }
-}
-
+/* Left side text block */
 .leftSide {
-   
+    padding: 150px 100px 40px;
     flex: 1;
     width: 100%;
-  
 }
 
-/* keep for compatibility */
-.cardContainer {
-    width: 100%;
-   
-}
-
-/* Heading (unchanged except tighter space below) */
+/* Headings */
 .sectionSubtitle {
     display: flex;
     align-items: center;
@@ -156,7 +56,6 @@
     font-weight: 500;
     color: #1e1e1e;
     margin-bottom: 8px;
-    /* was 20px */
     line-height: 1.2;
 }
 
@@ -165,33 +64,30 @@
     font-weight: 700;
 }
 
-/* ========= ONE ROW, NO SCROLL, NO EXTRA VERTICAL GAP ========= */
+/* Steps row (kept for structure consistency) */
 .stepsRow {
     --gap: clamp(20px, 3vw, 36px);
     display: flex;
     flex-wrap: nowrap;
-    /* stay on one line */
     gap: var(--gap);
     justify-content: space-between;
     overflow: visible;
-    /* no scrollbar */
     margin-top: 8px;
-    /* tight */
     margin-bottom: 0;
     padding: 0;
-    /* remove extra padding */
 }
 
-/* 4 equal slots across: width = (100% - 3*gap)/4 */
-.stepsRow>* {
+.stepsRow > * {
     --size: calc((100% - (var(--gap) * 3)) / 4);
     flex: 0 0 var(--size);
     max-width: var(--size);
 }
 
-/* ---------- Mobile ≤ 768px ---------- */
+/* ---------- Tablet & small adjustments ---------- */
 @media (max-width: 768px) {
     .section {
+        flex-direction: column;
+        align-items: center;
         padding: 32px 16px 16px;
         background-position: center top;
         row-gap: 16px;
@@ -201,13 +97,25 @@
         margin-left: 0;
         max-width: 100%;
         width: 100%;
+        padding: 24px 16px;
+        text-align: left;
+    }
+
+    .processImage {
+        margin-top: 16px;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .sectionSubtitle {
-        font-size: 18px;
+        font-size: 28px;
         gap: 10px;
-      
         margin-bottom: 6px;
+        justify-content: flex-start;
     }
 
     .sectionSubtitle::after {
@@ -215,17 +123,17 @@
     }
 
     .sectionTitle {
-        font-size: 28px;
+        font-size: 25px;
         line-height: 1.25;
         margin-bottom: 8px;
+        text-align: left;
     }
 
-    /* still one line on mobile, just smaller circles */
     .stepsRow {
         --gap: clamp(10px, 2vw, 18px);
     }
 
-    .stepsRow>* {
+    .stepsRow > * {
         --size: calc((100% - (var(--gap) * 3)) / 4);
     }
 }
@@ -245,106 +153,13 @@
     }
 
     .sectionTitle {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
+
+/* ---------- 🚫 Hide entire section on mobile view ---------- */
 @media (max-width: 768px) {
     .section {
-        flex-direction: column;
-        /* stack vertically */
-        align-items: center;
-        /* center content */
-        padding: 32px 16px 16px;
-        background-position: center top;
-        row-gap: 16px;
-    }
-
-    .leftSide {
-        margin-left: 0;
-        max-width: 100%;
-        width: 100%;
-        padding: 24px 16px;
-        /* reduced padding for mobile */
-        text-align: center;
-        /* center text */
-    }
-
-    .processImage {
-        margin-top: 16px;
-        width: 100%;
-        max-width: 500px;
-        /* keeps it neat, not oversized */
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        /* centers the image */
-    }
-
-    .sectionSubtitle {
-        font-size: 18px;
-        gap: 10px;
-        margin-bottom: 6px;
-        justify-content: center;
-        /* center subtitle + line */
-    }
-
-    .sectionSubtitle::after {
-        max-width: 64px;
-    }
-
-    .sectionTitle {
-        font-size: 28px;
-        line-height: 1.25;
-        margin-bottom: 8px;
-    }
-
-    .stepsRow {
-        --gap: clamp(10px, 2vw, 18px);
-    }
-
-    .stepsRow>* {
-        --size: calc((100% - (var(--gap) * 3)) / 4);
-    }
-}
-/* ---------- Mobile ≤ 768px ---------- */
-@media (max-width: 768px) {
-    .leftSide {
-        margin-left: 0;
-        max-width: 100%;
-        width: 100%;
-        padding: 24px 16px;
-        text-align: left;
-        /* ✅ changed from center to left */
-    }
-
-    .sectionSubtitle {
-        font-size: 28px;
-        gap: 10px;
-        margin-bottom: 6px;
-        justify-content: flex-start;
-        /* ✅ align left */
-    }
-
-    .sectionTitle {
-        font-size: 25px;
-        /* ✅ reduced size for mobile */
-        line-height: 1.25;
-        margin-bottom: 8px;
-        text-align: left;
-        /* ✅ left aligned */
-    }
-}
-
-/* ---------- Extra small ≤ 360px ---------- */
-@media (max-width: 360px) {
-    .sectionSubtitle {
-        font-size: 16px;
-        /* ✅ slightly smaller */
-    }
-
-    .sectionTitle {
-        font-size: 20px;
-        /* ✅ smaller for very small screens */
+        display: none !important;
     }
 }

@@ -72,8 +72,8 @@ const SalesForceConsulting = () => {
       <SplitFeature
         image="/images/services/image 47.png"            // keep your image path
         title="About Sales Force Consulting Services"
-        body={`Salesforce Consulting Services help businesses harness the full potential of Salesforce — the world’s leading Customer Relationship Management (CRM) platform. These services focus on understanding your processes and tailoring Salesforce solutions to improve efficiency, automate workflows, and strengthen customer engagement.`}
-        body2={`With expert consulting, companies can streamline sales, marketing, and service operations, gain actionable insights through data analytics, and enhance overall business performance. Consultants guide organizations from planning and implementation to customization and ongoing support, ensuring a smooth digital transformation and measurable growth.`}
+        body={`Salesforce Consulting Services help businesses harness the full potential of Salesforce — the world’s leading Customer Relationship Management (CRM) platform. These services focus on understanding your business processes and tailoring Salesforce solutions to improve efficiency, automate workflows, and strengthen customer engagement. With expert consulting, companies can streamline sales, marketing, and service operations, gain actionable insights through data analytics, and enhance overall business performance. Salesforce consultants guide organizations from planning and implementation to customization and ongoing support, ensuring a smooth digital transformation and measurable growth.`}
+        // body2={`With expert consulting, companies can streamline sales, marketing, and service operations, gain actionable insights through data analytics, and enhance overall business performance. Consultants guide organizations from planning and implementation to customization and ongoing support, ensuring a smooth digital transformation and measurable growth.`}
         imageLeft={false}
       />
 

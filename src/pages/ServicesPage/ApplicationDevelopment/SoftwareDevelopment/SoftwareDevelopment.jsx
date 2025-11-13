@@ -57,8 +57,10 @@ export default function SoftwareDevelopment() {
       <SplitFeature
         image="/images/services/image 40.png"
         title="Understanding The Needs & Defining The Problem"
-        body={`The process of software development begins with understanding a problem or a need. Developers work closely with stakeholders to identify the requirements and define the scope of the software. This initial phase is crucial as it lays the foundation for the entire development process.`}
-        body2={`Clear communication and a comprehensive understanding of the problem domain are essential to ensure that the final software solution meets the expectations and needs of its users.`}
+        body={`The process of software development begins with understanding  problem or a need the developers work closely with stakeholders to identify the requirements and define  the scope of software. This initial phase is crucial as it lays the foundation for entire development process. clear
+communication and a comprehensive understanding of the 
+problem domain are essential to ensure that the final software solutions meets the expectations and needs of its users.`}
+        // body2={`Clear communication and a comprehensive understanding of the problem domain are essential to ensure that the final software solution meets the expectations and needs of its users.`}
         imageLeft={true}
       />
 
@@ -66,8 +68,14 @@ export default function SoftwareDevelopment() {
       <SplitFeature
         image="/images/services/image 41.png"
         title="Designing The Blueprint & Creating The Software Roadmap"
-        body={`Once the requirements are established, developers move to the design phase. This involves creating a blueprint or roadmap for the software, outlining its architecture and structure.`}
-        body2={`Design decisions take into account factors such as user experience, scalability, and maintainability. This phase is crucial for setting the direction of the project and ensuring the development team has a clear vision of the final product.`}
+        body={`Once the requirements are established, developers move on 
+to the design phase. This involves in creating in blueprint or 
+roadmap for the software , outlining its architecture and 
+structure. Design decisions are take into a account factors
+such as user experience, scalability and maintainability. This phase is crucial for setting the direction of the project
+and ensuring the development team has clear vision  of the 
+final project..`}
+        // body2={`Design decisions take into account factors such as user experience, scalability, and maintainability. This phase is crucial for setting the direction of the project and ensuring the development team has a clear vision of the final product.`}
         imageLeft={false}
       />
 
@@ -75,8 +83,7 @@ export default function SoftwareDevelopment() {
       <SplitFeature
         image="/images/services/image 42.png"
         title="Testing For Quality & Identifying And Fixing Bugs"
-        body={`Testing and Quality Assurance (QA) is the process of evaluating software to ensure it meets the required standards of performance, functionality, and security. It involves systematically identifying, reporting, and fixing bugs or errors to improve the product’s reliability and user experience.`}
-        body2={`Through continuous testing and quality checks, businesses can deliver software that is stable, efficient, and ready for real-world use.`}
+        body={`Testing and Quality Assurance (QA) is the process of evaluating software to ensure it meets the required standards of performance, functionality, and security. It involves systematically identifying, reporting, and fixing bugs or errors to improve the product’s reliability and user experience. Through continuous testing and quality checks, businesses can deliver software that is stable, efficient, and ready for real-world use.`}
         imageLeft={true}
       />
 

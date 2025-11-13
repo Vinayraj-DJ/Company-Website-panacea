@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;500;600;700&display=swap');
+
+:root {
+  --accent: #4070B1;
+  --arrow: #F2CAF8;
+}
+
+/* SECTION */
+.section {
+  background: transparent;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.heading {
+  font-family: "Roboto Serif", serif;
+  color: var(--accent);
+  font-size: 28px;
+  text-align: center;
+  margin: 0 0 40px 0;
+  font-weight: 600;
+}
+
+/* MAIN LAYOUT */
+.stepsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* STEP CARD */
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+/* IMAGE STYLING */
+.image {
+  width: 100%;
+  max-width: 360px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease;
+}
+
+.image:hover {
+  transform: scale(1.03);
+}
+
+/* LABEL */
+.label {
+  font-family: "Roboto Serif", serif;
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: 14px;
+}
+
+/* STRAIGHT ARROW BETWEEN CARDS */
+.arrowWrap {
+  display: flex;
+  align-items: center;       /* centers arrow vertically with image */
+  justify-content: center;
+  flex: 0 0 180px;
+  height: 280px;             /* same as image height */
+  pointer-events: none;
+}
+
+.arrow {
+  width: 100%;
+  height: 40px;              /* SVG viewBox height */
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .stepsRow {
+    gap: 20px;
+  }
+  .image {
+    max-width: 300px;
+    height: 240px;
+  }
+  .arrowWrap {
+    flex: 0 0 140px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stepsRow {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .arrowWrap {
+    display: none;
+  }
+
+  .image {
+    max-width: 100%;
+    height: 220px;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .image {
+    height: 180px;
+  }
+  .label {
+    font-size: 16px;
+  }
+}

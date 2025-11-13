@@ -472,10 +472,11 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto Serif:wght@300;400;500;600;700&display=swap');
 
 
 .page {
-  font-family: var(--Font_Family, "Roboto", sans-serif);
+  font-family: var(--Font_Family, "Roboto Serif", sans-serif);
   color: #333;
   background: linear-gradient(135deg, #ffffff 0%, #f7ecff 40%, #e6f1ff 100%);
   padding-bottom: 60px;
@@ -649,6 +650,7 @@
   .grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 14px;
+    padding: 50px;
   }
 
   .caption {
@@ -658,3 +660,36 @@
 }
 
 
+/* Hover overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(234, 221, 255, 0.96);
+  color: #000;
+  font-family: "Roboto Serif", serif;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border: 1px solid #c5b6ff;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.overlayText {
+  width: 100%;
+  color: rgba(98, 95, 95, 0.85);
+  letter-spacing: 0;
+  font-size: 15px;
+  max-height: 100%;
+  overflow: hidden;
+font-family: "Roboto Serif", serif;
+}
