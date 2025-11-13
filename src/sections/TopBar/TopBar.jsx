@@ -753,9 +753,8 @@ const TopBar = () => {
           borderRadius="12px"
           fontSize="var(--Font_Size_3)"
           padding="10px 20px"
-           onClick={() =>
-            showToast("We're glad — you will receive a response shortly.")
-            
+          onClick={
+            () => go("/contactUs")
           }
         />
       </div>
