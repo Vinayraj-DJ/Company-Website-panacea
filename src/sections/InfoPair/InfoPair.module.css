@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600&display=swap");
+
+:root{
+  --card-radius: 16px;
+  --card-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  --card-bg: #ffffff;
+  --gap: 20px;
+  --max-width: 1200px;
+  --text-color: #000000;
+}
+
+/* wrapper for each pair */
+.pair {
+  font-family: "Roboto Serif", serif;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 24px auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* grid: two columns side-by-side */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  align-items: stretch;
+}
+
+/* when reverse === true, swap visual order by changing direction */
+.row.reverse {
+  direction: rtl; /* flip inline ordering for easy swap */
+}
+.row.reverse > .col {
+  direction: ltr; /* restore content direction inside columns */
+}
+
+/* column base */
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* content card (white, rounded, bullets) */
+.contentCard {
+  width: 100%;
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 36px 36px;
+  box-sizing: border-box;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* content wrapper inside card to limit width like design */
+.contentInner {
+  max-width: 560px; 
+  width: 100%;
+}
+
+/* bullets styling */
+.bullets {
+  margin: 0;
+  padding-left: 22px;
+  color: var(--text-color);
+  font-size: 20px;     /* around 22px in design but a little smaller for better wrapping */
+  line-height: 1.6;    /* 160% line-height like your screenshot */
+  font-weight: 400;
+  list-style-type: disc;
+}
+
+/* image card */
+.imageCard {
+  width: 100%;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageCard img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* control the aspect ratio roughly similar to your reference */
+.imageCard.aspect {
+  aspect-ratio: 16 / 9; /* keeps image rectangular */
+  min-height: 220px;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 900px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+  /* when stacked, preserve normal visual order (text above image) unless you want otherwise */
+  .row.reverse {
+    direction: ltr;
+  }
+  .contentCard {
+    padding: 20px;
+  }
+  .contentInner { max-width: 100%; }
+  .bullets { font-size: 18px; }
+  .imageCard.aspect { aspect-ratio: 4 / 3; min-height: 160px; }
+}

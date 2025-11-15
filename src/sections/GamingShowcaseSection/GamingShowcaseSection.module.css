@@ -1,83 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;500;600&display=swap');
+/* Roboto Serif */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600&display=swap");
 
 :root {
-  --serif: 'Roboto Serif', serif;
+  --font: "Roboto Serif", serif;
 }
 
-/* Whole section wrapper */
+/* Section wrapper */
 .section {
   width: 100%;
-  padding: 60px 0;
-  font-family: var(--serif);
+  padding: 50px 0;
+  font-family: var(--font);
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: #ffffff;
 }
 
-/* Background image container */
+/* Background container */
 .bgContainer {
   width: 100%;
   max-width: 1440px;
   height: 710px;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
+
+  border-radius: 16px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
   position: relative;
+  overflow: hidden;
 }
 
-/* Container that holds phones */
-.phonesContainer {
+/* Wrapper that centers the image perfectly */
+.showcaseWrapper {
   display: flex;
-  /* align-items: flex-end; */
-  justify-content: center;
-  gap: 48px;
-  width: 100%;
-  height: 100%;
-  padding-top: 60px;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+
+  width: 200%;
+  height: 150%;
+
+  /* Maintain Figma design ratio EXACTLY 925 × 522 */
+  max-width: 925px;
+  max-height: 522px;
+padding: 25% 0% 0% 0%;
+  margin-left: -150px;          
 }
 
-/* Each phone wrapper */
-.phoneWrapper {
-  width: 240px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Phone images */
-.phoneImage {
-  width: 100%;
+/* The combined phones image */
+.showcaseImage {
+  width: 150%;
   height: auto;
-  border-radius: 28px;
-  box-shadow: 
-    0 6px 20px rgba(0, 0, 0, 0.08),
-    0 30px 60px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+  object-fit: contain;      /* ensures equal left & right spacing */
+  display: block;
   transition: transform 0.3s ease;
 }
 
-.phoneImage:hover {
-  transform: translateY(-6px);
+.showcaseImage:hover {
+  transform: scale(1.02);
 }
 
-/* Responsive adjustments */
+/* ----------- RESPONSIVE ----------- */
 @media (max-width: 1024px) {
   .bgContainer {
-    height: 540px;
+    height: 550px;
   }
 
-  .phonesContainer {
-    gap: 24px;
-  }
-
-  .phoneWrapper {
-    width: 180px;
+  .showcaseWrapper {
+    max-width: 700px;
+    max-height: 400px;
   }
 }
 
@@ -86,15 +80,12 @@
     height: 420px;
   }
 
-  .phonesContainer {
-    gap: 16px;
+  .showcaseWrapper {
+    max-width: 90%;
+    max-height: 90%;
   }
 
-  .phoneWrapper {
-    width: 130px;
-  }
-
-  .phoneImage {
-    border-radius: 20px;
+  .showcaseImage {
+    border-radius: 12px;
   }
 }

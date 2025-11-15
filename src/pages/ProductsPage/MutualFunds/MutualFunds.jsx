@@ -11,6 +11,7 @@ import HightLightSection from "../../../sections/AboutUs/HightLightSection/Hight
 
 import SmartScalableSection from "../../../sections/Products/SmartScalableSection";
 import StepsSection from "../../../sections/StepsSection/StepsSection";
+import MFW from "../../../sections/MFW/MFW";
 const SOCIALS = {
   linkedin: "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
   facebook: "https://www.facebook.com/your-handle",
@@ -59,6 +60,9 @@ const MutualFunds = () => {
 
 
          <StepsSection />
+
+
+           <MFW />
       
       <SmartScalableSection/>
       <HightLightSection

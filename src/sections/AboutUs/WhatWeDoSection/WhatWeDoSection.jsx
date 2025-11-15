@@ -8,7 +8,7 @@ const WhatWeDoSection = () => {
         {/* Left image */}
         <div className={styles.imageWrapper}>
           <img
-            src="/images/ceo.png" // <-- replace with your new image
+            src="/images/aboutus/hemachandra.jpg" // <-- replace with your new image
             alt="What we do"
             className={styles.image}
           />
@@ -31,7 +31,7 @@ const WhatWeDoSection = () => {
             improvement. Whether the task is big or small, we believe in doing
             it right—with purpose, professionalism, and pride.
           </p>
-          <p className={styles.signature}>- Narasimha (CEO )</p>
+          <p className={styles.signature}>- Gariganti Hema Chandu (CEO )</p>
         </div>
       </div>
     </section>

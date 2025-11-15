@@ -88,13 +88,9 @@ const GameingApp= () => {
 
 
        <GamingShowcaseSection
-        background="/images/products/bg1.png"
-        phones={[
-          "/images/products/phone1.png",
-          "/images/products/phone1.png",
-          "/images/products/phone1.png",
-        ]}
-      />
+  background="/images/products/phone.png"
+  showcase="/images/products/phones.png"
+/>
 
 
        <GamingFeatureSection

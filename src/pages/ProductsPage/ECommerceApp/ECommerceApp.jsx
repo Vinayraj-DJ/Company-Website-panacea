@@ -12,6 +12,9 @@ import styles from "./ECommerceApp.module.css";
 import HightLightSection from "../../../sections/AboutUs/HightLightSection/HightLightSection";
 import JoinOurServiceSection from "../../../sections/Services/JoinOurServiceSection";
 import TravelInfoSection from "../../../sections/TravelInfoSection/TravelInfoSection";
+import GoalResultSection from "../../../sections/GoalResultSection/GoalResultSection";
+import ImageCaptionHero from "../../../sections/ImageCaptionHero/ImageCaptionHero";
+import ShowcaseSection from "../../../sections/ShowcaseSection/ShowcaseSection";
 
 const SOCIALS = {
   linkedin: "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
@@ -20,7 +23,11 @@ const SOCIALS = {
 
 const ECommerceApp= () => {
   // feature data for the EducationalFeaturesSection
-
+ const floats = [
+    { id: "f1", src: "/images/circle1.png", size: 115, left: "12%", top: "18%" },
+    { id: "f2", src: "/images/circle2.png", size: 115, left: "82%", top: "12%" },
+    { id: "f3", src: "/images/circle3.png", size: 115, left: "20%", top: "62%" },
+  ];
 
   return (
     <section className={styles.page}>
@@ -58,6 +65,42 @@ const ECommerceApp= () => {
           "Our E-Commerce App is built to deliver a seamless online shopping experience for users and a powerful management system for store owners. With a clean interface, smart filters, and secure checkout, it allows users to browse, shop, and pay effortlessly — anytime, anywhere."
         ]}
       />
+
+
+<GoalResultSection
+  // image="/images/ecommerce.png"
+  // items={[
+  //   {
+  //     icon: "/icons/goal.svg",
+  //     title: "Goal",
+  //     description: "Your custom goal text…"
+  //   },
+  //   {
+  //     icon: "/icons/result.svg",
+  //     title: "Result",
+  //     description: "Your custom result text…"
+  //   }
+  // ]}
+/>
+
+
+<ImageCaptionHero
+  src="/images/products/bg5.png"
+  caption="Businesses experienced faster order management and improved customer retention through real-time updates and personalized offers. Overall, it helped brands achieve stronger digital growth and higher customer satisfaction."
+  captionSize={32}         // optional
+  overlayHeight="180px"     
+/>
+
+<ShowcaseSection
+      heading={`Shop Smart. Grow Fast.\nEmpowering businesses and customers through seamless\n digital shopping experiences.`}
+      highlightSpans={["Empowering businesses", "digital shopping"]}
+      mainImage="/images/phone.png"
+      floats={floats}
+      caption=""
+    />
+
+
+
   <JoinOurServiceSection
   imageSrc="/images/products/Ecomm1.png"
   imageAlt="Our team"

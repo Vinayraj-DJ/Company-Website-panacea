@@ -13,6 +13,8 @@ import HightLightSection from "../../../sections/AboutUs/HightLightSection/Hight
 // import CloudImageComponent from "../../../sections/CloudImageComponent/CloudImageComponent";
 import GroceryImageComponent from "../../../sections/CloudImageComponent/GroceryImageComponent";
 // import InfoPairsSection from "../../../sections/InfoPairsSection/InfoPairsSection"; 
+import InfoPair from "../../../sections/InfoPair/InfoPair";
+import UserGrocery from "../../../sections/UserGrocery/UserGrocery";
 
 const SOCIALS = {
   linkedin: "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
@@ -20,6 +22,21 @@ const SOCIALS = {
 };
 
 const GroceryApp= () => {
+
+
+
+    const bulletsA = [
+    "Exclusive discounts and personalized offers.",
+    "Fresh and high-quality products guaranteed for sure.",
+    "Time-saving doorstep delivery.",
+  ];
+
+  const bulletsB = [
+    "24/7 customer support.",
+    "Hassle-free online grocery shopping.",
+    "Order History & Reorder Option.",
+    "Eco-Friendly Packaging.",
+  ];
   // feature data for the EducationalFeaturesSection
       const items = [
   {
@@ -94,6 +111,48 @@ const GroceryApp= () => {
       <GroceryImageComponent/>
 
       {/* <InfoPairsSection items={items} highlightColor="blue" />; */}
+
+
+
+        <InfoPair
+        reverse={false}
+        bullets={bulletsA}
+        imageSrc="/images/products/groceries1.jpg"
+        imageAlt="delivery basket"
+      />
+
+      {/* bottom row — image left, text right (reverse true) */}
+      <InfoPair
+        reverse={true}
+        bullets={bulletsB}
+        imageSrc="/images/products/groceries2.jpg"
+        imageAlt="groceries and tablet"
+      />
+
+
+
+       <UserGrocery
+      showcaseSrc="/images/products/grocery-showcase.png"
+      heading={"User Friendly\nInterface"}
+      products={[
+        {
+          image: "/images/products/.png",
+          price: "$8.00",
+          title: "Fresh Peach",
+          subtitle: "dozen",
+        },
+        {
+          image: "/images/products/.png",
+          price: "$9.90",
+          title: "Pineapple",
+          subtitle: "1.50 lbs",
+        },
+      ]}
+    />
+
+
+
+      
 
 
       

@@ -48,19 +48,20 @@
   line-height: 1.6;
 }
 
-.imageBlock {
+/* .imageBlock {
   flex: 1;
   max-width: 530px;
   display: flex;
   justify-content: center;
-}
+} */
 
 .image {
   width: 100%;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); */
+ 
 }
 
 /* Responsive design */

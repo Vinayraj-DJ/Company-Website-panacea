@@ -13,7 +13,7 @@ import HightLightSection from "../../../sections/AboutUs/HightLightSection/Hight
 import JoinOurServiceSection from "../../../sections/Services/JoinOurServiceSection";
 import TravelInfoSection from "../../../sections/TravelInfoSection/TravelInfoSection";
 import FitnessJourneySection from "../../../sections/FitnessJourneySection/FitnessJourneySection";
-import EventHeroSection from "../../../sections/HeroVisualSection/HeroVisualSection";
+// import EventHeroSection from "../../../sections/HeroVisualSection/HeroVisualSection";
 import HeroVisualSection from "../../../sections/HeroVisualSection/HeroVisualSection";
 import PeopleGridSection from "../../../sections/PeopleGridSection/PeopleGridSection";
 const SOCIALS = {
@@ -22,6 +22,26 @@ const SOCIALS = {
 };
 
 const TicketBookingApp = () => {
+
+const peopleItems = [
+  // top row: positions 1..7
+  { id: "t1", src: null, pos: 1 },                 // top row, 1st = empty
+  { id: "t2", src: "/images/products/people/1.png", pos: 2 }, // top row, 2nd = image
+  { id: "t3", src: "/imagesproducts//people/2.png", pos: 3 },
+  { id: "t4", src: "/images/products/people/3.png", pos: 4 },
+  { id: "t5", src: "/images/products/people/4.png", pos: 5 },
+  { id: "t6", src: null, pos: 6 },                  // top row, 6th = empty (as requested)
+  { id: "t7", src: "/images/products/people/5.png", pos: 7 }, // top row, 7th = image (you asked 'second one is up 7 position')
+
+  // bottom row: positions 8..14
+  { id: "b1", src: "/images/products/people/6.png", pos: 8 }, // bottom row, 8th = image
+  { id: "b2", src: "/images/products/people/7.png", pos: 9 },
+  { id: "b3", src: "/images/products/people/8.png", pos: 10 },
+  { id: "b4", src: "/images/products/people/9.png", pos: 11 },
+  { id: "b5", pos: 12 },
+  { id: "b6", src: "/images/products/people/11.png", pos: 13 },
+  { id: "b7", src: "/images/products/people/12.png", pos: 14 },
+];
 
 
   return (
@@ -62,12 +82,15 @@ const TicketBookingApp = () => {
       />
 
       <PeopleGridSection
-        heroSrc="/images/hero-ticket.jpg"
-        titleLeft="Book. Click. Go."
-        titleHighlight="ticket"
-        titleRight="to anywhere! "
-        // items={people}
-      />
+  heroSrc="/images/hero-ticket.jpg"
+  titleLeft="Book. Click. Go."
+  titleHighlight="ticket"
+  titleRight="to anywhere!"
+  items={peopleItems}
+/>
+
+
+
 
       <HeroVisualSection />
 

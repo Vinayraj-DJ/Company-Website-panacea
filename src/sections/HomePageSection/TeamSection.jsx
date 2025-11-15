@@ -3,14 +3,15 @@ import React, { useRef, useEffect, useState } from "react";
 import styles from "./TeamSection.module.css";
 
 const TEAM = [
-  { name: "Darshan", role: "Lead Designer", photo: "/images/team1.jpg" },
-  { name: "Harika", role: "Lead App Developer", photo: "/images/tejaswi.png" },
-  { name: "Varun", role: "Data Analyst", photo: "/images/team2.jpg" },
-  { name: "Surekha", role: "Backend &Marketing", photo: "/images/team4.jpg" },
-  { name: "Srinath ", role: "Lead Designer", photo: "/images/team1.jpg" },
-  { name: "Pavan", role: "Technical Lead", photo: "/images/team2.jpg" },
-  { name: "Sai Pranay", role: "API ", photo: "/images/team3.jpg" },
-  { name: "Tejaswi", role: "Market Analyst", photo: "/images/tejaswi.png" },
+  { name: "Kotla Darshan", role: "Front End Designer", photo: "/images/Home/darshan.jpg" },
+  { name: "Harika", role: "Mobile App Developer", photo: "/images/Home/harika.jpg" },
+  { name: "Varun", role: "UI/UX Designer", photo: "/images/Home/varun.jpg" },
+  { name: "Surekha", role: "", photo: "/images/Home/sureka.jpg" },
+  { name: "Pavankalyan", role: "Technical Lead & Digital Marketing", photo: "/images/Home/pavan.jpg" },
+  { name: "Vinay Raj", role: "Front End Developer", photo: "/images/Home/vinayraj2.jpg" },
+  { name: "Deekshith", role: "Backend Developer ", photo: "/images/Home/deekshith2.jpg" },
+  { name: "Ravikumar ", role: "Front End Developer", photo: "/images/Home/ravi.jpg" },
+  
 ];
 
 const TOAST_DURATION = 4000; // ms (4 seconds)
