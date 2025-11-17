@@ -588,7 +588,7 @@ export default function FooterSection({
             <div className={styles.socialRow}>
               <a
                 className={styles.socialBtn}
-                href="https://www.facebook.com/your-handle"
+                href="https://www.facebook.com/profile.php?id=61578148200915"
                 aria-label="Facebook"
                 target="_blank"
                 rel="noreferrer"
@@ -600,7 +600,7 @@ export default function FooterSection({
               </a>
               <a
                 className={styles.socialBtn}
-                href="https://instagram.com/panaceaitservices"
+                href="https://www.instagram.com/panaceaitservices"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram"
@@ -609,7 +609,7 @@ export default function FooterSection({
               </a>
               <a
                 className={styles.socialBtn}
-                href="https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in"
+                href="https://www.linkedin.com/company/107517525/admin/dashboard/"
                 aria-label="LinkedIn"
                 target="_blank"
                 rel="noreferrer"

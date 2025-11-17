@@ -28,7 +28,7 @@
   max-width: 794px;
   display: flex;
   flex-direction: column;
-  gap: 24px; /* Figma "Gap: 24px" */
+  gap: 24px; 
   text-align: center;
   margin: 0 auto;
   font-family: 'Roboto Serif', serif;
@@ -46,6 +46,7 @@
   font-size: 32px;
   line-height: 160%;        /* per Figma */
   letter-spacing: 0;        /* Figma shows 0% */
+  font-family: 'Roboto Serif', serif;
 }
 
 /* Description — 18px, lh 28px, 60% black */
@@ -56,6 +57,7 @@
   font-size: 18px;
   line-height: 28px; /* exact from Figma */
   max-width: 100%;
+  font-family: 'Roboto Serif', serif;
 }
 
 /* Button row lets the CTA sit centered or left */

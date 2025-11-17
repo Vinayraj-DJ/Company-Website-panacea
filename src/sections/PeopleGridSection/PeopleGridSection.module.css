@@ -52,10 +52,13 @@
   color: var(--text);
   text-align: center;
   font-weight: 400;
+  font-family: "Roboto Serif", serif;
+  
 }
 .highlight{
   color: var(--accent-red);
   font-weight: 500;
+  font-family: "Roboto Serif", serif;
 }
 
 /* grid area */
@@ -71,6 +74,7 @@
   left: 68px;
   top: -30px;
   z-index: 1;
+  
 }
 .decorRight{
   position: absolute;
@@ -87,7 +91,7 @@
   justify-content:center;
   box-shadow: 0 10px 22px rgba(11,30,60,0.06);
 }
-.decorIcon{ width:36px; height:36px; }
+.decorIcon{ width:36px; height:36px;  }
 
 /* people grid */
 .peopleGrid{

@@ -56,9 +56,9 @@ const OTTApp= () => {
       </div>
 
       <SectionIntro
-        title="OMR Customization Website "
+        title="OTT App "
         paragraphs={[
-          "An OMR Customization Website is a specialized online platform designed to create, customize, and manage Optical Mark Recognition (OMR) sheets efficiently. It allows educational institutions, coaching centers, and organizations to design personalized OMR sheets for exams, surveys, or data collection. Users can easily modify layouts, add logos, barcodes, and unique question formats to meet specific requirements. The website also supports automated scanning, data extraction, and result generation to save time and reduce manual errors. With secure data handling, responsive design, and cloud-based storage, an OMR Customization Website provides a complete solution for creating, processing, and analyzing OMR sheets seamlessly and accurately."
+          "Our OTT App offers a seamless entertainment experience by allowing users to stream movies, TV shows, web series, and live content anytime, anywhere. Built with a robust backend and an engaging user interface, it delivers high-quality video streaming with personalized recommendations and secure user management."
         ]}
       />
 
@@ -70,7 +70,17 @@ const OTTApp= () => {
  />
 
 
-          <KnowEverythingSection
+         
+
+    
+
+    <CloudImageComponent/>
+
+      <SmartScalableSection/>
+
+
+
+       <KnowEverythingSection
       title="Why Choose OUT OTT App"
       paragraphs={[
         "We specialize in delivering high-performance OTT platforms with rich media experiences, scalability, and monetization capabilities. Our solutions empower entertainment brands to engage users, expand reach, and maximize revenue through a secure, modern, and user-centric digital ecosystem.",
@@ -89,12 +99,6 @@ const OTTApp= () => {
         borderRadius: "12px",
       }}
     />
-
-    
-
-    <CloudImageComponent/>
-
-      <SmartScalableSection/>
 
 
       

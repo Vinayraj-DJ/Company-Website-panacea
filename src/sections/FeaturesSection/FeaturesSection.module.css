@@ -41,6 +41,7 @@
   color: #4070b1; /* Blue as per design */
   margin-bottom: 12px;
   text-align: center;
+  font-family: "Roboto Serif", serif;
 }
 
 /* ✅ Subtitle */
@@ -53,6 +54,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-family: "Roboto Serif", serif;
 }
 
 /* ✅ Grid layout for cards */
@@ -103,6 +105,7 @@
   color: #4070b1;
   margin-bottom: 8px;
   text-align: center;
+  font-family: "Roboto Serif", serif;
 }
 
 /* ✅ Card description */
@@ -112,6 +115,7 @@
   color: rgba(0, 0, 0, 0.6);
   line-height: 1.5;
   text-align: center;
+  font-family: "Roboto Serif", serif;
 }
 
 /* ✅ Responsive adjustments */

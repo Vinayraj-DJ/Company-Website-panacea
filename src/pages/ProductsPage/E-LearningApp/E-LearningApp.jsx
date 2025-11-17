@@ -116,13 +116,13 @@ const ELearningApp = () => {
 
       <OMRFeaturesSection
   title="Essential Features for Smooth Functionality"
-  heroImages={["/images/products/OMR16.png"]}
+  heroImage="/images/products/learning.png"
  
   features={[
-    { id: 1, icon: "/images/products/feature1.png", title: "Interactive Lessons" },
-    { id: 2, icon: "/images/products/feature2.png", title: "Progress Tracking" },
-    { id: 3, icon: "/images/products/feature3.png", title: "Multi-Device & Accessibility" },
-    { id: 4, icon: "/images/products/feature4.png", title: "Offline Mode" },
+    { id: 1, icon: "/images/products/learn1.png", title: "Interactive Lessons" },
+    { id: 2, icon: "/images/products/learn2.png", title: "Progress Tracking" },
+    { id: 3, icon: "/images/products/learn3.png", title: "Multi-Device & Accessibility" },
+    { id: 4, icon: "/images/products/learn4.png", title: "Offline Mode" },
   ]}
 />
 

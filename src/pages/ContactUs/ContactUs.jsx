@@ -9,6 +9,7 @@ import HeroTitleChip from "../../components/common/HeroTitleChip";
 import styles from "./ContactUs.module.css";
 import ServicesSection from "../../sections/ServicesSection/ServicesSection";
 import ContactSection from "../../sections/ContactSection/ContactSection";
+import ContactMapSection from "../../sections/ContactMapSection/ContactMapSection";
 
 
 
@@ -64,6 +65,9 @@ const ContactUs = () => {
       </div>
 
       <ContactSection />
+      <ContactMapSection
+        query="Panaceaitservices, 100Feet Road, Ayyappa Society, Madhapur, Hyderabad"
+      />
 
 
       <ServicesSection

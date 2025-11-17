@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 28px;
   align-items: center;
-  max-width: 1280px;
+  max-width: 1500px; /* UPDATED */
   margin: 32px auto;
   padding: 0 5.5rem;
 }
@@ -14,7 +14,7 @@
 .right .media { order: 1; }
 .right .card { order: 0; }
 
-/* ✅ Plain clean image (same as FeatureList image) */
+/* Image */
 .media {
   width: 100%;
 }
@@ -25,7 +25,7 @@
   display: block;
 }
 
-/* card stays SAME */
+/* Card */
 .card {
   background: linear-gradient(
     180deg,
@@ -37,6 +37,7 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
+/* Title */
 .title {
   font-family: "Roboto Serif", serif;
   font-weight: 500;
@@ -46,6 +47,7 @@
   margin: 0 0 12px;
 }
 
+/* Body text */
 .body,
 .body2 {
   font-family: "Roboto Serif", serif;
@@ -55,19 +57,47 @@
   color: rgba(0, 0, 0, 0.6);
   margin: 0;
 }
-.body2 { margin-top: 16px; }
 
-/* Responsive */
+.body2 {
+  margin-top: 16px;
+}
+
+/* ===============================
+   RESPONSIVE FONT SIZE CHANGES
+================================ */
+
+/* Tablet */
 @media (max-width: 1024px) {
   .section { padding: 0 2rem; }
+
+  .title {
+    font-size: 22px;  /* smaller title */
+  }
+
+  .body,
+  .body2 {
+    font-size: 18px;  /* smaller body */
+  }
 }
+
+/* Mobile */
 @media (max-width: 768px) {
   .section {
     grid-template-columns: 1fr;
     gap: 18px;
     padding: 0 1rem;
   }
+
   .media {
     order: 0 !important;
+  }
+
+  .title {
+    font-size: 20px;  /* mobile title */
+  }
+
+  .body,
+  .body2 {
+    font-size: 16px;  /* mobile body text */
   }
 }

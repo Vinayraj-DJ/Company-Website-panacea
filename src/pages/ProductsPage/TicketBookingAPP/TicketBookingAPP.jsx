@@ -82,7 +82,7 @@ const peopleItems = [
       />
 
       <PeopleGridSection
-  heroSrc="/images/hero-ticket.jpg"
+  heroSrc="/images/products/hero-ticket.png"
   titleLeft="Book. Click. Go."
   titleHighlight="ticket"
   titleRight="to anywhere!"

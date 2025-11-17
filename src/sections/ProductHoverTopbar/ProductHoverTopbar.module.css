@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600&display=swap');
 
 :root {
   --accent: #4070B1;
@@ -9,7 +9,7 @@
 }
 
 .container {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Serif", serif;
   color: var(--text);
   background: transparent;
   padding: 22px;
@@ -23,8 +23,9 @@
 .heading {
   font-size: 18px;
   font-weight: 600;
-  color: #2b57a4;;
+  color: #2b57a4;
   margin: 0 0 18px;
+   font-family: "Roboto Serif", serif;
 }
 
 /* ---------- DESKTOP LAYOUT ---------- */
@@ -32,6 +33,7 @@
   display: flex;
   align-items: flex-start;
   gap: 32px;
+  
 }
 
 .imageWrapper {
@@ -50,12 +52,11 @@
   object-fit: cover;
 }
 
-/* grid — three perfectly aligned columns */
 .productGrid {
   flex: 1 1 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(220px, 1fr));
-  gap: 20px 64px; /* row-gap and column-gap */
+  gap: 20px 64px;
   align-items: start;
 }
 
@@ -66,14 +67,15 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  
 }
 
 .itemRow {
   padding: 8px 0;
   border-bottom: 1px solid rgba(64,112,177,0.08);
+  
 }
 
-/* clickable row */
 .itemLink {
   display: flex;
   align-items: center;
@@ -87,6 +89,7 @@
 
 .itemLink:hover {
   color: #2b57a4;
+  
 }
 
 .itemText {
@@ -94,10 +97,11 @@
   white-space: normal;
   word-break: break-word;
   line-height: 1.4;
-  transition: transform 0.3s ease, color 0.3s ease; /* enables smooth animation */
+  transition: transform 0.3s ease, color 0.3s ease;
+   font-family: "Roboto Serif", serif;
+ 
 }
 
-/* hover animation */
 .itemLink:hover .itemText {
   color: #2b57a4;
   transform: translateX(6px);
@@ -109,15 +113,12 @@
   margin-left: 8px;
 }
 
-/* ---------- MOBILE LAYOUT (merged from ServiceHoverTopbar) ---------- */
+/* ---------- MOBILE LAYOUT ---------- */
 @media (max-width: 768px) {
   .container { padding: 12px; }
-
-  /* hide desktop split on mobile */
   .content { display: none; }
   .imageWrapper { display: none; }
 
-  /* small mobile image shown above accordion (matches services style) */
   .imageWrapperMobile {
     display: block;
     border-radius: 10px;
@@ -195,7 +196,6 @@
     will-change: max-height, opacity;
   }
 
-  /* when JS sets maxHeight > 0, make it visible and add spacing */
   .accPanel[style] {
     opacity: 1;
     padding-bottom: 12px;
@@ -262,7 +262,7 @@
   }
 }
 
-/* accessible focus styles (shared) */
+/* focus styles */
 .serviceLink:focus-visible,
 .accCta:focus-visible,
 .viewAllBtnMobile:focus-visible,

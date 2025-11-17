@@ -24,6 +24,7 @@
   grid-template-columns: 1fr 480px;
   gap: 40px;
   align-items: center; /* ✅ centers hero vertically */
+  
 }
 
 /* === LEFT SIDE === */
@@ -61,6 +62,7 @@
   font-size: 32px;
   line-height: 1.6;
   margin-bottom: 24px;
+  font-family: "Roboto Serif", serif;
 }
 
 /* === FEATURE LIST === */
@@ -72,10 +74,13 @@
   flex-direction: column;
   gap: 14px;
   width: 100%;
+  
+  
 }
 
 .featureItem {
   width: 100%;
+  
 }
 
 .featureInner {
@@ -89,11 +94,13 @@
   min-height: 68px;
   box-shadow: var(--card-shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
 }
 
 .featureInner:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  
 }
 
 /* === ICON & TEXT === */
@@ -123,6 +130,7 @@
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
   line-height: 1.2;
+  font-family: "Roboto Serif", serif;
 }
 
 /* === RESPONSIVE === */
