@@ -83,7 +83,8 @@
   font-family: "Roboto Serif", serif;
   max-width: var(--maxw, 1280px);
   margin: 0 auto 20px auto;
-  padding: 24px var(--padx-desktop, 5.5rem) 0;
+  padding: 54px var(--padx-desktop, 5.5rem) 0;
+  /* padding-top: 70px; */
 }
 
 .left { text-align: left; }

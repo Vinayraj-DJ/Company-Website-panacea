@@ -117,7 +117,7 @@ const GroceryApp= () => {
         <InfoPair
         reverse={false}
         bullets={bulletsA}
-        imageSrc="/images/products/groceries1.jpg"
+        imageSrc="/images/products/groceries1.png"
         imageAlt="delivery basket"
       />
 
@@ -125,7 +125,7 @@ const GroceryApp= () => {
       <InfoPair
         reverse={true}
         bullets={bulletsB}
-        imageSrc="/images/products/groceries2.jpg"
+        imageSrc="/images/products/groceries2.png"
         imageAlt="groceries and tablet"
       />
 
@@ -136,13 +136,13 @@ const GroceryApp= () => {
       heading={"User Friendly\nInterface"}
       products={[
         {
-          image: "/images/products/.png",
+          image: "/images/products/apple1.png",
           price: "$8.00",
           title: "Fresh Peach",
           subtitle: "dozen",
         },
         {
-          image: "/images/products/.png",
+          image: "/images/products/apple2.png",
           price: "$9.90",
           title: "Pineapple",
           subtitle: "1.50 lbs",
