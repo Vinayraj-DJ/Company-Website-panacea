@@ -12,7 +12,7 @@
 .sectionRoot {
   padding: 64px 0;
   /* Primary font as Roboto Serif with Poppins fallback */
-  font-family: "Roboto Serif", "Poppins", sans-serif;
+  font-family: "Roboto Serif";
 }
 
 .container {
