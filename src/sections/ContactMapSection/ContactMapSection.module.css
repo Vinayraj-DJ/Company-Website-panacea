@@ -26,6 +26,7 @@
   align-items: start;
   max-width: calc(var(--left-width) + var(--right-width) + var(--gap));
   margin: 0 auto;
+  
 }
 
 /* Left info card */
@@ -36,6 +37,7 @@
   padding: 18px 24px;
   border: 1px solid var(--card-border);
   box-sizing: border-box;
+  
 }
 
 /* labels like "Name:", "Street:" */
@@ -53,7 +55,7 @@
   line-height: 32px;
   color: #5b5b5b;
   margin-bottom: 14px;
-    font-family: 'Roboto Serif', serif;
+  font-family: 'Roboto Serif', serif;
 }
 
 /* meta block for phone/notes */
@@ -65,13 +67,17 @@
   color: #5b5b5b;
   font-size: 16px;
   line-height: 28px;
-  
+   font-family: 'Roboto Serif', serif;
+}
+.metaText{
+  font-family: 'Roboto Serif', serif;
 }
 
 .metaItem strong {
   display: block;
   margin-bottom: 4px;
   font-weight: 600;
+  font-family: 'Roboto Serif', serif;
 }
 
 /* Button area - centered and sized like your screenshot (approx 327 x 52) */

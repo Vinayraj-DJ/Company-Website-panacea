@@ -12,6 +12,7 @@ import HightLightSection from "../../../sections/AboutUs/HightLightSection/Hight
 import HeroSection from "../../../components/common/HeroSection";
 import FeaturesSection from "../../../sections/FeaturesSection/FeaturesSection";
 import ServicesSection from "../../../sections/ServicesSection/ServicesSection";
+import BrandSection from "../../../sections/BrandSection/BrandSection";
 
 const SOCIALS = {
   linkedin: "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
@@ -98,6 +99,8 @@ const services = [
           </a>
         </div>
       </div>
+
+      <BrandSection/>
 
       <HeroSection
               title="On Demand On Influencer App Development "

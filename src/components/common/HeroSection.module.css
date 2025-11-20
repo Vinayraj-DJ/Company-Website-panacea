@@ -29,14 +29,14 @@
 .title {
   color: var(--hero-accent, #4070b1);
   font-weight: 600;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1.6;
   margin-bottom: 16px;
   font-family: "Roboto Serif", serif;
 }
 
 .description {
-  color: rgba(0, 0, 0, 0.75);
+  color: rgba(0, 0, 0, 0.4);
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;

@@ -26,7 +26,7 @@
   text-align: center;
   color: var(--blue-700);
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 40px;
   letter-spacing: 0.2px;
   font-family: "Roboto Serif", serif;
@@ -99,7 +99,7 @@
 .itemTitle {
   color: var(--blue-700);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 6px;
   font-family: "Roboto Serif", serif;
 }

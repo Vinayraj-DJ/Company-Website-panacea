@@ -76,7 +76,20 @@ const OTTApp= () => {
 
     <CloudImageComponent/>
 
-      <SmartScalableSection/>
+      <SmartScalableSection
+  title="What Users get ?"
+  items={[
+    { image: "/images/products/1.jpg", title: "FLEXIBILTY" },
+    { image: "/images/products/2.jpg", title: "TRANSPARENT" },
+    { image: "/images/products/3.jpg", title: "SECURE" },
+    { image: "/images/products/4.jpg", title: "REALIABLE" },
+    { image: "/images/products/5.jpg", title: "FULL CONTROL" },
+    { image: "/images/products/6.jpg", title: "BEST INSIGHTS" },
+    { image: "/images/products/7.jpg", title: "DASHBOARDS" },
+    { image: "/images/products/7.jpg", title: "DASHBOARDS" },
+  ]}
+/>
+
 
 
 

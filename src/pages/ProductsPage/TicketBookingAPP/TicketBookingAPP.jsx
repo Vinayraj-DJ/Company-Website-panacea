@@ -27,7 +27,7 @@ const peopleItems = [
   // top row: positions 1..7
   { id: "t1", src: null, pos: 1 },                 // top row, 1st = empty
   { id: "t2", src: "/images/products/people/1.png", pos: 2 }, // top row, 2nd = image
-  { id: "t3", src: "/imagesproducts//people/2.png", pos: 3 },
+  { id: "t3", src: "/images/products//people/2.png", pos: 3 },
   { id: "t4", src: "/images/products/people/3.png", pos: 4 },
   { id: "t5", src: "/images/products/people/4.png", pos: 5 },
   { id: "t6", src: null, pos: 6 },                  // top row, 6th = empty (as requested)
@@ -40,7 +40,7 @@ const peopleItems = [
   { id: "b4", src: "/images/products/people/9.png", pos: 11 },
   { id: "b5", pos: 12 },
   { id: "b6", src: "/images/products/people/11.png", pos: 13 },
-  { id: "b7", src: "/images/products/people/12.png", pos: 14 },
+ 
 ];
 
 
@@ -81,9 +81,11 @@ const peopleItems = [
         ]}
       />
 
+      
+
       <PeopleGridSection
   heroSrc="/images/products/hero-ticket.png"
-  titleLeft="Book. Click. Go."
+  titleLeft="Book. Click. Go. your"
   titleHighlight="ticket"
   titleRight="to anywhere!"
   items={peopleItems}

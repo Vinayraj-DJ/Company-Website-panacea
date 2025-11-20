@@ -126,7 +126,7 @@
 }
 
 .featureTitle {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
   line-height: 1.2;
@@ -153,4 +153,19 @@
   .featureInner {
     justify-content: center;
   }
+  .featureTitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.2;
+  font-family: "Roboto Serif", serif;
+}
+.heading {
+  color: var(--accent-blue);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-family: "Roboto Serif", serif;
+}
 }

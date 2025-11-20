@@ -90,10 +90,10 @@ const SchoolApp= () => {
 <FeaturesGrid
   title="Key Features Provide in School App"
   features={[
-    { id: 1, img: "/images/products/school/fee-payment.png", title: "Student & Teacher Dashboard" },
-    { id: 2, img: "/images/products/school/fee-payment.png", title: "Attendance Management" },
-    { id: 3, img: "/images/products/school/fee-payment.png", title: "Online Classes & Homework" },
-    { id: 4, img: "/images/products/school/fee-payment.png", title: "Exams & Results" },
+    { id: 1, img: "/images/products/school/school11.png", title: "Student & Teacher Dashboard" },
+    { id: 2, img: "/images/products/school/school12.png", title: "Attendance Management" },
+    { id: 3, img: "/images/products/school/school13.png", title: "Online Classes & Homework" },
+    { id: 4, img: "/images/products/school/school14.png", title: "Exams & Results" },
     { id: 5, img: "/images/products/school/fee-payment.png", title: "Fee Payment Integration" },
     
   ]}

@@ -21,6 +21,7 @@
 .inner{
   width: 100%;
   max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 /* hero image */
@@ -31,8 +32,8 @@
 }
 .heroImage{
   width:100%;
-  max-width: 12700px;
-  height: 381px;
+  max-width: 1270px;         
+  height: 380px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 12px 30px rgba(11,30,60,0.06);
@@ -44,6 +45,7 @@
   margin: 28px 0;
   display:flex;
   justify-content:center;
+  
 }
 .heading{
   margin:0;
@@ -53,7 +55,6 @@
   text-align: center;
   font-weight: 400;
   font-family: "Roboto Serif", serif;
-  
 }
 .highlight{
   color: var(--accent-red);
@@ -71,16 +72,17 @@
 /* decorative top-left square */
 .decorTopLeft{
   position: absolute;
-  left: 68px;
-  top: -30px;
-  z-index: 1;
-  
+  left: 123px;
+  top: -58px;
+  z-index: 2;
+  pointer-events: none;
 }
 .decorRight{
   position: absolute;
-  right: 68px;
-  top: -30px;
-  z-index: 1;
+  right: 123px;
+  top: -58px;
+  z-index: 2;
+  pointer-events: none;
 }
 .decorSquare{
   width: 136px;
@@ -94,6 +96,7 @@
 .decorIcon{ width:36px; height:36px;  }
 
 /* people grid */
+/* keep fixed cell size so layout matches the image; use justify-content: center for desktop */
 .peopleGrid{
   display: grid;
   grid-template-columns: repeat(7, 136px);
@@ -101,7 +104,7 @@
   gap: 18px;
   justify-content: center;
   list-style: none;
-  padding: 10% 0% 0% 0%;
+  padding: 6% 0 0 0;
   margin: 0 auto;
   grid-auto-flow: dense;
 }
@@ -116,6 +119,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.personBox:hover{
+  transform: translateY(-6px);
+  /* box-shadow: 0 10px 28px rgba(11,30,60,0.12);y */
 }
 .personImg{
   width: 100%;
@@ -125,18 +133,23 @@
 }
 
 /* empty slot */
-.emptyBox{
+/* .emptyBox{
   width: 100%;
   height: 100%;
   border-radius: 12px;
   background: transparent;
   border: 2px dashed rgba(0,0,0,0.06);
   box-sizing: border-box;
-}
+} */
+
+/* small tweaks to make some items appear slightly larger or offset:
+   you can add these classes inline in the items by setting bg and using CSS :nth-child
+   (we keep component unchanged — so we rely on structural placement)
+*/
 
 /* responsive: mid screens */
 @media (max-width: 1100px){
-  .peopleGrid{ grid-template-columns: repeat(6, 120px); gap: 14px; }
+  .peopleGrid{ grid-template-columns: repeat(6, 120px); gap: 14px; padding-top:6%; }
   .personBox{ width:120px; height:120px; border-radius:10px; }
   .decorSquare{ width:120px; height:120px; }
   .peopleGrid{ grid-template-rows: repeat(2, 120px); }
@@ -144,14 +157,14 @@
 
 /* tablet */
 @media (max-width: 800px){
-  .heroImage{ height: 180px; border-radius:10px; }
+  .heroImage{ height: 240px; border-radius:10px; }
   .heading{ font-size: 34px; text-align: left; margin-left: 12px; }
   .peopleGrid{
     grid-template-columns: repeat(4, 110px);
     gap: 12px;
     justify-content: start;
     padding-left:12px;
-    grid-template-rows: none;
+    grid-template-rows: none; /* allow grid to auto-flow rows */
   }
   .decorTopLeft{ left: 12px; top: 12px; }
   .decorRight{ right: 12px; top: 12px; }

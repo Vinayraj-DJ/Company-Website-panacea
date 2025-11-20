@@ -24,22 +24,22 @@
   background: linear-gradient(180deg, var(--blue-start), var(--blue-end));
   border-radius: 16px;
   padding: 28px 36px;
-  border: 2px solid rgba(18, 90, 180, 0.18);
+  /* border: 2px solid rgba(18, 90, 180, 0.18); */
   box-sizing: border-box;
 }
 
 /* HEADLINE */
 .headline {
   text-align: center;
-  font-size: 48px;
+  font-size: 42px;
   line-height: 72px;
   font-weight: 400;
   color: var(--text);
   margin-bottom: 28px;
   font-family: "Roboto Serif", serif;
 }
-.textNormal { font-weight: 400; }
-.highlight { color: var(--accent-red); font-weight: 600; }
+.textNormal { font-weight: 400;font-family: "Roboto Serif", serif; }
+.highlight { color: var(--accent-red); font-weight: 600;font-family: "Roboto Serif", serif; }
 
 /* LAYOUT GRID */
 .visuals {

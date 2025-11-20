@@ -84,7 +84,7 @@
   max-width: var(--maxw, 1280px);
   margin: 0 auto 20px auto;
   padding: 54px var(--padx-desktop, 5.5rem) 0;
-  /* padding-top: 70px; */
+  /* padding-top: 2px; */
 }
 
 .left { text-align: left; }
@@ -133,7 +133,7 @@
 .intro {
   font-size: var(--Font_Size_4, 20px);
   line-height: 160%;
-  color: rgba(0, 0, 0, 0.6);
+  color:rgba(0, 0, 0, 0.4);
   margin: 0 0 10px 0;
   font-family: "Roboto Serif", serif;
 }

@@ -124,4 +124,13 @@
   .body { align-items:flex-start; text-align:left; padding-right:0; }
   .name { font-size: 22px; text-align:left; }
   .desc { font-size: 16px; text-align:left; max-width: none; }
+  .title{
+  color: var(--accent-blue);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 0 30px;
+  font-family: "Roboto Serif", serif;
+}
 }
