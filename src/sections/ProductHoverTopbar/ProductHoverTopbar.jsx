@@ -478,7 +478,7 @@ export default function ProductHoverTopbar() {
                     </p>
                     <div className={styles.panelFooter}>
                       <a className={styles.visitLink} href={p.path}>
-                        Visit →
+                        View details →
                       </a>
                     </div>
                   </div>
