@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600&display=swap");
 
+
+* {
+  font-family: "Roboto Serif", serif !important;
+}
+
 :root{
   --max-width: 1300px;
   --gutter: 28px;
@@ -22,6 +27,7 @@
 .headingWrap {
   margin: 0 !important;
   padding: 0 !important;
+  
 }
 
 /* reset heading margins inside NumberedHeading */
@@ -33,6 +39,7 @@
 .headingWrap h6 {
   margin: 0 !important;
   padding: 0 !important;
+  
 }
 
 /* inner layout */
@@ -47,6 +54,7 @@
   height: auto !important;
   min-height: auto !important;
   padding-bottom: 0 !important;
+  
 }
 
 /* left column */
@@ -55,6 +63,8 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-left: 100px;
+
 }
 
 /* bullets container */
@@ -163,14 +173,39 @@
   }
 }
 
-@media (max-width: 480px){
-  .imageWrapper{
-    width: 300px;
+/* Mobile fixes: ensure bullets have proper left spacing and take full width */
+@media (max-width: 480px) {
+
+  /* reduce the heavy left offset so content can use full width */
+  .leftCol {
+    padding-left: 16px; /* small gutter instead of 100px */
   }
-  .bullets{
-    font-size: 16px;
+
+  /* make bullets wrapper use full width and add horizontal padding */
+  .bulletsWrap {
+    width: 100%;
+    padding: 0 12px; /* small horizontal breathing room */
+    box-sizing: border-box;
   }
-  .featuresImage {
-    max-width: 360px;
+
+  /* ensure list markers are visible and properly indented */
+  .bullets {
+    list-style-position: outside;
+    padding-left: 28px;  /* space for the bullet */
+    margin-left: 0;      /* reset any stray margin */
+    font-size: 16px;     /* keep your existing scale */
+    line-height: 1.8;    /* comfortable spacing */
+  }
+
+  /* if individual list items had negative margins or forced layout, reset them */
+  .bulletItem {
+    margin: 0 0 12px 0;
+    padding-right: 8px;
+  }
+
+  /* keep image responsive and avoid overflow */
+  .imageWrapper {
+    width: 300px; /* your existing value — keep if desired */
+    padding-right: 12px;
   }
 }

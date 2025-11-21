@@ -170,7 +170,11 @@ const Hypare = () => {
 
 
       
-<SmartScalableSection/>
+
+      <SmartScalableSection
+  title="User’s Get Service’s"
+ 
+/>
 
       
       <HightLightSection

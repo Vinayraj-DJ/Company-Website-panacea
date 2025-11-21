@@ -21,41 +21,44 @@
   margin: 0 auto;
 }
 
-/* Heading (left) and lead (right) layout */
-.headerCol{
-  display:block;
+/* NEW — Heading + Lead in one horizontal row */
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
   margin-bottom: 20px;
 }
 
+/* Heading */
+.headerCol{ display:block; }
+
 .heading{
   font-size:48px;
-  line-height:1.9; /* 200% */
+  line-height:1.9;
   margin:0;
   font-weight:500;
   color: var(--dark);
   letter-spacing: 2%;
 }
 
-/* accent the last word (PROCESS) by styling a span */
 .headingAccent{
-  color: #32597d; /* bluish accent like Figma */
+  color: #32597d;
   margin-left: 6px;
 }
 
-/* lead paragraph on right; visually placed to the right */
-.leadCol{
-  margin-bottom: 28px;
-}
+/* Lead text */
+.leadCol{ }
 
 .leadText{
   max-width: 520px;
   font-size: 20px;
-  line-height: 2; /* 200% */
+  line-height: 2;
   color: var(--dark);
   opacity: 0.9;
 }
 
-/* Main 3-column grid area for cards and center icons */
+/* GRID */
 .grid{
   display: grid;
   grid-template-columns: 1fr 120px 1fr;
@@ -67,16 +70,15 @@
   position: relative;
 }
 
-/* Left stacked cards - vertical spacing */
+/* Left & Right Cards */
 .leftStack,
 .rightStack{
   display:flex;
   flex-direction:column;
-  gap: 36px;
+  gap: 155px;
   align-items: flex-start;
 }
 
-/* Card style */
 .card{
   width: 100%;
   max-width: 432px;
@@ -84,39 +86,37 @@
   padding: 18px 22px;
   box-shadow: 0 8px 20px rgba(16,24,40,0.04);
   box-sizing: border-box;
-}
-
-/* Title row inside card with small rounded pill bullet */
-.cardTitle{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin-bottom: 10px;
-}
-
-.dotBullet{
-  display:inline-block;
-  min-width: 96px;
-  padding: 6px 12px;
+  position: relative;
+  z-index: 3;
   background: white;
-  border-radius: 18px;
-  font-size: 16px;
-  color: var(--dark);
-  box-shadow: 0 2px 6px rgba(16,24,40,0.03);
-  font-weight:400;
 }
 
-/* bullet list style */
+.whiteBoxTitle {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 6px 16px;
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.whiteBoxTitle span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
 .bullets{
   margin: 0;
   padding-left: 18px;
   list-style: disc;
-  color: var(--dark);
   font-size: 18px;
   line-height: 2;
+  color: var(--dark);
 }
 
-/* center column: vertical dashed path and icons */
+/* CENTER COLUMN */
 .centerColumn{
   display:flex;
   justify-content:center;
@@ -125,7 +125,6 @@
   height: 100%;
 }
 
-/* the dashed vertical path and icon stack */
 .path{
   position: relative;
   display:flex;
@@ -135,9 +134,9 @@
   padding: 12px 0;
   height: 100%;
   justify-content: center;
+  z-index: 2;
 }
 
-/* vertical dashed line drawn using pseudo-element */
 .path::before{
   content: "";
   position: absolute;
@@ -146,31 +145,26 @@
   bottom: 8%;
   width: 2px;
   transform: translateX(-50%);
-  border-left: 2px dashed rgba(139,81,164,0.25);
+  /* border-left: 2px dashed rgba(139,81,164,0.25); */
+  z-index: 1;
 }
 
-/* icon wrapper (circular) */
 .iconWrap{
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: linear-gradient(180deg, #fff, #F6D3FC);
   display:flex;
-  align-items:center;
   justify-content:center;
-  z-index:2;
+  align-items:center;
+  z-index: 4;
   box-shadow: 0 4px 14px rgba(16,24,40,0.06);
-  border: 1px solid rgba(139,81,164,0.08);
 }
 
-/* if user passed an svg/png icon */
 .iconImg{
   width: 28px;
   height: 28px;
-  object-fit: contain;
 }
 
-/* fallback placeholder (empty circle) */
 .iconPlaceholder{
   width: 18px;
   height: 18px;
@@ -178,106 +172,50 @@
   background: rgba(139,81,164,0.15);
 }
 
-/* Right alignment tweaks (rightStack cards align to right visually) */
-.rightStack { align-items: flex-end; }
-.rightStack .card { text-align: left; }
-
-/* Responsiveness */
-@media (max-width: 980px){
-  .grid{
-    grid-template-columns: 1fr;
-    row-gap: 24px;
-    min-height: auto;
-  }
-  .leftStack, .rightStack { align-items: center; }
-  .path::before { display:none; }
-  .centerColumn { order: 2; }
-}
-
-/* small screens: reduce sizes */
-@media (max-width: 520px){
-  .heading { font-size: 32px; line-height:1.6; }
-  .leadText { font-size: 16px; }
-  .card { max-width: 100%; padding: 14px; border-radius: 10px; }
-  .dotBullet { min-width: 84px; padding: 6px 10px; font-size: 14px; }
-  .bullets { font-size: 15px; line-height: 1.8; }
-  .iconWrap { width: 40px; height: 40px; }
-}
-
-/* === White title box inside cards (e.g., "UI Design", "Front End Development") === */
-.whiteBoxTitle {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 6px 16px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  margin-bottom: 12px;
-}
-
-/* Small bullet dot inside title box */
-.whiteBoxTitle::before {
-  /* content: "•"; */
-  font-size: 18px;
-  /* color: var(--dark); */
-}
-
-/* Text inside the white box */
-.whiteBoxTitle span {
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--dark);
-  line-height: 1.6;
-}
-
-
-/* ---------- Final Accurate Arrow Alignment (as per screenshot) ---------- */
+/* ARROWS */
 .arrowImage {
   position: absolute;
   width: 180px;
   opacity: 0.9;
   pointer-events: none;
-  z-index: 1;
-  transition: transform 0.3s ease;
+  z-index: 0;
 }
 
-/* Top arrow: connects left card → Figma icon */
-.arrowTop {
-  top: 80px;
-  left: -90px;
-  transform: rotate(0deg);
-}
+.arrowTop { top: 80px; left: -115px; }
+.arrowMiddle { top: 240px; right: -150px; }
+.arrowBottom { bottom: 80px; left: -150px; }
 
-/* Middle arrow: connects Figma → React → right card */
-.arrowMiddle {
-  top: 240px;
-  right: -90px;
-  transform: rotate(0deg);
-}
-
-/* Bottom arrow: connects left bottom card → Node icon */
-.arrowBottom {
-  bottom: 80px;
-  left: -90px;
-  transform: rotate(0deg);
-}
-
-/* Make sure icons always appear above the arrows */
-.centerColumn .path {
-  position: relative;
-  z-index: 2;
-}
-
-/* Smooth hover hint (optional, remove if not needed) */
-.arrowImage:hover {
-  opacity: 1;
-  transform: scale(1.02);
-}
-
-/* Responsive: hide arrows on small screens */
+/* MOBILE */
 @media (max-width: 980px) {
-  .arrowImage {
+
+  .headerRow {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .arrowImage,
+  .iconWrap {
     display: none;
   }
+
+  .grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    row-gap: 24px;
+  }
+
+  .leftStack, .rightStack {
+    align-items: center;
+    gap: 24px;
+  }
+
+  .leftStack .card:nth-child(n+3),
+  .rightStack .card:nth-child(n+2) {
+    display: none;
+  }
+}
+
+@media (max-width: 520px){
+  .heading { font-size: 32px; }
+  .leadText { font-size: 16px; }
 }

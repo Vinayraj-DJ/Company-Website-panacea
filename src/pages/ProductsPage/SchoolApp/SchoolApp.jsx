@@ -27,7 +27,7 @@ const SchoolApp= () => {
   const services = [
   {
     id: 1,
-    title: "Communication between school, students, and parents",
+    title: "Communication between  students, and parents",
     image: "/images/products/image 186.png",
     description: "Streamline announcements, homework, and parent-teacher communication."
   },

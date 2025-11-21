@@ -1,3 +1,165 @@
+// import React from "react";
+// import styles from "./OurProcessSection.module.css";
+
+// /**
+//  * Props:
+//  * - heading: string
+//  * - leadText: string
+//  * - leftCards: { title: string, bullets: string[], bg?: string }[]
+//  * - rightCards: { title: string, bullets: string[], bg?: string }[]
+//  * - centerIcons: string[] // URLs or null (if null, render placeholder)
+//  * - arrowImages: { top?: string, middle?: string, bottom?: string } // arrow image placeholders
+//  */
+// export default function OurProcessSection({
+//   heading = "OUR PROCESS",
+//   leadText = "We implement robust backends, analytics, and monetization systems to help clients maximize player retention and revenue.",
+//   leftCards = [
+//     {
+//       title: "UI Design",
+//       bullets: ["Research & Wireframing", "Visual Design", "Prototyping"],
+//       bg: "#F8EDE2",
+//     },
+//     {
+//       title: "BackEnd Development",
+//       bullets: ["Data Base Design", "API Architecture", "Testing", "Deployment"],
+//       bg: "#DFF6E6",
+//     },
+//   ],
+//   rightCards = [
+//     {
+//       title: "Front End Development",
+//       bullets: [
+//         "Requirement Analysis",
+//         "Planning",
+//         "Making it Responsive",
+//         "API Integration",
+//       ],
+//       bg: "#F0E7FF",
+//     },
+//   ],
+//   centerIcons = [null, null, null], // same number as total cards
+//   arrowImages = {
+//     top: "/images/products/arrow1.png",
+//     middle: "/images/products/arrow2.png",
+//     bottom: "/images/products/arrow3.png",
+//   },
+// }) {
+//   // merge left and right card backgrounds for icon alignment
+//   const cardColors = [...leftCards.map((c) => c.bg), ...rightCards.map((c) => c.bg)];
+
+//   return (
+//     <section className={styles.section} aria-label="Our process">
+//       <div className={styles.inner}>
+//         {/* Heading */}
+//         <div className={styles.headerCol}>
+//           <h2 className={styles.heading}>
+//             {heading.split(" ").map((w, i) =>
+//               i === heading.split(" ").length - 1 ? (
+//                 <span key={i} className={styles.headingAccent}>
+//                   {w}
+//                 </span>
+//               ) : (
+//                 <span key={i}> {w} </span>
+//               )
+//             )}
+//           </h2>
+//         </div>
+
+//         {/* Lead text */}
+//         <div className={styles.leadCol}>
+//           <p className={styles.leadText}>{leadText}</p>
+//         </div>
+
+//         {/* Main Grid */}
+//         <div className={styles.grid}>
+//           {/* Left cards */}
+//           <div className={styles.leftStack}>
+//             {leftCards.map((card, idx) => (
+//               <div
+//                 key={idx}
+//                 className={styles.card}
+//                 style={{ background: card.bg || "#fbf7f3" }}
+//               >
+//                 <div className={styles.whiteBoxTitle}>
+//                   <span>{card.title}</span>
+//                 </div>
+//                 <ul className={styles.bullets}>
+//                   {card.bullets.map((b, i) => (
+//                     <li key={i}>{b}</li>
+//                   ))}
+//                 </ul>
+//               </div>
+//             ))}
+//           </div>
+
+//           {/* Center column: arrows (images) + icons */}
+//           <div className={styles.centerColumn}>
+//             {/* Arrow placeholders (positioned with CSS) */}
+//             <img
+//               src={arrowImages.top}
+//               alt="arrow-top"
+//               className={`${styles.arrowImage} ${styles.arrowTop}`}
+//             />
+//             <img
+//               src={arrowImages.middle}
+//               alt="arrow-middle"
+//               className={`${styles.arrowImage} ${styles.arrowMiddle}`}
+//             />
+//             <img
+//               src={arrowImages.bottom}
+//               alt="arrow-bottom"
+//               className={`${styles.arrowImage} ${styles.arrowBottom}`}
+//             />
+
+//             {/* Icons stack (on top of arrows) */}
+//             <div className={styles.path}>
+//               {centerIcons.map((icon, i) => (
+//                 <div
+//                   key={i}
+//                   className={styles.iconWrap}
+//                   style={{
+//                     background: cardColors[i] || "#ffffff",
+//                   }}
+//                 >
+//                   {icon ? (
+//                     <img src={icon} alt={`icon-${i}`} className={styles.iconImg} />
+//                   ) : (
+//                     <div className={styles.iconPlaceholder} />
+//                   )}
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+
+//           {/* Right cards */}
+//           <div className={styles.rightStack}>
+//             {rightCards.map((card, idx) => (
+//               <div
+//                 key={idx}
+//                 className={styles.card}
+//                 style={{ background: card.bg || "#f3eefc" }}
+//               >
+//                 <div className={styles.whiteBoxTitle}>
+//                   <span>{card.title}</span>
+//                 </div>
+//                 <ul className={styles.bullets}>
+//                   {card.bullets.map((b, i) => (
+//                     <li key={i}>{b}</li>
+//                   ))}
+//                 </ul>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+
+
+
+
 import React from "react";
 import styles from "./OurProcessSection.module.css";
 
@@ -7,8 +169,8 @@ import styles from "./OurProcessSection.module.css";
  * - leadText: string
  * - leftCards: { title: string, bullets: string[], bg?: string }[]
  * - rightCards: { title: string, bullets: string[], bg?: string }[]
- * - centerIcons: string[] // URLs or null (if null, render placeholder)
- * - arrowImages: { top?: string, middle?: string, bottom?: string } // arrow image placeholders
+ * - centerIcons: string[]  // URLs or null
+ * - arrowImages: { top?: string, middle?: string, bottom?: string }
  */
 export default function OurProcessSection({
   heading = "OUR PROCESS",
@@ -37,49 +199,45 @@ export default function OurProcessSection({
       bg: "#F0E7FF",
     },
   ],
-  centerIcons = [null, null, null], // same number as total cards
+  centerIcons = [null, null, null], 
   arrowImages = {
     top: "/images/products/arrow1.png",
     middle: "/images/products/arrow2.png",
     bottom: "/images/products/arrow3.png",
   },
 }) {
-  // merge left and right card backgrounds for icon alignment
   const cardColors = [...leftCards.map((c) => c.bg), ...rightCards.map((c) => c.bg)];
 
   return (
     <section className={styles.section} aria-label="Our process">
       <div className={styles.inner}>
-        {/* Heading */}
-        <div className={styles.headerCol}>
-          <h2 className={styles.heading}>
-            {heading.split(" ").map((w, i) =>
-              i === heading.split(" ").length - 1 ? (
-                <span key={i} className={styles.headingAccent}>
-                  {w}
-                </span>
-              ) : (
-                <span key={i}> {w} </span>
-              )
-            )}
-          </h2>
+
+        {/* NEW — HEADING + LEAD TEXT IN ONE ROW */}
+        <div className={styles.headerRow}>
+          <div className={styles.headerCol}>
+            <h2 className={styles.heading}>
+              {heading.split(" ").map((w, i) =>
+                i === heading.split(" ").length - 1 ? (
+                  <span key={i} className={styles.headingAccent}>{w}</span>
+                ) : (
+                  <span key={i}> {w} </span>
+                )
+              )}
+            </h2>
+          </div>
+
+          <div className={styles.leadCol}>
+            <p className={styles.leadText}>{leadText}</p>
+          </div>
         </div>
 
-        {/* Lead text */}
-        <div className={styles.leadCol}>
-          <p className={styles.leadText}>{leadText}</p>
-        </div>
-
-        {/* Main Grid */}
+        {/* MAIN GRID */}
         <div className={styles.grid}>
-          {/* Left cards */}
+
+          {/* LEFT CARDS */}
           <div className={styles.leftStack}>
             {leftCards.map((card, idx) => (
-              <div
-                key={idx}
-                className={styles.card}
-                style={{ background: card.bg || "#fbf7f3" }}
-              >
+              <div key={idx} className={styles.card} style={{ background: card.bg }}>
                 <div className={styles.whiteBoxTitle}>
                   <span>{card.title}</span>
                 </div>
@@ -92,37 +250,21 @@ export default function OurProcessSection({
             ))}
           </div>
 
-          {/* Center column: arrows (images) + icons */}
+          {/* CENTER COLUMN */}
           <div className={styles.centerColumn}>
-            {/* Arrow placeholders (positioned with CSS) */}
-            <img
-              src={arrowImages.top}
-              alt="arrow-top"
-              className={`${styles.arrowImage} ${styles.arrowTop}`}
-            />
-            <img
-              src={arrowImages.middle}
-              alt="arrow-middle"
-              className={`${styles.arrowImage} ${styles.arrowMiddle}`}
-            />
-            <img
-              src={arrowImages.bottom}
-              alt="arrow-bottom"
-              className={`${styles.arrowImage} ${styles.arrowBottom}`}
-            />
+            <img src={arrowImages.top} className={`${styles.arrowImage} ${styles.arrowTop}`} alt="" />
+            <img src={arrowImages.middle} className={`${styles.arrowImage} ${styles.arrowMiddle}`} alt="" />
+            <img src={arrowImages.bottom} className={`${styles.arrowImage} ${styles.arrowBottom}`} alt="" />
 
-            {/* Icons stack (on top of arrows) */}
             <div className={styles.path}>
               {centerIcons.map((icon, i) => (
                 <div
                   key={i}
                   className={styles.iconWrap}
-                  style={{
-                    background: cardColors[i] || "#ffffff",
-                  }}
+                  style={{ background: cardColors[i] }}
                 >
                   {icon ? (
-                    <img src={icon} alt={`icon-${i}`} className={styles.iconImg} />
+                    <img src={icon} alt="" className={styles.iconImg} />
                   ) : (
                     <div className={styles.iconPlaceholder} />
                   )}
@@ -131,14 +273,10 @@ export default function OurProcessSection({
             </div>
           </div>
 
-          {/* Right cards */}
+          {/* RIGHT CARDS */}
           <div className={styles.rightStack}>
             {rightCards.map((card, idx) => (
-              <div
-                key={idx}
-                className={styles.card}
-                style={{ background: card.bg || "#f3eefc" }}
-              >
+              <div key={idx} className={styles.card} style={{ background: card.bg }}>
                 <div className={styles.whiteBoxTitle}>
                   <span>{card.title}</span>
                 </div>
@@ -150,6 +288,7 @@ export default function OurProcessSection({
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>

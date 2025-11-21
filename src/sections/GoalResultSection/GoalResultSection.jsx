@@ -2,16 +2,16 @@ import React from "react";
 import styles from "./GoalResultSection.module.css";
 
 export default function GoalResultSection({
-  image = "/images/cart-mobile.png",
+  image = "/images/products/cart-mobile.png",
   items = [
     {
-      icon: "/icons/goal.svg",
+      icon: "/images/products/goal.svg",
       title: "Goal",
       description:
         "To provide a seamless, secure, and enjoyable online shopping experience that connects customers and sellers effortlessly through an intuitive, high-performance mobile platform.",
     },
     {
-      icon: "/icons/result.svg",
+      icon: "/images/products/result.svg",
       title: "Result",
       description:
         "The E-Commerce App delivered a seamless and efficient shopping experience, increasing user engagement and boosting sales. Businesses experienced faster order management and improved customer retention through real-time updates.",

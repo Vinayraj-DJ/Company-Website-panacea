@@ -15,6 +15,7 @@ import GroceryImageComponent from "../../../sections/CloudImageComponent/Grocery
 // import InfoPairsSection from "../../../sections/InfoPairsSection/InfoPairsSection"; 
 import InfoPair from "../../../sections/InfoPair/InfoPair";
 import UserGrocery from "../../../sections/UserGrocery/UserGrocery";
+import SecurePaymentMiniSection from "../../../sections/SecurePaymentSection/SecurePaymentSection";
 
 const SOCIALS = {
   linkedin: "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
@@ -107,6 +108,7 @@ const GroceryApp= () => {
           "Our Grocery Delivery App simplifies daily shopping by bringing fresh groceries, essentials, and household items directly to users’ doorsteps. Built with an intuitive design and powerful backend, the platform connects local stores, delivery agents, and customers seamlessly for a smooth shopping experience.."
         ]}
       />
+       <SecurePaymentMiniSection />
 
       <GroceryImageComponent/>
 

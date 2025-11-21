@@ -92,12 +92,12 @@ const ECommerceApp= () => {
 />
 
 <ShowcaseSection
-      heading={`Shop Smart. Grow Fast.\nEmpowering businesses and customers through seamless\n digital shopping experiences.`}
-      highlightSpans={["Empowering businesses", "digital shopping"]}
-      mainImage="/images/phone.png"
-      floats={floats}
-      caption=""
-    />
+  heading={`Shop Smart. Grow Fast. Empowering businesses
+and customers through seamless
+digital shopping experiences.`}
+  highlightSpans={["Empowering businesses", "digital shopping"]}
+/>
+
 
 
 

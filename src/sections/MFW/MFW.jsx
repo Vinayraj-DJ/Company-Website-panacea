@@ -17,11 +17,12 @@ export default function MFW({
 }) {
   return (
     <>
+    <NumberedHeading number={2} title="What is our Mutual funds website ?" />
       {/* ===== Top section: "What is our Mutual funds website ?" ===== */}
       <section className={styles.section} aria-labelledby="mutual-funds-heading">
         {/* heading wrapped to remove default margins */}
         <div className={styles.headingWrap}>
-          <NumberedHeading number={2} title="What is our Mutual funds website ?" />
+          
         </div>
 
         <div className={styles.inner}>
