@@ -104,12 +104,7 @@ const SeoRanking = () => {
       />
 
       <CtaPanel
-        title="KNOW MORE PROJECTS"
-        description="To know more projects and the technologies we used to make them successful in a very short span of time, please contact us."
-        buttonLabel="Call us"
-        href="/contact"
-        align="center"
-        maxWidth={794}
+        
       />
 
       <FooterSection

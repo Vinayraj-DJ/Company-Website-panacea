@@ -20,7 +20,7 @@ const Wordpress = () => {
       {/* HERO */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/wordpress-hero.png"
+          imageSrc="/images/services/wordpress.png"
           alt="Word Press Development"
           title={`Word Press\nDevelopment`}
         />
@@ -58,20 +58,20 @@ const Wordpress = () => {
 
       {/* WHY + IMAGE */}
       <SplitFeature
-        image="/images/services/wordpress-why.png"
+        image="/images/services/wordpress1.png"
         title="Why You Should Choose WordPress Development ?"
         body={`Choosing WordPress for your website gives you complete control and flexibility over design, functionality, and performance. It supports responsive web design, ensuring your site looks perfect on every device. WordPress also integrates smoothly with marketing and analytics tools, allowing businesses to track performance, optimize content, and engage audiences more effectively.`}
         body2={`Moreover, the vast plugin library enables developers to add advanced features—like eCommerce functionality, booking systems, or membership areas—without complex coding. Whether you need a portfolio site, a corporate website, or an online store, WordPress delivers reliable solutions that grow with your business.`}
-        imageLeft={false}
+        imageLeft={true}
       />
 
       {/* HOW PANACEA HELPS + IMAGE */}
       <SplitFeature
-        image="/images/services/wordpress-how.png"
+        image="/images/services/wordpress2.png"
         title="How Panacea Can Help You with WordPress Development"
         body={`At Panacea IT Services, we specialize in building dynamic, SEO-optimized WordPress websites tailored to meet your business goals. Our expert developers create customized themes, secure plugins, and performance-driven designs that enhance user experience and boost online visibility.`}
         body2={`We focus on clean code, responsive layouts, and fast load times to ensure your site performs seamlessly across all devices. From website design and development to maintenance and digital marketing integration, Panacea provides end-to-end WordPress development solutions that help you build a powerful digital presence.`}
-        imageLeft={true}
+        imageLeft={false}
       />
 
       {/* BENEFITS LIST */}
@@ -99,14 +99,14 @@ const Wordpress = () => {
               "With the majority of users browsing from mobile devices, having a responsive website is essential. WordPress themes are designed to automatically adjust layouts.",
           },
         ]}
-        illustrationSrc="/images/services/wordpress-benefits.png"
+        illustrationSrc="/images/services/wordpress3.png"
         illustrationAlt="WordPress illustration"
-        imageLeft={false}
+        imageLeft={true}
       />
 
       <CtaPanel
         title="KNOW MORE PROJECTS"
-        description="To know more projects and the technologies we used to make them successful in a very short span of time, please contact us."
+        description="To know more projects and about all the details of the projects , the Technolgies that we used to make the project successful in very short span of time please do contact us"
         buttonLabel="Call us"
         href="/contact"
         align="center"

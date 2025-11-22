@@ -21,7 +21,7 @@ const Shopify = () => {
       {/* ✅ HERO (unchanged layout) */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/shopify-hero.png"
+          imageSrc="/images/services/shopify.png"
           alt="Shopify Development"
           title={"Shopify\nDevelopment"}
         />
@@ -59,7 +59,7 @@ const Shopify = () => {
 
       {/* ✅ WHY (content only changed) */}
       <SplitFeature
-        image="/images/services/shopify-why.png"
+        image="/images/services/shopify1.png"
         title="Why Shopify Development is Important ?"
         body={`In today’s competitive e-commerce landscape, having a fast, reliable, and scalable platform is crucial. Shopify makes this possible by offering a secure infrastructure, mobile-friendly design, and built-in SEO features. It supports multiple payment gateways, global shipping integrations, and advanced analytics—making it a perfect solution for both startups and established enterprises.`}
         body2={`Businesses using Shopify can quickly launch their online stores, manage daily operations efficiently, and scale effortlessly as their customer base grows. Its simplicity, combined with enterprise-grade capabilities, makes Shopify a preferred choice for modern e-commerce success.`}
@@ -68,7 +68,7 @@ const Shopify = () => {
 
       {/* ✅ HOW PANACEA HELPS (content only changed) */}
       <SplitFeature
-        image="/images/services/shopify-how.png"
+        image="/images/services/shopify2.png"
         title="How Panacea Can Help You with Shopify Development ?"
         body={`At Panacea IT Services, we specialize in developing tailored Shopify solutions that empower businesses to grow and succeed online. Our expert team designs and develops custom Shopify stores that are fast, responsive, and visually stunning.`}
         body2={`We handle everything—from store setup and theme customization to product integration, payment configuration, and app development. We also focus on performance optimization to ensure smooth navigation and excellent user experience. With Panacea’s Shopify expertise, your business can build a powerful online presence that drives sales, attracts customers, and strengthens brand reputation.`}
@@ -100,7 +100,7 @@ const Shopify = () => {
               "Thousands of themes and apps enable you to tailor storefronts, workflows, and integrations to your brand and operations.",
           },
         ]}
-        illustrationSrc="/images/services/shopify-benefits.png"
+        illustrationSrc="/images/services/shopify3.png"
         illustrationAlt="Shopify benefits illustration"
         imageLeft={true}
       />

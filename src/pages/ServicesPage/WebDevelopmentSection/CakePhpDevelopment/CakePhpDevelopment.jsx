@@ -74,7 +74,7 @@ export default function CakePhpDevelopment() {
 />
 
 
-      <CtaPanel title="KNOW MORE PROJECTS" description="Explore our CakePHP portfolio and success stories." buttonLabel="Call us" href="/contact" align="center" maxWidth={794} />
+      <CtaPanel title="KNOW MORE PROJECTS" description="To know more projects and about all the details of the projects , the Technolgies that we used to make the project successful in very short span of time please do contact us" buttonLabel="Call us" href="/contact" align="center" maxWidth={794} />
       <FooterSection brand="Panacea IT Services" year={new Date().getFullYear()} services={["Software Development","Mobile Apps","UI/UX Design","Digital Marketing","SEO Optimization","Consulting"]} company={["About Us","Our Team","Careers","Portfolio","Blog","Contact"]} legal={["Privacy Policy","Terms of Service","Cookie Policy","GDPR"]}/>
     </section>
   );

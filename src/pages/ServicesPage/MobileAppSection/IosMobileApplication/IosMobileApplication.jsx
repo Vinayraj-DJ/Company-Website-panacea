@@ -105,7 +105,7 @@ const IosMobileApplication = () => {
       {/* ✅ CTA Panel */}
       <CtaPanel
         title="KNOW MORE PROJECTS"
-        description="To know more about our iOS mobile app projects and the technologies we used to make them successful in a short span of time, please contact us."
+        description="To know more projects and about all the details of the projects , the Technolgies that we used to make the project successful in very short span of time please do contact us"
         buttonLabel="Call us"
         href="/contact"
         align="center"

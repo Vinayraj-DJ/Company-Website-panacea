@@ -20,7 +20,7 @@ const ECommerce = () => {
       {/* HERO */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/ecommerce-hero.png"
+          imageSrc="/images/services/ecommerce.png"
           alt="E-Commerce Development"
           title={'E-Commerce\nDevelopment'}
         />
@@ -58,7 +58,7 @@ const ECommerce = () => {
 
       {/* WHY + IMAGE */}
       <SplitFeature
-        image="/images/services/ecommerce-why.png"
+        image="/images/services/ecommerce1.png"
         title="Why E-Commerce Development is Important"
         body={'In today’s digital-first world, consumers prefer convenience and accessibility, making e-commerce essential for any modern business. A professionally built e-commerce website not only strengthens your brand’s online presence but also operates as a 24/7 sales channel. It helps you reach customers across different locations and manage sales efficiently.'}
         body2={'With secure payment gateways, real-time order tracking, and responsive design, e-commerce websites ensure customer trust and satisfaction. Whether you’re a startup or an established brand, investing in e-commerce development helps you stay competitive and meet evolving market demands.'}
@@ -67,7 +67,7 @@ const ECommerce = () => {
 
       {/* PANACEA HELP + IMAGE */}
       <SplitFeature
-        image="/images/services/ecommerce-how.png"
+        image="/images/services/ecommerce2.png"
         title="How Panacea Can Help You with E-Commerce Development ?"
         body={'At Panacea IT Services, we specialize in building customized e-commerce websites that combine stunning design with advanced functionality. Our team develops scalable platforms using leading technologies such as Shopify, WooCommerce, Magento, and custom React/Node stacks to suit your specific business needs.'}
         body2={'We focus on creating secure, fast, and responsive online stores that deliver exceptional user experiences across devices. From product catalog setup and payment gateway integration to SEO optimization and post-launch support, we handle every aspect of e-commerce development.'}
@@ -99,14 +99,14 @@ const ECommerce = () => {
               "E-commerce platforms come with integrated analytics tools that provide valuable insights into customer behavior, sales trends, and product performance.",
           },
         ]}
-        illustrationSrc="/images/services/ecommerce-benefits.png"
+        illustrationSrc="/images/services/ecommerce3.png"
         illustrationAlt="E-commerce illustration"
         imageLeft={true}
       />
 
       <CtaPanel
         title="KNOW MORE PROJECTS"
-        description="To know more projects and the technologies we used to make them successful in a very short span of time, please contact us."
+        description="To know more projects and about all the details of the projects , the Technolgies that we used to make the project successful in very short span of time please do contact us"
         buttonLabel="Call us"
         href="/contact"
         align="center"

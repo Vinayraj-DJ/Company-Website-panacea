@@ -28,44 +28,58 @@ export default function PPCMarketing() {
       </div>
 
       <SectionIntro
-        title="Pay Per Click Marketing Services"
-        paragraphs={[
-          "PPC delivers instant visibility and targeted traffic by showing ads when users actively search or browse relevant content.",
-          "We build and manage high-performance campaigns across Google Ads, Bing Ads, Facebook, LinkedIn, and more — with rigorous optimization to maximize ROI.",
-        ]}
-      />
+  title="Pay Per Click Marketing Services"
+  paragraphs={[
+    "Pay-Per-Click (PPC) Marketing is a highly effective digital advertising strategy that drives instant visibility and targeted traffic to your website. With PPC, businesses only pay when users click on their ads, making it a cost-efficient and results-driven marketing solution. At PanaceaIT Services, we specialize in creating and managing high-performing PPC campaigns across platforms like Google Ads, Bing Ads, Facebook, and LinkedIn. Our certified experts use data-driven strategies, keyword optimization, and continuous performance tracking to maximize ROI, boost conversions, and help your business reach the right audience at the right time.",
+  ]}
+/>
+
+<SplitFeature
+  image="/images/services/image 70.png"
+  title="Why you should Choose Pay per click Marketing And how panacea can help you"
+  body={`In the fast-paced digital world, Pay-Per-Click (PPC) Marketing offers one of the quickest and most measurable ways to generate leads and increase online visibility. Unlike organic marketing, PPC delivers immediate results by placing your brand at the top of search engine results and social media platforms. With precise targeting, you can reach potential customers who are actively searching for your products or services — ensuring that every click brings you closer to conversion.`}
+  body2={`At PanaceaIT Services, we take a strategic, data-driven approach to PPC campaign management. Our team of certified professionals handles everything — from keyword research and ad creation to bid management and performance optimization.`}
+  imageLeft={true}
+/>
+
 
       <SplitFeature
-        image="/images/services/image 70.png"
-        title="Why Choose PPC — And How PanaceaIT Helps"
-        body={`PPC provides immediate results with precise audience targeting. Place your brand at the top of search results and reach intent-driven prospects across social platforms.`}
-        body2={`Our certified team handles keyword research, ad creation, bidding, and performance optimization to convert clicks into customers efficiently.`}
-        imageLeft={true}
-      />
+  image="/images/services/image 71.png"
+  title="About Pay Per Click Marketing"
+  body={`Pay-Per-Click (PPC) Marketing is a digital advertising model that allows businesses to display ads on search engines and social media platforms, paying only when users click on their ads. It’s a fast and efficient way to drive qualified traffic, boost brand visibility, and achieve measurable results. By targeting specific keywords, demographics, and locations, PPC helps businesses reach the right audience at the right time. At PanaceaIT Services, we specialize in designing and managing data-driven PPC campaigns that maximize ROI, enhance conversions, and accelerate your business growth through strategic ad placement and performance optimization.`}
+  imageLeft={false}
+/>
 
-      <SplitFeature
-        image="/images/services/image 71.png"
-        title="About Pay Per Click Marketing"
-        body={`With PPC, you pay only when someone clicks your ad. Campaigns are tuned for qualified traffic, brand visibility, and measurable growth using data-driven placements.`}
-        imageLeft={false}
-      />
 
       <FeatureList
-        title="Key Benefits Of PPC"
-        items={[
-          { title: "Instant Visibility & Results", desc: "Appear immediately on search engines and social platforms for rapid reach." },
-          { title: "Highly Targeted Advertising", desc: "Target by keyword, location, audience, interests, and devices." },
-          { title: "Cost-Effective Control", desc: "Pay only for clicks; allocate budget to best-performing segments." },
-          { title: "Measurable Performance", desc: "Track every impression, click, and conversion for crystal-clear ROI." },
-        ]}
-        illustrationSrc="/images/services/image 72.png"
-        illustrationAlt="PPC benefits illustration"
-        imageLeft={true}
-      />
+  title="Key Benefits Of PPC Marketing Services"
+  items={[
+    {
+      title: "Instant Visibility and Results",
+      desc: "PPC ads appear immediately on search engines and social platforms, helping your business gain quick visibility and traffic.",
+    },
+    {
+      title: "Highly Targeted Advertising",
+      desc: "Reach your ideal audience through precise targeting options such as location, keywords, demographics, interests, and devices.",
+    },
+    {
+      title: "Cost-Effective Marketing",
+      desc: "You only pay when someone clicks your ad, ensuring that your marketing budget is spent on genuine, interested prospects.",
+    },
+    {
+      title: "Measurable Performance",
+      desc: "Every click, impression, and conversion can be tracked, providing clear insights into your campaign’s success and ROI.",
+    },
+  ]}
+  illustrationSrc="/images/services/image 72.png"
+  illustrationAlt="PPC benefits illustration"
+  imageLeft={true}
+/>
+
 
       <CtaPanel
         title="KNOW MORE PROJECTS"
-        description="Curious how our PPC optimizations improved ROI? Let’s talk."
+        description="To know more projects and about all the details of the projects , the Technolgies that we used to make the project successful in very short span of time please do contact us"
         buttonLabel="Call us"
         href="/contact"
         align="center"

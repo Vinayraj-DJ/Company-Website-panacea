@@ -21,7 +21,7 @@ const WooCommerce = () => {
       {/* ✅ HERO (layout unchanged) */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/woocommerce-hero.png"
+          imageSrc="/images/services/woocommerce.png"
           alt="WooCommerce Development"
           title={"Woo Commerce\nDevelopment"}
         />
@@ -59,7 +59,7 @@ const WooCommerce = () => {
 
       {/* ✅ WHY – content swapped only */}
       <SplitFeature
-        image="/images/services/woocommerce-why.png"
+        image="/images/services/woocommerce1.png"
         title="Why WooCommerce Development is Important ?"
         body={`WooCommerce offers businesses a reliable and affordable solution to establish their online presence. It integrates seamlessly with WordPress, allowing for complete control over design, functionality, and user experience. Businesses can sell physical goods, digital products, memberships, or subscriptions—all managed through a simple and intuitive interface.`}
         body2={`WooCommerce also supports multiple payment gateways, shipping methods, and tax settings, making it adaptable for global markets. With its mobile-responsive design and SEO-friendly structure, WooCommerce ensures that your online store is not only attractive but also optimized for higher visibility and conversions.`}
@@ -68,7 +68,7 @@ const WooCommerce = () => {
 
       {/* ✅ HOW PANACEA HELPS – content swapped only */}
       <SplitFeature
-        image="/images/services/woocommerce-how.png"
+        image="/images/services/woocommerce2.png"
         title="How Panacea Can Help You with WooCommerce Development ?"
         body={`At Panacea IT Services, we specialize in building custom WooCommerce solutions tailored to your unique business needs. Our team of experienced developers designs visually stunning, user-friendly, and high-performing online stores that deliver a seamless shopping experience.`}
         body2={`We handle everything from WooCommerce setup and theme customization to plugin integration, payment gateway setup, and performance optimization. We also ensure your e-commerce website is secure, scalable, and easy to manage—so you can focus on growth and measurable results.`}
@@ -100,7 +100,7 @@ const WooCommerce = () => {
               "Built on WordPress, WooCommerce inherits strong SEO capabilities and easy optimization for product pages.",
           },
         ]}
-        illustrationSrc="/images/services/woocommerce-benefits.png"
+        illustrationSrc="/images/services/woocommerce3.png"
         illustrationAlt="WooCommerce benefits illustration"
         imageLeft={true}
       />
