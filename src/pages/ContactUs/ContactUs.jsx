@@ -75,17 +75,7 @@ const ContactUs = () => {
   items={services}
   highlightedIndex={1}
 />
-
-
-
-      
-
-        
-
-      
-      
-      
-      
+   
  
       <FooterSection
         brand="Panacea IT Services"
@@ -106,3 +96,11 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+
+
+
+
+
+
+
+

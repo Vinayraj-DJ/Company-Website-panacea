@@ -1,29 +1,23 @@
-
 // ChildCareManagement.jsx
 import React from "react";
-
 import FooterSection from "../../../sections/HomePageSection/FooterSection/FooterSection";
 import SectionIntro from "../../../components/common/SectionIntro";
-
 import HeroTitleChip from "../../../components/common/HeroTitleChip";
-
-
 import styles from "./OTTApp.module.css";
 import HightLightSection from "../../../sections/AboutUs/HightLightSection/HightLightSection";
 import SmartScalableSection from "../../../sections/Products/SmartScalableSection";
 import KnowEverythingSection from "../../../sections/Services/KnowEverythingSection";
 import OTTHeroSection from "../../../sections/OTTHeroSection/OTTHeroSection";
-
 import CloudImageComponent from "../../../sections/CloudImageComponent/CloudImageComponent";
 
 const SOCIALS = {
-  linkedin: "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
+  linkedin:
+    "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
   facebook: "https://www.facebook.com/your-handle",
 };
 
-const OTTApp= () => {
+const OTTApp = () => {
   // feature data for the EducationalFeaturesSection
-
 
   return (
     <section className={styles.page}>
@@ -32,7 +26,6 @@ const OTTApp= () => {
           imageSrc="/images/products/OTT.png"
           alt="OTT App"
           title={"OTT App"}
-          
         />
 
         <div className={styles.heroSocialIcons}>
@@ -58,63 +51,52 @@ const OTTApp= () => {
       <SectionIntro
         title="OTT App "
         paragraphs={[
-          "Our OTT App offers a seamless entertainment experience by allowing users to stream movies, TV shows, web series, and live content anytime, anywhere. Built with a robust backend and an engaging user interface, it delivers high-quality video streaming with personalized recommendations and secure user management."
+          "Our OTT App offers a seamless entertainment experience by allowing users to stream movies, TV shows, web series, and live content anytime, anywhere. Built with a robust backend and an engaging user interface, it delivers high-quality video streaming with personalized recommendations and secure user management.",
         ]}
       />
 
-
       <OTTHeroSection
-  //  title="OTT App"
-  heroImage="/images/products/ott-hero-mockup.png"
-   phoneImage="/images/products/ott-phone.png"
- />
+        //  title="OTT App"
+        heroImage="/images/products/ott-hero-mockup.png"
+        phoneImage="/images/products/ott-phone.png"
+      />
 
-
-         
-
-    
-
-    <CloudImageComponent/>
+      <CloudImageComponent />
 
       <SmartScalableSection
-  title="What Users get ?"
-  items={[
-    { image: "/images/products/1.jpg", title: "FLEXIBILTY" },
-    { image: "/images/products/2.jpg", title: "TRANSPARENT" },
-    { image: "/images/products/3.jpg", title: "SECURE" },
-    { image: "/images/products/4.jpg", title: "REALIABLE" },
-    { image: "/images/products/5.jpg", title: "FULL CONTROL" },
-    { image: "/images/products/6.jpg", title: "BEST INSIGHTS" },
-    { image: "/images/products/7.jpg", title: "DASHBOARDS" },
-    { image: "/images/products/7.jpg", title: "DASHBOARDS" },
-  ]}
-/>
+        title="What Users get ?"
+        items={[
+          { image: "/images/products/1.jpg", title: "FLEXIBILTY" },
+          { image: "/images/products/2.jpg", title: "TRANSPARENT" },
+          { image: "/images/products/3.jpg", title: "SECURE" },
+          { image: "/images/products/4.jpg", title: "REALIABLE" },
+          { image: "/images/products/5.jpg", title: "FULL CONTROL" },
+          { image: "/images/products/6.jpg", title: "BEST INSIGHTS" },
+          { image: "/images/products/7.jpg", title: "DASHBOARDS" },
+          { image: "/images/products/7.jpg", title: "DASHBOARDS" },
+        ]}
+      />
 
+      <KnowEverythingSection
+        title="Why Choose OUT OTT App"
+        paragraphs={[
+          "We specialize in delivering high-performance OTT platforms with rich media experiences, scalability, and monetization capabilities. Our solutions empower entertainment brands to engage users, expand reach, and maximize revenue through a secure, modern, and user-centric digital ecosystem.",
+          "We provide end-to-end development, from UI/UX design to backend architecture, integration, and deployment. Our solutions are custom-tailored to your business model — whether it’s subscription-based (SVOD), ad-supported (AVOD), or transactional (TVOD).",
+          "Beyond just development, we emphasize analytics, performance optimization, and monetization tools to help clients track viewer engagement and boost revenue.",
+        ]}
+        backgroundImage="/images/backgroundwhychooseus.jpg"
+        heroImage="/images/joinourservice.png"
+        ctaLabel="Call us"
+        toastMessage="Thanks! Our team will contact you shortly."
+        toastDuration={4000}
+        buttonProps={{
+          padding: "12px 28px",
+          fontSize: "16px",
+          backgroundColor: "#4070B1",
+          borderRadius: "12px",
+        }}
+      />
 
-
-
-       <KnowEverythingSection
-      title="Why Choose OUT OTT App"
-      paragraphs={[
-        "We specialize in delivering high-performance OTT platforms with rich media experiences, scalability, and monetization capabilities. Our solutions empower entertainment brands to engage users, expand reach, and maximize revenue through a secure, modern, and user-centric digital ecosystem.",
-        "We provide end-to-end development, from UI/UX design to backend architecture, integration, and deployment. Our solutions are custom-tailored to your business model — whether it’s subscription-based (SVOD), ad-supported (AVOD), or transactional (TVOD).",
-        "Beyond just development, we emphasize analytics, performance optimization, and monetization tools to help clients track viewer engagement and boost revenue.",
-      ]}
-      backgroundImage="/images/backgroundwhychooseus.jpg"
-      heroImage="/images/joinourservice.png"
-      ctaLabel="Call us"
-      toastMessage="Thanks! Our team will contact you shortly."
-      toastDuration={4000}
-      buttonProps={{
-        padding: "12px 28px",
-        fontSize: "16px",
-        backgroundColor: "#4070B1",
-        borderRadius: "12px",
-      }}
-    />
-
-
-      
       <HightLightSection
         title="PRODUCTS & PLATFORMS"
         lead="Use our products that are&nbsp; well made<br/>and built"
@@ -138,7 +120,14 @@ const OTTApp= () => {
           "SEO Optimization",
           "Consulting",
         ]}
-        company={["About Us", "Our Team", "Careers", "Portfolio", "Blog", "Contact"]}
+        company={[
+          "About Us",
+          "Our Team",
+          "Careers",
+          "Portfolio",
+          "Blog",
+          "Contact",
+        ]}
         legal={["Privacy Policy", "Terms of Service", "Cookie Policy", "GDPR"]}
       />
     </section>

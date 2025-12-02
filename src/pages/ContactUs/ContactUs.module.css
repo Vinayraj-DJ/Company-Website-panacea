@@ -21,10 +21,10 @@
   padding: 24px 5.5rem 60px;
 }
 
-/*********** Header ***********/
+/* ********** Header ********** */
 .header { grid-area: header; }
 .title {
-  font-size: var(--Font_Size_5); /* 24px */
+  font-size: var(--Font_Size_5); 
   color: #436fb0;
   font-weight: 600;
 }
@@ -35,12 +35,12 @@
   margin-left: 12px;
 }
 .intro {
-  font-size: var(--Font_Size_4); /* 20px */
+  font-size: var(--Font_Size_4); 
   line-height: 160%;
   color: rgba(0,0,0,.6);
 }
 
-/*********** Images ***********/
+/* ********** Images ********** */
 .heroImage,
 .middleImage,
 .bottomImage { margin: 0; }
@@ -58,7 +58,7 @@
   border-radius: 6px;
 }
 
-/*********** Gradient Card ***********/
+/* ********** Gradient Card ********** */
 .rightCard {
   grid-area: rightCard;
   padding: 24px;
@@ -79,7 +79,7 @@
   color: rgba(0,0,0,.65);
 }
 
-/*********** About ***********/
+/* ********** About ********** */
 .aboutCard {
   grid-area: about;
   padding: 20px;
@@ -87,7 +87,7 @@
   border-radius: 16px;
 }
 .aboutTitle {
-  font-size: var(--Font_Size_3); /* 15px */
+  font-size: var(--Font_Size_3); 
   color: #436fb0;
   font-weight: 600;
   margin-bottom: 8px;
@@ -98,7 +98,7 @@
   color: rgba(0,0,0,.7);
 }
 
-/*********** ✅ Benefits ***********/
+/* ********** ✅ Benefits ********** */
 .benefitsCard {
   grid-area: benefits;
   background: #fff;
@@ -155,7 +155,7 @@
   font-weight: 400;
 }
 
-/*********** TABLET ***********/
+/* ********** TABLET ********** */
 @media (max-width: 1024px) {
   .section { padding: 24px 2rem; gap: 20px; }
 
@@ -165,7 +165,7 @@
   }
 }
 
-/*********** MOBILE ***********/
+/* ********** MOBILE ********** */
 @media (max-width: 768px) {
   .section {
     grid-template-columns: 1fr;
@@ -180,8 +180,8 @@
     padding: 16px;
   }
 
-  .title { font-size: var(--Font_Size_4); } /* 20px */
-  .intro { font-size: var(--Font_Size_3); } /* 15px */
+  .title { font-size: var(--Font_Size_4); } 
+  .intro { font-size: var(--Font_Size_3); } 
 
   .cardTitle { font-size: var(--Font_Size_4); }
   .cardText { font-size: var(--Font_Size_3); }
@@ -199,7 +199,7 @@
 /* === HERO + SOCIALS (same as Application page) === */
 .page {
   background: linear-gradient(135deg, #ffffff 0%, #f7ecff 40%, #e6f1ff 100%);
-  /* padding-bottom: 60px; */
+  padding-bottom: 60px;
     font-family: var(--Font_Family, "Roboto Serif", sans-serif);
   
 }
@@ -247,3 +247,8 @@
   .heroSocialIcons { bottom: -24px; right: 16px; }
   .social { width: 36px; height: 36px; font-size: 14px; }
 }
+
+
+
+
+

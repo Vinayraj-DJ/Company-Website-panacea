@@ -8,7 +8,8 @@ import HeroTitleChip from "../../../../components/common/HeroTitleChip";
 import styles from "./SoftwareDevelopment.module.css"; // reuse your existing service css (same rules as others)
 
 const SOCIALS = {
-  linkedin: "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
+  linkedin:
+    "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
   facebook: "https://www.facebook.com/your-handle",
 };
 
@@ -18,7 +19,7 @@ export default function SoftwareDevelopment() {
       {/* Hero (only text changed) */}
       <div className={styles.hero}>
         <HeroTitleChip
-          imageSrc="/images/services/sd.png"  // keep same pattern you’re using
+          imageSrc="/images/services/sd.png" // keep same pattern you’re using
           alt="Software Development"
           title={"Software\nDevelopment"}
         />
@@ -107,7 +108,14 @@ final project..`}
           "SEO Optimization",
           "Consulting",
         ]}
-        company={["About Us", "Our Team", "Careers", "Portfolio", "Blog", "Contact"]}
+        company={[
+          "About Us",
+          "Our Team",
+          "Careers",
+          "Portfolio",
+          "Blog",
+          "Contact",
+        ]}
         legal={["Privacy Policy", "Terms of Service", "Cookie Policy", "GDPR"]}
       />
     </section>

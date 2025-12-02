@@ -1,4 +1,3 @@
-
 // ChildCareManagement.jsx
 import React from "react";
 
@@ -6,7 +5,6 @@ import FooterSection from "../../../sections/HomePageSection/FooterSection/Foote
 import SectionIntro from "../../../components/common/SectionIntro";
 
 import HeroTitleChip from "../../../components/common/HeroTitleChip";
-
 
 import styles from "./GamingAPP.module.css";
 import HightLightSection from "../../../sections/AboutUs/HightLightSection/HightLightSection";
@@ -16,13 +14,13 @@ import GamingShowcaseSection from "../../../sections/GamingShowcaseSection/Gamin
 import OurProcessSection from "../../../sections/OurProcessSections/OurProcessSection";
 
 const SOCIALS = {
-  linkedin: "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
+  linkedin:
+    "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
   facebook: "https://www.facebook.com/your-handle",
 };
 
-const GameingApp= () => {
+const GameingApp = () => {
   // feature data for the EducationalFeaturesSection
-
 
   return (
     <section className={styles.page}>
@@ -31,7 +29,6 @@ const GameingApp= () => {
           imageSrc="/images/products/GA.png"
           alt="Gaming APP"
           title={"Gaming App"}
-          
         />
 
         <div className={styles.heroSocialIcons}>
@@ -57,43 +54,55 @@ const GameingApp= () => {
       <SectionIntro
         title="Gaming App"
         paragraphs={[
-          "Our Gaming App is designed to deliver an immersive, high-performance, and entertaining experience for users across all platforms. With rich graphics, smooth controls, and engaging gameplay, it’s built to attract, retain, and entertain players while supporting real-time multiplayer modes and in-app purchases for revenue growth."
+          "Our Gaming App is designed to deliver an immersive, high-performance, and entertaining experience for users across all platforms. With rich graphics, smooth controls, and engaging gameplay, it’s built to attract, retain, and entertain players while supporting real-time multiplayer modes and in-app purchases for revenue growth.",
         ]}
       />
 
+      <OurProcessSection
+        heading="OUR PROCESS"
+        leadText="We implement robust backends, analytics, and monetization systems to help clients maximize player retention and revenue."
+        leftCards={[
+          {
+            title: "UI Design",
+            bullets: ["Research & Wireframing", "Visual Design", "Prototyping"],
+            bg: "#FBEDE0",
+          },
+          {
+            title: "BackEnd Development",
+            bullets: [
+              "Data Base Design",
+              "API Architecture",
+              "Testing",
+              "Deployment",
+            ],
+            bg: "#DFF6E6",
+          },
+        ]}
+        rightCards={[
+          {
+            title: "Front End Development",
+            bullets: [
+              "Requirement Analysis",
+              "Planning",
+              "Making it Responsive",
+              "API Integration",
+            ],
+            bg: "#F0E7FF",
+          },
+        ]}
+        centerIcons={[
+          "/images/products/figma.svg",
+          "/images/products/react.svg",
+          "/images/products/nodejs.svg",
+        ]}
+      />
 
+      <GamingShowcaseSection
+        background="/images/products/phone.png"
+        showcase="/images/products/phones.png"
+      />
 
-       <OurProcessSection
-      heading="OUR PROCESS"
-      leadText="We implement robust backends, analytics, and monetization systems to help clients maximize player retention and revenue."
-      leftCards={[
-        { title: "UI Design", bullets: ["Research & Wireframing", "Visual Design", "Prototyping"], bg: "#FBEDE0" },
-        { title: "BackEnd Development", bullets: ["Data Base Design","API Architecture","Testing","Deployment"], bg:"#DFF6E6" }
-      ]}
-      rightCards={[
-        { title: "Front End Development", bullets: ["Requirement Analysis","Planning","Making it Responsive","API Integration"], bg:"#F0E7FF" }
-      ]}
-      centerIcons={[
-        "/images/products/figma.svg",
-        "/images/products/react.svg",
-        "/images/products/nodejs.svg"
-      ]}
-    />
-
-
-
-
-
-
-
-
-       <GamingShowcaseSection
-  background="/images/products/phone.png"
-  showcase="/images/products/phones.png"
-/>
-
-
-       <GamingFeatureSection
+      <GamingFeatureSection
         image="/images/products/g1.png"
         icon="/images/products/icons1.svg"
         title="Smooth Gaming Experience"
@@ -110,22 +119,20 @@ const GameingApp= () => {
         reverse={true}
       />
 
-      
+      <JoinOurServiceSection
+        imageSrc="/images/products/Games.png"
+        imageAlt="Our team"
+        title="What Users get ?"
+        paragraphs={[
+          "Fun, engaging, and skill-based gaming experience.",
+          "Real-time competitions with global players.",
+          "Regular updates with new levels and challenges.",
+          "24/7 player support and community features.",
+          "Reward points and bonuses for consistent play.",
+        ]}
+        showButton={false}
+      />
 
-<JoinOurServiceSection
-  imageSrc="/images/products/Games.png"
-  imageAlt="Our team"
-  title="What Users get ?"
-  paragraphs={[
-    "Fun, engaging, and skill-based gaming experience.",
-    "Real-time competitions with global players.",
-    "Regular updates with new levels and challenges.",
-    "24/7 player support and community features.",
-    "Reward points and bonuses for consistent play."
-  ]}
-  showButton={false}
-/>
-      
       <HightLightSection
         title="PRODUCTS & PLATFORMS"
         lead="Use our products that are&nbsp; well made<br/>and built"
@@ -149,7 +156,14 @@ const GameingApp= () => {
           "SEO Optimization",
           "Consulting",
         ]}
-        company={["About Us", "Our Team", "Careers", "Portfolio", "Blog", "Contact"]}
+        company={[
+          "About Us",
+          "Our Team",
+          "Careers",
+          "Portfolio",
+          "Blog",
+          "Contact",
+        ]}
         legal={["Privacy Policy", "Terms of Service", "Cookie Policy", "GDPR"]}
       />
     </section>

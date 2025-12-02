@@ -1,34 +1,27 @@
-
 // ChildCareManagement.jsx
 import React from "react";
-
 import FooterSection from "../../../sections/HomePageSection/FooterSection/FooterSection";
 import HeroTitleChip from "../../../components/common/HeroTitleChip";
 import SectionIntro from "../../../components/common/SectionIntro";
-
 import styles from "./MutualFunds.module.css";
 import HightLightSection from "../../../sections/AboutUs/HightLightSection/HightLightSection";
-
 import SmartScalableSection from "../../../sections/Products/SmartScalableSection";
 import StepsSection from "../../../sections/StepsSection/StepsSection";
 import MFW from "../../../sections/MFW/MFW";
 const SOCIALS = {
-  linkedin: "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
+  linkedin:
+    "https://www.linkedin.com/company/panacea-it-services/?originalSubdomain=in",
   facebook: "https://www.facebook.com/your-handle",
 };
 
 const MutualFunds = () => {
-
-
   return (
-    
     <section className={styles.page}>
       <div className={styles.hero}>
         <HeroTitleChip
           imageSrc="/images/products/Mf.png"
           alt="Mutual Funds "
           title={"Mutual Funds"}
-          
         />
 
         <div className={styles.heroSocialIcons}>
@@ -50,7 +43,7 @@ const MutualFunds = () => {
           </a>
         </div>
       </div>
-<SectionIntro
+      <SectionIntro
         title="Mutual Funds Website"
         paragraphs={[
           "A Mutual Fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of assets such as stocks, bonds, and other securities. It is managed by professional fund managers who aim to generate returns in line with the fund’s investment objectives",
@@ -58,14 +51,11 @@ const MutualFunds = () => {
         ]}
       />
 
+      <StepsSection />
 
-         <StepsSection />
+      <MFW />
 
-
-           <MFW />
-      
-      
-            <SmartScalableSection
+      <SmartScalableSection
         title="What Users get ?"
         items={[
           { image: "/images/products/1.jpg", title: "FLEXIBILTY" },
@@ -89,7 +79,7 @@ const MutualFunds = () => {
         ]}
         columns={4}
       />
- 
+
       <FooterSection
         brand="Panacea IT Services"
         year={new Date().getFullYear()}
@@ -101,7 +91,14 @@ const MutualFunds = () => {
           "SEO Optimization",
           "Consulting",
         ]}
-        company={["About Us", "Our Team", "Careers", "Portfolio", "Blog", "Contact"]}
+        company={[
+          "About Us",
+          "Our Team",
+          "Careers",
+          "Portfolio",
+          "Blog",
+          "Contact",
+        ]}
         legal={["Privacy Policy", "Terms of Service", "Cookie Policy", "GDPR"]}
       />
     </section>
